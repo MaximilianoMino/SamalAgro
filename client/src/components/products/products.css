@@ -1,0 +1,45 @@
+.products-container {
+  font-family: roboto-bold;
+  position: relative;
+  height: 100vh;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSGDnFNxiwm1-a_40UEQYiL9xKlcYGqfMMAWOpMQ4ickRRUDwc");
+}
+.cards {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(12, 300px);
+  grid-gap: 50px;
+}
+.our-products {
+  font-family: Roboto;
+  font-size: 60px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  padding-top: 85px;
+  text-align: center;
+  color: #707070;
+}
+
+.card-title {
+  width: 260px;
+  height: 42px;
+  margin: 0 136px 19.9px 20px;
+  font-family: Roboto;
+  font-size: 36px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.22;
+  letter-spacing: normal;
+  text-align: left;
+  color: #707070;
+}
+.card-title > span {
+  border-bottom: solid 3px #c6261e;
+}
+.card-img {
+  border-radius: 50%;
+}

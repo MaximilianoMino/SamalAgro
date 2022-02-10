@@ -1,0 +1,29 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  width: 1920px;
+}
+
+.App {
+  font-family: Roboto;
+  line-height: 18px;
+  font-style: normal;
+  font-weight: 400;
+  background-color: white;
+  text-align: center;
+}
+
+.bg-danger,
+.btn-danger {
+  background: #c71d0e !important;
+}
+.bg-secondary {
+  background: rgb(197, 194, 194) !important;
+}
+
+.border-danger {
+  border-bottom: 2px solid #c71d0e !important;
+}

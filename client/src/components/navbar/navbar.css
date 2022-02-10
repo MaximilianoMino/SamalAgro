@@ -1,0 +1,24 @@
+.navbar {
+  height: 110px;
+  display: flex;
+  justify-content: space-around;
+}
+.nav-item {
+  height: 26px;
+  font-family: "Roboto";
+  font-size: 22px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.23;
+  letter-spacing: normal;
+  margin-right: 15px;
+  text-align: left;
+  color: #707070;
+}
+
+.samal-logo {
+  width: 398px;
+  background: red;
+  padding: 5rem;
+}

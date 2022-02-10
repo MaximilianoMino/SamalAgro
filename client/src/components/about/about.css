@@ -1,0 +1,14 @@
+.box {
+  font-size: 0.8rem;
+  margin-left: 8%;
+  background: rgba(223, 223, 223, 0.1);
+  backdrop-filter: blur(10px);
+  max-width: 35%;
+  height: 60vh;
+  border-radius: 5%;
+  color: white;
+}
+.nav {
+  z-index: 10;
+  color: white;
+}
