@@ -1,38 +1,53 @@
 import React from "react";
+import CountUp from "react-countup";
 import "./about.css";
 const About = () => {
   return (
-    <div className="box mt-5 py-5 rounded">
-      <p className="h1 ms-4 text-start">
-        Producimos y exportamos granos y legumbres.
+    <div className="box">
+      <p className="produce_and_exports">
+        Producimos y<br /> exportamos granos
+        <br /> y legumbres.
       </p>
-      <p className="h6 mt-4">
+      <p className="ps-5 about-subtitle">
         Generamos un <strong>mundo</strong> de posibilidades para la{" "}
         <strong>agricultura.</strong>
         <strong> ¡Trabaja con nosotros!</strong>
       </p>
 
-      <div className="mt-4 text-start ms-5">
-        <a className="btn lead px-4 btn-danger btn-sm" type="submit">
+      <div className="text-start ms-5 mt-4">
+        <a className="btn shadow btn-danger btn-sm" href="#contact">
           CONTACTÁNOS
         </a>
       </div>
 
-      <ul className="nav justify-content-center mt-4">
+      <ul className="nav justify-content-center">
         <li className="me-4">
-          <p className="h4">+15000</p> <p>Toneladas anuales</p>
+          <p className="about-numbers">
+            +<CountUp end={17000} />
+          </p>
+          <p className="about-descr">Toneladas anuales</p>
         </li>
         <li className="me-4">
-          <p className="h4">+1000</p>
-          <p>
+          <p className="about-numbers">
+            +<CountUp end={1000} />
+          </p>
+          <p className="about-descr">
             Clientes en el <br></br> mundo
           </p>
         </li>
         <li className="me-4">
-          <p className="h4">12</p> <p>Productos</p>
+          <p className="about-numbers">
+            <CountUp end={12} />
+          </p>
+
+          <p className="about-descr">Productos</p>
         </li>
         <li className="me-4">
-          <p className="h4">40</p> <p>Paises</p>
+          <p className="about-numbers">
+            <CountUp end={40} />
+          </p>
+
+          <p className="about-descr">Paises</p>
         </li>
       </ul>
     </div>

@@ -1,14 +1,66 @@
 .box {
-  font-size: 0.8rem;
-  margin-left: 8%;
-  background: rgba(223, 223, 223, 0.1);
-  backdrop-filter: blur(10px);
-  max-width: 35%;
-  height: 60vh;
-  border-radius: 5%;
-  color: white;
-}
-.nav {
   z-index: 10;
+  background: rgba(223, 223, 223, 0.1);
+  backdrop-filter: blur(11.9px);
+  border-radius: 10px;
+  box-shadow: 50px 20px 30px 0 rgba(0, 0, 0, 0.78);
   color: white;
+  height: 70vh;
+  margin-left: 189px;
+  width: 37%;
+}
+
+.btn-danger {
+  width: 180px;
+  margin: 0px 0 0;
+  border-radius: 4px;
+  background-color: #c81f0e;
+}
+.about-subtitle {
+  font-family: "Roboto";
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+  text-align: left;
+  color: #fff;
+}
+.about-numbers {
+  font-size: 30px;
+  font-family: "Roboto";
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.15;
+  letter-spacing: normal;
+  text-align: left;
+  color: #fff;
+  margin-top: 56px;
+  text-align: left;
+}
+
+.produce_and_exports {
+  font-family: "Roboto";
+  font-size: 45px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.17;
+  letter-spacing: normal;
+  text-align: left;
+  color: #fff;
+  padding: 50px 51px 10px 51px;
+}
+.about-descr {
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: center;
+  color: #fff;
 }

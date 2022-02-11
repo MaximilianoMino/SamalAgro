@@ -1,38 +1,61 @@
 .products-container {
-  font-family: roboto-bold;
+  font-family: "Roboto";
   position: relative;
   height: 100vh;
-  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSGDnFNxiwm1-a_40UEQYiL9xKlcYGqfMMAWOpMQ4ickRRUDwc");
+  z-index: 1;
+  max-width: 90%;
+  margin: auto;
 }
-.cards {
-  margin-top: 100px;
-  display: grid;
-  grid-template-columns: repeat(12, 300px);
-  grid-gap: 50px;
+
+.products-container::before {
+  background-image: url("../../assets/images/Landing/Grit11-byGhostlyPixels.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  content: "";
+  display: block;
+  font-family: "Roboto";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  opacity: 0.14;
+  width: 100%;
 }
 .our-products {
-  font-family: Roboto;
-  font-size: 60px;
+  font-family: "Roboto";
+  font-size: 50px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
-  line-height: 1.33;
+  line-height: normal;
   letter-spacing: normal;
-  padding-top: 85px;
+  padding-top: 65px;
   text-align: center;
   color: #707070;
+  position: relative;
+}
+
+.cards {
+  position: relative;
+  margin-top: 35px;
+  display: grid;
+  grid-template-columns: repeat(12, 300px);
+  grid-gap: 50px;
+  z-index: 50;
+  margin-left: -40rem;
 }
 
 .card-title {
+  position: relative;
   width: 260px;
   height: 42px;
-  margin: 0 136px 19.9px 20px;
-  font-family: Roboto;
-  font-size: 36px;
+  font-family: "Roboto";
+  font-size: 32px;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
-  line-height: 2.22;
+  line-height: 1.88;
   letter-spacing: normal;
   text-align: left;
   color: #707070;
@@ -41,5 +64,36 @@
   border-bottom: solid 3px #c6261e;
 }
 .card-img {
+  width: 210px;
+  height: 210px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
   border-radius: 50%;
+  background: #5cb85c;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+}
+.list-item {
+  text-align: start;
+  margin-top: -12px;
+}
+.Calidad-No-1-Processing-Manufacturing {
+  font-size: 15px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  color: #707070;
+  margin-left: 37px;
+  margin-top: 2px;
+}
+.Calidad-No-1-Processing-Manufacturing .text-style-1 {
+  font-weight: normal;
+}
+
+.products-icons {
+  width: 27.6px;
+  height: 41.4px;
+  position: absolute;
+  padding: 3px 2px 7.8px 0.4px;
 }

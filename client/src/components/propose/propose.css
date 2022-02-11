@@ -1,6 +1,41 @@
 .propose-container {
+  font-family: "Roboto", sans-serif;
+  position: relative;
   height: 100vh;
-  margin: 1032px 0 115px;
-  padding: 148px 304px 78px 305px;
+  max-width: 100%;
   background-color: #c6261e;
+  color: white;
+  font-size: 20px;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.cards-propose-container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+  padding: 2em;
+}
+
+.card-propose-text {
+  margin: auto;
+  font-size: 30px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+}
+.card-propose-title {
+  font-size: 34px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.32;
+  letter-spacing: normal;
+  text-align: center;
 }

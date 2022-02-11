@@ -1,18 +1,15 @@
 import "./App.css";
-import data from "./api/dataEs";
+import dataEs from "./api/dataEs";
+import dataEn from "./api/dataEn";
+
 import Header from "./components/header/Header";
 import Products from "./components/products/Products";
 import Propose from "./components/propose/Propose";
 import Footer from "./components/footer/Footer";
 import Contact from "./components/contact/Contact";
 import { useState } from "react";
+import Info from "./components/info/Info";
 
-console.log(data.scope);
-console.log(
-  data.scope.map((continent) => {
-    return continent.title;
-  })
-);
 function App() {
   const [english, setEnglish] = useState(false);
 
@@ -33,7 +30,12 @@ function App() {
     <div className="App min-vw-100">
       <Header handleLanguage={handleLanguage} english={english} />
       <Products />
-      <Propose english={english} />
+      <Propose
+        english={english}
+        proposesEs={dataEs.proposes}
+        proposesEn={dataEn.proposes}
+      />
+      <Info />
       <Contact />
       <Footer />
     </div>

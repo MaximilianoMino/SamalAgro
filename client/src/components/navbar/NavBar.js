@@ -1,10 +1,11 @@
 import React from "react";
 import "./navbar.css";
+import SamalLogo from "../../assets/images/Landing/IMG_3697.PNG";
 const NavBar = ({ handleLanguage, english }) => {
   return (
-    <nav className="navbar navbar-expand-lg bg-transparent">
-      <div className="samal-logo">
-        <a href="2">SAMAL AGRO</a>
+    <nav className="navbar navbar-expand-lg bg-transparent mb-5">
+      <div className="">
+        <img className="mt-3 samal-logo" src={`${SamalLogo}`} alt="SamalLogo" />
       </div>
       <div className="justify-content-around navbar-light">
         <ul className="navbar-nav">
@@ -75,7 +76,11 @@ const NavBar = ({ handleLanguage, english }) => {
               onClick={(e) => handleLanguage("es", e)}
               href="1"
             >
-              <strong className={!english ? "border-bottom border-dark" : ""}>
+              <strong
+                className={
+                  !english ? "border-bottom text-danger border-danger" : ""
+                }
+              >
                 ESP
               </strong>
             </a>
@@ -86,7 +91,11 @@ const NavBar = ({ handleLanguage, english }) => {
               onClick={(e) => handleLanguage("en", e)}
               href="1"
             >
-              <strong className={english ? "border-bottom border-dark" : ""}>
+              <strong
+                className={
+                  english ? "border-bottom border-danger text-danger" : ""
+                }
+              >
                 EN
               </strong>
             </a>

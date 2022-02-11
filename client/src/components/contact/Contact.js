@@ -2,7 +2,7 @@ import React from "react";
 import "./contact.css";
 const Contact = () => {
   return (
-    <div className="contact-container">
+    <div id="contact" className="contact-container">
       <div className="bg-white p-5 w-50 h-75 ms-5 text-start">
         <p className="h1 py-4">CONTACTÁNOS</p>
         <p>Por favor dejanos tus datos para que podamos contactarnos.</p>

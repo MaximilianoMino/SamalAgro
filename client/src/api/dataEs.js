@@ -1,4 +1,41 @@
-module.exports = {
+import adzuki from "../assets/images/Productos/adzuki-samal.jpg";
+import alubia from "../assets/images/Productos/alubia-samal.jpg";
+import arveja from "../assets/images/Productos/arveja-samal.jpg";
+import coriandro from "../assets/images/Productos/coriandro-samal.jpg";
+import cranberry from "../assets/images/Productos/cranberry-samal.jpg";
+import drk from "../assets/images/Productos/drk-samal.jpg";
+import garbanzo from "../assets/images/Productos/garbanzo-samal.jpg";
+import lrk from "../assets/images/Productos/lrk-samal.jpg";
+import mung from "../assets/images/Productos/mung-samal.jpg";
+import negro from "../assets/images/Productos/negro-samal.jpg";
+import pisingallo from "../assets/images/Productos/pisingallo-samal.jpg";
+import sesamo from "../assets/images/Productos/sesamo-samal.jpg";
+//gifs
+import qq from "../assets/gifs/cantidad-calidad.gif";
+import eficiency from "../assets/gifs/eficiencia.gif";
+import trazability from "../assets/gifs/trazabilidad.gif";
+
+const data = {
+  proposes: [
+    {
+      title: "CANTIDAD-CALIDAD",
+      description:
+        "Sembramos en diferentes áreas de Argentina ubicadas estratégicamente, atomizando los riesgos productivos, garantizando cantidad y calidad en cada producto.",
+      thumbnail: `${qq}`,
+    },
+    {
+      title: "TRAZABILIDAD",
+      description:
+        "Conectamos con un equipo técnico de ingenieros, con conocimientos específicos que participan en toda la cadena de valor, garantizando un estricto control de trazabilidad.",
+      thumbnail: `${trazability}`,
+    },
+    {
+      title: "EFICIENCIA",
+      description:
+        "Contamos con un departamento de comercio exterior que da respuestas a las necesidades documentales de cada pais.",
+      thumbnail: `${eficiency}`,
+    },
+  ],
   products: [
     {
       title: "MUNG",
@@ -7,7 +44,7 @@ module.exports = {
         availability: "March to July",
         packaging: "25Kg. Polipropileno",
         quality_standard: "HACCP; BPM",
-        thumbnail: ``,
+        thumbnail: `${mung}`,
       },
     },
     {
@@ -17,7 +54,7 @@ module.exports = {
         availability: "April to July",
         packaging: "25kg. Propileno",
         quality_standard: "HACCP; BPM",
-        thumbnail: ``,
+        thumbnail: `${adzuki}`,
       },
     },
     {
@@ -27,7 +64,7 @@ module.exports = {
         availability: "Marzo a Julio",
         packaging: "25kg. Polipropileno",
         quality_standard: "HCCP;BPM",
-        thumbnail: ``,
+        thumbnail: `${alubia}`,
       },
     },
     {
@@ -37,7 +74,7 @@ module.exports = {
         availability: "Noviembre a Enero",
         packaging: "25kg. Propileno",
         quality_standard: "HACCP;BPM",
-        thumbnail: ``,
+        thumbnail: `${coriandro}`,
       },
     },
     {
@@ -47,7 +84,7 @@ module.exports = {
         availability: "Noviembre a Enero",
         packaging: "25kg. Propileno",
         quality_standard: "HACCP;BPM",
-        thumbnail: ``,
+        thumbnail: `${garbanzo}`,
       },
     },
     {
@@ -57,7 +94,7 @@ module.exports = {
         availability: "Mayo a Julio",
         packaging: "25kg. Propileno",
         quality_standard: "HACCP;BPM",
-        thumbnail: ``,
+        thumbnail: `${cranberry}`,
       },
     },
     {
@@ -67,7 +104,7 @@ module.exports = {
         availability: "Junio a Julio",
         packaging: "25kg. Propileno",
         quality_standard: "HACCP;BPM",
-        thumbnail: ``,
+        thumbnail: `${negro}`,
       },
     },
     {
@@ -77,7 +114,7 @@ module.exports = {
         availability: "Junio a Julio",
         packaging: "25kg. Propileno",
         quality_standard: "HACCP;BPM",
-        thumbnail: ``,
+        thumbnail: `${lrk}`,
       },
     },
     {
@@ -87,7 +124,7 @@ module.exports = {
         availability: "Junio a Julio",
         packaging: "25kg. Propileno",
         quality_standard: "HACCP;BPM",
-        thumbnail: ``,
+        thumbnail: `${sesamo}`,
       },
     },
     {
@@ -97,7 +134,7 @@ module.exports = {
         availability: "Junio a Julio",
         packaging: "25kg. Propileno",
         quality_standard: "HACCP;BPM",
-        thumbnail: ``,
+        thumbnail: `${drk}`,
       },
     },
     {
@@ -107,7 +144,7 @@ module.exports = {
         availability: "Marzo a Junio",
         packaging: "25kg. Propileno",
         quality_standard: "HACCP;BPM",
-        thumbnail: ``,
+        thumbnail: `${pisingallo}`,
       },
     },
     {
@@ -117,7 +154,7 @@ module.exports = {
         availability: "Diciembre a Enero",
         packaging: "25kg. Propileno",
         quality_standard: "HACCP;BPM",
-        thumbnail: ``,
+        thumbnail: `${arveja}`,
       },
     },
   ],
@@ -392,3 +429,5 @@ module.exports = {
     },
   ],
 };
+
+export default data;

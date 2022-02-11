@@ -1,50 +1,49 @@
 import React from "react";
+
 import "./propose.css";
 
-const Propose = ({ english }) => {
+const Propose = ({ english, proposesEs, proposesEn }) => {
   return (
-    <div
-      id="propose"
-      className="propose-container d-flex justify-content-around"
-    >
-      <div class="card w-25 bg-transparent border-0 text-white">
-        <div class="card-body">
-          <h5 class="card-title">CANTIDAD-CALIDAD</h5>
+    <div id="propose" className="propose-container">
+      {english ? <h1>Why choose us?</h1> : <h1>¿Por qué elegirnos?</h1>}
+      <div class="cards-propose-container text-white">
+        {english
+          ? proposesEn.map((proposeEn) => {
+              return (
+                <div className="card bg-transparent border-0">
+                  <div class="card-body text-center me-4">
+                    <h5 class="card-propose-title m-auto text-white mb-5">
+                      {proposeEn.title}
+                    </h5>
+                    <p class="card-propose-text text-center">
+                      {proposeEn.description}
+                    </p>
+                  </div>
+                </div>
+              );
+            })
+          : proposesEs.map((proposeEs) => {
+              return (
+                <div className="card bg-transparent border-0">
+                  <div className="propose-gifs">
+                    <img
+                      className="w-25"
+                      src={`${proposeEs.thumbnail}`}
+                      alt="gif"
+                    />
+                  </div>
 
-          {english ? (
-            <p class="card-text">
-              We sow in different areas of Argentina located strategically,
-              atomizing production risks, guaranteeing quantity and quality in
-              each product.
-            </p>
-          ) : (
-            <p class="card-text">
-              Sembramos en diferentes areas de argentina ubicadas
-              estrategicamente, atomizando los riesgos productivos, garantizando
-              cantidad y calidad en cada producto.
-            </p>
-          )}
-        </div>
-      </div>
-      <div class="card w-25 bg-transparent border-0 text-white">
-        <div class="card-body">
-          <h5 class="card-title">CANTIDAD-CALIDAD</h5>
-          <p class="card-text">
-            Sembramos en diferentes areas de argentina ubicadas
-            estrategicamente, atomizando los riesgos productivos, garantizando
-            cantidad y calidad en cada producto.
-          </p>
-        </div>
-      </div>
-      <div class="card w-25 bg-transparent border-0 text-white">
-        <div class="card-body">
-          <h5 class="card-title">CANTIDAD-CALIDAD</h5>
-          <p class="card-text">
-            Sembramos en diferentes areas de argentina ubicadas
-            estrategicamente, atomizando los riesgos productivos, garantizando
-            cantidad y calidad en cada producto.
-          </p>
-        </div>
+                  <div class="card-body text-center me-4">
+                    <h5 class="card-propose-title m-auto text-white mb-5">
+                      {proposeEs.title}
+                    </h5>
+                    <p class="card-propose-text text-center">
+                      {proposeEs.description}
+                    </p>
+                  </div>
+                </div>
+              );
+            })}
       </div>
     </div>
   );

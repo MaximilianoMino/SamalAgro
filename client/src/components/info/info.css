@@ -1,0 +1,73 @@
+.info-container {
+  height: 100vh;
+  display: flex;
+  width: 60%;
+}
+
+.info-container > .info-article {
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  text-align: center;
+  border-color: red !important;
+  padding: 30px;
+}
+
+.info-article > p:nth-child(even) {
+  text-align: center;
+  border-left: 2px solid;
+  border-color: red !important;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  margin-right: 30px;
+  padding-right: 0;
+}
+
+.info-article > p:nth-child(odd) {
+  text-align: center;
+  border-right: 2px solid;
+  border-color: red !important;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  margin-left: 30px;
+  padding-left: 0;
+}
+
+.info-article > p:first-child {
+  text-align: center;
+  border-top: 0;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.info-article > p:last-child {
+  text-align: center;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.seed {
+  margin-left: 15%;
+  margin-top: 20%;
+}
+
+.supervision {
+  margin-left: 35%;
+  margin-top: 10%;
+}
+.process {
+  margin-top: 3%;
+  margin-left: 60%;
+}
+
+.logistics {
+  margin-left: 60%;
+  margin-top: 20%;
+}
+.exports {
+  margin-left: 40%;
+  margin-top: 25%;
+}
+.article-img {
+  position: absolute;
+}

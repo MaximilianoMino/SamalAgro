@@ -1,4 +1,21 @@
 module.exports = {
+  proposes: [
+    {
+      title: "QUANTITY-QUALITY",
+      description:
+        "We plant in diferent strategically located regions of Argentina, atomizing production risks, ensuring quantity and quality in each product.",
+    },
+    {
+      title: "TRACEABILITY",
+      description:
+        "We have a team of engineers with specific knowledge who participate in the entire value chain, ensuring strict traceability control.",
+    },
+    {
+      title: "EFFICENCY",
+      description:
+        "We have a Foreign Trade Departament that responds to the documentary needs of each country.",
+    },
+  ],
   products: [
     {
       title: "MUNG",

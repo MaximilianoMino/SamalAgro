@@ -1,18 +1,9 @@
-html,
-body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-  width: 1920px;
-}
-
 .App {
+  background-color: white;
   font-family: Roboto;
-  line-height: 18px;
   font-style: normal;
   font-weight: 400;
-  background-color: white;
+  line-height: 18px;
   text-align: center;
 }
 
