@@ -1,19 +1,26 @@
-module.exports = {
+import qq from "../assets/gifs/cantidadcalidad.gif";
+import eficiency from "../assets/gifs/eficiencia.gif";
+import trazability from "../assets/gifs/trazabilidad.gif";
+
+const data = {
   proposes: [
     {
       title: "QUANTITY-QUALITY",
       description:
         "We plant in diferent strategically located regions of Argentina, atomizing production risks, ensuring quantity and quality in each product.",
+      thumbnail: `${qq}`,
     },
     {
       title: "TRACEABILITY",
       description:
         "We have a team of engineers with specific knowledge who participate in the entire value chain, ensuring strict traceability control.",
+      thumbnail: `${trazability}`,
     },
     {
       title: "EFFICENCY",
       description:
         "We have a Foreign Trade Departament that responds to the documentary needs of each country.",
+      thumbnail: `${eficiency}`,
     },
   ],
   products: [
@@ -196,7 +203,7 @@ module.exports = {
       title: "SOUTH AMERICA",
       countries: [
         {
-          country: "BRASIL",
+          country: "BRAZIL",
           since: 2013,
           annual_tons: "1.532,14",
           annual_shipments: 32,
@@ -409,3 +416,4 @@ module.exports = {
     },
   ],
 };
+export default data;

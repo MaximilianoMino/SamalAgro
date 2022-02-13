@@ -4,8 +4,8 @@ import spoon from "../../assets/images/Landing/mung-beans-in-wood-spoon-isolated
 const Info = () => {
   return (
     <div className="info-container">
+      <img className="article-img" src={`${spoon}`} alt="" />
       <div className="info-article seed">
-        <img className="article-img" src={`${spoon}`} alt="" />
         <h4>SIEMBRA</h4>
         <p>Sembramos en 6 regiones de Argentina, estrategicamente ubicadas.</p>
       </div>

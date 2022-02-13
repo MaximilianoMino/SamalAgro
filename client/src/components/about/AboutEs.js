@@ -1,7 +1,7 @@
 import React from "react";
 import CountUp from "react-countup";
 import "./about.css";
-const About = () => {
+const AboutEs = () => {
   return (
     <div className="box">
       <p className="produce_and_exports">
@@ -9,13 +9,13 @@ const About = () => {
         <br /> y legumbres.
       </p>
       <p className="ps-5 about-subtitle">
-        Generamos un <strong>mundo</strong> de posibilidades para la{" "}
-        <strong>agricultura.</strong>
+        Generamos un <strong>mundo</strong> de posibilidades para la
+        <strong> agricultura.</strong>
         <strong> ¡Trabaja con nosotros!</strong>
       </p>
 
       <div className="text-start ms-5 mt-4">
-        <a className="btn shadow btn-danger btn-sm" href="#contact">
+        <a className="btn btn-contact" href="#contact">
           CONTACTÁNOS
         </a>
       </div>
@@ -25,7 +25,9 @@ const About = () => {
           <p className="about-numbers">
             +<CountUp end={17000} />
           </p>
-          <p className="about-descr">Toneladas anuales</p>
+          <p className="about-descr">
+            Toneladas <br /> anuales
+          </p>
         </li>
         <li className="me-4">
           <p className="about-numbers">
@@ -54,4 +56,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default AboutEs;

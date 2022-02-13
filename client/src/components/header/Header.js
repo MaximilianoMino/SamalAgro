@@ -1,20 +1,19 @@
 import React from "react";
-import About from "../about/About";
+import AboutEs from "../about/AboutEs";
 import NavBar from "../navbar/NavBar";
 import video from "../../assets/videos/Samal_fragmento.mp4";
 import "./header.css";
+import AboutEn from "../about/AboutEn";
 
 const Header = ({ handleLanguage, english }) => {
   return (
-    <div className="header-container">
+    <div id="header" className="header-container">
       <div className="header-body">
         <NavBar handleLanguage={handleLanguage} english={english} />
-        <About />
+        {english ? <AboutEn /> : <AboutEs />}
       </div>
 
-      <video className="videoTag" width="100%" autoPlay loop muted>
-        <source src={video} type="video/mp4" />
-      </video>
+      <video className="videoTag" src={video} autoPlay loop muted></video>
     </div>
   );
 };

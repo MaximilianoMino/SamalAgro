@@ -11,7 +11,7 @@ import negro from "../assets/images/Productos/negro-samal.jpg";
 import pisingallo from "../assets/images/Productos/pisingallo-samal.jpg";
 import sesamo from "../assets/images/Productos/sesamo-samal.jpg";
 //gifs
-import qq from "../assets/gifs/cantidad-calidad.gif";
+import qq from "../assets/gifs/cantidadcalidad.gif";
 import eficiency from "../assets/gifs/eficiencia.gif";
 import trazability from "../assets/gifs/trazabilidad.gif";
 
@@ -161,7 +161,7 @@ const data = {
   scope: [
     {
       id: 0,
-      title: "NORTH AMERICA",
+      title: "AMÉRICA DEL NORTE",
       countries: [
         {
           country: "EE.UU.",
@@ -181,7 +181,7 @@ const data = {
     {
       id: 1,
 
-      title: "CENTRAL AMERICA AND CARIBBEAN",
+      title: "AMÉRICA CENTRAL Y EL CARIBE",
       countries: [
         {
           country: "MÉXICO",
@@ -213,7 +213,7 @@ const data = {
     {
       id: 2,
 
-      title: "SOUTH AMERICA",
+      title: "AMÉRICA DEL SUR",
       countries: [
         {
           country: "BRASIL",

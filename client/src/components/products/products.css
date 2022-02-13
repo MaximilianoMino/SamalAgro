@@ -1,10 +1,10 @@
 .products-container {
-  font-family: "Roboto";
   position: relative;
   height: 100vh;
   z-index: 1;
   max-width: 90%;
   margin: auto;
+  overflow: hidden;
 }
 
 .products-container::before {
@@ -42,8 +42,10 @@
   display: grid;
   grid-template-columns: repeat(12, 300px);
   grid-gap: 50px;
-  z-index: 50;
-  margin-left: -40rem;
+  overflow-x: scroll;
+}
+.cards::-webkit-scrollbar {
+  width: 0;
 }
 
 .card-title {
@@ -51,7 +53,7 @@
   width: 260px;
   height: 42px;
   font-family: "Roboto";
-  font-size: 32px;
+  font-size: 28px;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
@@ -64,14 +66,14 @@
   border-bottom: solid 3px #c6261e;
 }
 .card-img {
-  width: 210px;
-  height: 210px;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
-  background: #5cb85c;
-  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  width: 209px;
+  height: 209px;
+  clip-path: circle(50%);
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px !important;
+  margin-bottom: 1.6rem;
 }
+
 .list-item {
   text-align: start;
   margin-top: -12px;

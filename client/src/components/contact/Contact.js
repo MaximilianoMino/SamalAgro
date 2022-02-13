@@ -1,45 +1,40 @@
 import React from "react";
 import "./contact.css";
+
 const Contact = () => {
   return (
     <div id="contact" className="contact-container">
-      <div className="bg-white p-5 w-50 h-75 ms-5 text-start">
-        <p className="h1 py-4">CONTACTÁNOS</p>
+      <div className="form-container">
+        <p className="form-title text-start py-4">CONTACTÁNOS</p>
         <p>Por favor dejanos tus datos para que podamos contactarnos.</p>
         <form id="contactForm">
           <div class="mb-3">
-            <label class="form-label" htmlFor="name">
-              Name
-            </label>
+            <label class="form-label" htmlFor="name"></label>
             <input
               class="form-control"
               id="name"
               type="text"
-              placeholder="Name"
+              placeholder="Nombre y apellido"
             />
           </div>
 
           <div class="mb-3">
-            <label class="form-label" htmlFor="emailAddress">
-              Email Address
-            </label>
+            <label class="form-label" htmlFor="emailAddress"></label>
             <input
               class="form-control"
               id="emailAddress"
               type="email"
-              placeholder="Email Address"
+              placeholder="Email"
             />
           </div>
 
           <div class="mb-3">
-            <label class="form-label" htmlFor="message">
-              Message
-            </label>
+            <label class="form-label" htmlFor="message"></label>
             <textarea
               class="form-control"
               id="message"
               type="text"
-              placeholder="Message"
+              placeholder="Mensaje"
             ></textarea>
           </div>
 

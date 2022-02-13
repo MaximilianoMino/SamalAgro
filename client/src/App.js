@@ -9,6 +9,7 @@ import Footer from "./components/footer/Footer";
 import Contact from "./components/contact/Contact";
 import { useState } from "react";
 import Info from "./components/info/Info";
+import Countries from "./components/countries/Countries";
 
 function App() {
   const [english, setEnglish] = useState(false);
@@ -36,6 +37,7 @@ function App() {
         proposesEn={dataEn.proposes}
       />
       <Info />
+      <Countries english={english} />
       <Contact />
       <Footer />
     </div>

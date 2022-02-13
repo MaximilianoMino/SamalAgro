@@ -1,5 +1,30 @@
 .contact-container {
-  background-image: url("https://media.istockphoto.com/photos/cropped-view-of-man-holding-bean-seeds-on-palm-above-hole-in-soil-picture-id1312202207?k=20&m=1312202207&s=612x612&w=0&h=o5wAhgWOjI9Rphsibov9zf_FYHer7JnVZ6vmrLB-F60=");
+  background-image: url("../../assets/images/Landing/3.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center 35%;
   height: 100vh;
+  margin: auto;
+  position: relative;
+  display: flex;
+  vertical-align: center;
+  border: solid 1px #707070;
+}
+.form-container {
+  background: #fff;
+  height: 80%;
+  margin-top: 5rem;
+  padding: 5rem;
+  margin-left: 10rem;
+}
+
+.form-title {
+  font-size: 40px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.14;
+  letter-spacing: normal;
+  text-align: left;
+  color: #333;
 }

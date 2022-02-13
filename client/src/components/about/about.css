@@ -1,34 +1,49 @@
 .box {
-  z-index: 10;
+  z-index: 1000;
+  position: relative;
   background: rgba(223, 223, 223, 0.1);
+  -webkit-backdrop-filter: blur(11.9px);
   backdrop-filter: blur(11.9px);
   border-radius: 10px;
-  box-shadow: 50px 20px 30px 0 rgba(0, 0, 0, 0.78);
   color: white;
   height: 70vh;
   margin-left: 189px;
   width: 37%;
 }
 
-.btn-danger {
+.btn-contact {
   width: 180px;
   margin: 0px 0 0;
   border-radius: 4px;
-  background-color: #c81f0e;
+  font-family: Roboto;
+  padding: 9px -10px 9px 10px;
+  border-radius: 4px;
+  background-color: #c81f0e !important;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: 1.39px;
+  color: #fff;
+}
+
+.btn-contact:hover {
+  opacity: 0.9;
+  color: white !important;
 }
 .about-subtitle {
   font-family: "Roboto";
-  font-size: 20px;
-  font-weight: bold;
+  font-size: 21px;
   font-stretch: normal;
   font-style: normal;
   line-height: 1.43;
   letter-spacing: normal;
   text-align: left;
   color: #fff;
+  padding-right: 2.8rem;
 }
 .about-numbers {
-  font-size: 30px;
+  font-size: 35px;
   font-family: "Roboto";
   font-weight: 500;
   font-stretch: normal;
@@ -55,8 +70,8 @@
 }
 .about-descr {
   font-family: "Roboto";
-  font-size: 18px;
-  font-weight: 500;
+  font-size: 0.9rem;
+  font-weight: 700;
   font-stretch: normal;
   font-style: normal;
   line-height: 1;

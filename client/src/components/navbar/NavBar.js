@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import "./navbar.css";
 import SamalLogo from "../../assets/images/Landing/IMG_3697.PNG";
+import ClientIcon from "../../assets/Iconos/clientes.png";
+
 const NavBar = ({ handleLanguage, english }) => {
+  const [csoon, setCsoon] = useState(false);
   return (
     <nav className="navbar navbar-expand-lg bg-transparent mb-5">
       <div className="">
@@ -9,18 +12,16 @@ const NavBar = ({ handleLanguage, english }) => {
       </div>
       <div className="justify-content-around navbar-light">
         <ul className="navbar-nav">
-          <li className="nav-item">
-            <a className="nav-link text-danger" href="2">
-              {english ? (
-                <strong className="border-bottom border-danger pb-2">
-                  We are Samal
-                </strong>
-              ) : (
-                <strong className="border-bottom border-danger pb-2">
-                  Somos Samal
-                </strong>
-              )}
-            </a>
+          <li className="">
+            {english ? (
+              <span className="border-bottom bold-word nav-link border-danger pb-2">
+                We are Samal
+              </span>
+            ) : (
+              <span className="border-bottom bold-word nav-link border-danger pb-2">
+                Somos Samal
+              </span>
+            )}
           </li>
           <li className="nav-item">
             {english ? (
@@ -36,7 +37,7 @@ const NavBar = ({ handleLanguage, english }) => {
           <li class="nav-item">
             {english ? (
               <a className="nav-link" href="#propose">
-                Value proposal
+                Value prop
               </a>
             ) : (
               <a className="nav-link" href="#propose">
@@ -55,7 +56,7 @@ const NavBar = ({ handleLanguage, english }) => {
               </a>
             )}
           </li>
-          <li class="nav-item">
+          <li className="nav-item">
             {english ? (
               <a className="nav-link" href="#contact">
                 Contact
@@ -76,13 +77,13 @@ const NavBar = ({ handleLanguage, english }) => {
               onClick={(e) => handleLanguage("es", e)}
               href="1"
             >
-              <strong
+              <span
                 className={
-                  !english ? "border-bottom text-danger border-danger" : ""
+                  !english ? "border-bottom bold-word  border-danger" : ""
                 }
               >
                 ESP
-              </strong>
+              </span>
             </a>
           </li>
           <li class="nav-item">
@@ -91,26 +92,63 @@ const NavBar = ({ handleLanguage, english }) => {
               onClick={(e) => handleLanguage("en", e)}
               href="1"
             >
-              <strong
+              <span
                 className={
-                  english ? "border-bottom border-danger text-danger" : ""
+                  english ? "border-bottom border-danger bold-word" : ""
                 }
               >
-                EN
-              </strong>
+                ENG
+              </span>
             </a>
           </li>
-          <li class="nav-item">
-            {english ? (
-              <a className="nav-link" href="2">
+
+          {english ? (
+            <li class="nav-item d-flex">
+              <span
+                onMouseOver={() => setCsoon(true)}
+                onMouseLeave={() => setCsoon(false)}
+              >
+                <img
+                  className="client-icon"
+                  src={`${ClientIcon}`}
+                  alt="icon client"
+                />
+              </span>
+              <a
+                className="nav-link"
+                href="2"
+                data-toggle="tooltip tooltip-danger"
+                data-placement="right"
+                title="Tooltip on top"
+              >
                 Clients
-              </a>
-            ) : (
-              <a className="nav-link" href="2">
+              </a>{" "}
+              {csoon ? <span class="nav-feature">Coming Soon</span> : null}
+            </li>
+          ) : (
+            <li class="nav-item d-flex">
+              <span
+                onMouseOver={() => setCsoon(true)}
+                onMouseLeave={() => setCsoon(false)}
+              >
+                <img
+                  className="client-icon"
+                  src={`${ClientIcon}`}
+                  alt="icon client"
+                />
+              </span>
+              <a
+                className="nav-link"
+                href="2"
+                data-toggle="tooltip"
+                data-placement="top"
+                title="Tooltip on top"
+              >
                 Clientes
               </a>
-            )}
-          </li>
+              {csoon ? <span class="nav-feature">Proximamente</span> : null}
+            </li>
+          )}
         </ul>
       </div>
     </nav>

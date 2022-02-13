@@ -3,9 +3,8 @@ html,
 body {
   margin: 0;
   padding: 0;
-  box-sizing: content-box;
   scroll-behavior: smooth;
   min-width: 1440px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: Helvetica, sans-serif;
+  overflow-x: hidden;
 }
