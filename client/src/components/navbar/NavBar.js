@@ -114,13 +114,7 @@ const NavBar = ({ handleLanguage, english }) => {
                   alt="icon client"
                 />
               </span>
-              <a
-                className="nav-link"
-                href="2"
-                data-toggle="tooltip tooltip-danger"
-                data-placement="right"
-                title="Tooltip on top"
-              >
+              <a className={`nav-link ${csoon ? "invisible" : null}`} href="2">
                 Clients
               </a>{" "}
               {csoon ? <span class="nav-feature">Coming Soon</span> : null}
@@ -137,13 +131,7 @@ const NavBar = ({ handleLanguage, english }) => {
                   alt="icon client"
                 />
               </span>
-              <a
-                className="nav-link"
-                href="2"
-                data-toggle="tooltip"
-                data-placement="top"
-                title="Tooltip on top"
-              >
+              <a className={`nav-link ${csoon ? "invisible" : null}`} href="2">
                 Clientes
               </a>
               {csoon ? <span class="nav-feature">Proximamente</span> : null}
