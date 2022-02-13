@@ -4,6 +4,7 @@
   font-weight: 400;
   line-height: 18px;
   text-align: center;
+  overflow: hidden;
 }
 
 .bg-danger,

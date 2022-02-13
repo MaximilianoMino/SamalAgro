@@ -1,7 +1,7 @@
 import React from "react";
 import "./footer.css";
 import SamalFooter from "../../assets/images/Landing/samalfooter.png";
-const Footer = () => {
+const Footer = ({ english }) => {
   return (
     <footer class="footer-container">
       <div class="text-start">
@@ -12,10 +12,15 @@ const Footer = () => {
             alt="Samal Footer"
           />
         </a>
-
-        <strong>
-          <small>&copy; 2020 SamalAgro. Todos los derechos reservados.</small>
-        </strong>
+        {english ? (
+          <strong>
+            <small>&copy; 2020 SamalAgro. All rights reserved .</small>
+          </strong>
+        ) : (
+          <strong>
+            <small>&copy; 2020 SamalAgro. Todos los derechos reservados.</small>
+          </strong>
+        )}
       </div>
       <div className="footer-icons-container">
         <a

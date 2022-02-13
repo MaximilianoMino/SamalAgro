@@ -44,10 +44,16 @@ const Countries = ({ english }) => {
   };
 
   return (
-    <div className="countries-container">
+    <div className="countries-container " id="exportation">
       <div className="countries-header-group mt-5">
-        <p className="h1 text-secondary">Llegamos a 40 paises.</p>
-        <p className="h5 text-secondary">Clickea para más información.</p>
+        <p className="h1 text-secondary">
+          {english ? "We are in 40 countries" : "Llegamos a 40 paises"}
+        </p>
+        <p className="h5 text-secondary">
+          {english
+            ? "Click for more information"
+            : "Clickea para más información"}
+        </p>
       </div>
       <div className="countries-map-container container mt-5 py-5">
         <div

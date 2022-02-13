@@ -47,11 +47,11 @@ const NavBar = ({ handleLanguage, english }) => {
           </li>
           <li class="nav-item">
             {english ? (
-              <a className="nav-link" href="#exports">
+              <a className="nav-link" href="#exportation">
                 Exportation
               </a>
             ) : (
-              <a className="nav-link" href="#exports">
+              <a className="nav-link" href="#exportation">
                 Exportación
               </a>
             )}

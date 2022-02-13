@@ -1,17 +1,17 @@
 import "./products.css";
-import data from "../../api/dataEs";
 
 import quality from "../../assets/Iconos/calidad.png";
 import availability from "../../assets/Iconos/disponibilidad.png";
 import standard from "../../assets/Iconos/normas.png";
 import packaging from "../../assets/Iconos/packaging.png";
 
-const Products = () => {
+const ProductsEs = ({ productsEs }) => {
+  console.log("product es" + productsEs);
   return (
     <div id="products" className="products-container">
       <p className="our-products">Nuestros productos</p>
       <div className="cards">
-        {data.products.map((product) => {
+        {productsEs.map((product) => {
           return (
             <div class="card border-0 bg-transparent">
               <div class="card-body">
@@ -83,4 +83,4 @@ const Products = () => {
   );
 };
 
-export default Products;
+export default ProductsEs;

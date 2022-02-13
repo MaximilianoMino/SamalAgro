@@ -1,3 +1,18 @@
+//images
+import adzuki from "../assets/images/Productos/adzuki-samal.jpg";
+import alubia from "../assets/images/Productos/alubia-samal.jpg";
+import arveja from "../assets/images/Productos/arveja-samal.jpg";
+import coriandro from "../assets/images/Productos/coriandro-samal.jpg";
+import cranberry from "../assets/images/Productos/cranberry-samal.jpg";
+import drk from "../assets/images/Productos/drk-samal.jpg";
+import garbanzo from "../assets/images/Productos/garbanzo-samal.jpg";
+import lrk from "../assets/images/Productos/lrk-samal.jpg";
+import mung from "../assets/images/Productos/mung-samal.jpg";
+import negro from "../assets/images/Productos/negro-samal.jpg";
+import pisingallo from "../assets/images/Productos/pisingallo-samal.jpg";
+import sesamo from "../assets/images/Productos/sesamo-samal.jpg";
+
+//gifs
 import qq from "../assets/gifs/cantidadcalidad.gif";
 import eficiency from "../assets/gifs/eficiencia.gif";
 import trazability from "../assets/gifs/trazabilidad.gif";
@@ -25,123 +40,123 @@ const data = {
   ],
   products: [
     {
-      title: "MUNG",
+      title: "GREEN MUNG BEAN",
       description: {
         quality: "N° 1 | Processing | Manufacturing",
         availability: "March to July",
-        packaging: "25Kg. Polipropileno",
+        packaging: "25Kg. Polypropylene New Bags",
         quality_standard: "HACCP; BPM",
-        thumbnail: ``,
+        thumbnail: `${mung}`,
       },
     },
     {
-      title: "ADZUKI",
+      title: "ADZUKI BEAN",
       description: {
         quality: "4mm up",
         availability: "April to July",
-        packaging: "25kg. Propileno",
+        packaging: "25kg. Polypropylene New Bags",
         quality_standard: "HACCP; BPM",
-        thumbnail: ``,
+        thumbnail: `${adzuki}`,
       },
     },
     {
-      title: "ALUBIA",
+      title: "ALUBIA BEAN",
       description: {
-        quality: "Processing | Manufacturing",
-        availability: "Marzo a Julio",
-        packaging: "25kg. Polipropileno",
+        quality: "Caliber 180/100 to 240/100",
+        availability: "June-July",
+        packaging: "25kg. Polypropylene New Bags",
         quality_standard: "HCCP;BPM",
-        thumbnail: ``,
+        thumbnail: `${alubia}`,
       },
     },
     {
-      title: "CORIANDO",
+      title: "CORIANDER",
       description: {
-        quality: "99% pureza 3% partido",
-        availability: "Noviembre a Enero",
-        packaging: "25kg. Propileno",
+        quality: "99% purity 3% split",
+        availability: "November to January",
+        packaging: "25kg. Polypropylene New Bags",
         quality_standard: "HACCP;BPM",
-        thumbnail: ``,
+        thumbnail: `${coriandro}`,
       },
     },
     {
-      title: "GARBANZO",
+      title: "CHEAKPEAS",
       description: {
         quality: "7mm | 8mm | 9mm",
-        availability: "Noviembre a Enero",
-        packaging: "25kg. Propileno",
+        availability: "November to January",
+        packaging: "25kg. Polypropylene New Bags",
         quality_standard: "HACCP;BPM",
-        thumbnail: ``,
+        thumbnail: `${garbanzo}`,
       },
     },
     {
-      title: "CRANBERRY",
+      title: "CRANBERRY BEANS",
       description: {
-        quality: "Gje. 180/100 a 240/100",
-        availability: "Mayo a Julio",
-        packaging: "25kg. Propileno",
+        quality: "Caliber 180/100 a 240/100",
+        availability: "May to July",
+        packaging: "25kg. Polypropylene New Bags",
         quality_standard: "HACCP;BPM",
-        thumbnail: ``,
+        thumbnail: `${cranberry}`,
       },
     },
     {
-      title: "NEGRO",
+      title: "BLACK BEAN",
       description: {
         quality: "4mm up",
-        availability: "Junio a Julio",
-        packaging: "25kg. Propileno",
+        availability: "June to July",
+        packaging: "25kg. Polypropylene New Bags",
         quality_standard: "HACCP;BPM",
-        thumbnail: ``,
+        thumbnail: `${negro}`,
       },
     },
     {
-      title: "RED LIGHT KIDNEY",
+      title: "LIGHT RED KIDNEY",
       description: {
         quality: "Gje. 180/100 a 240/100",
-        availability: "Junio a Julio",
-        packaging: "25kg. Propileno",
+        availability: "June to August",
+        packaging: "25kg. Polypropylene New Bags",
         quality_standard: "HACCP;BPM",
-        thumbnail: ``,
+        thumbnail: `${lrk}`,
       },
     },
     {
-      title: "SÉSAMO",
+      title: "SESAME",
       description: {
-        quality: "Acidez 2% máximo",
-        availability: "Junio a Julio",
-        packaging: "25kg. Propileno",
+        quality: "Acidity 0,5% max / oil 40% min",
+        availability: "June to July",
+        packaging: "25kg. Polypropylene New Bags",
         quality_standard: "HACCP;BPM",
-        thumbnail: ``,
+        thumbnail: `${sesamo}`,
       },
     },
     {
-      title: "RED DARK",
+      title: "DARK RED KIDNEY",
       description: {
         quality: "Gje. 180/100 a 240/100",
-        availability: "Junio a Julio",
-        packaging: "25kg. Propileno",
+        availability: "June to July",
+        packaging: "25kg. Polypropylene New Bags",
         quality_standard: "HACCP;BPM",
-        thumbnail: ``,
+        thumbnail: `${drk}`,
       },
     },
     {
-      title: "PISINGALLO",
+      title: "POP CORN",
       description: {
-        quality: "Expansión 40-42 Explosion 98% | K-10 65",
-        availability: "Marzo a Junio",
-        packaging: "25kg. Propileno",
+        quality: "Expansion 40-42 Explosion 98% | K-10 65",
+        availability: "March to June",
+        packaging: "25kg. Polypropylene New Bags",
         quality_standard: "HACCP;BPM",
-        thumbnail: ``,
+        thumbnail: `${pisingallo}`,
       },
     },
     {
-      title: "ARVEJA",
+      title: "GREEN PEAS",
       description: {
         quality: "5mm up",
-        availability: "Diciembre a Enero",
-        packaging: "25kg. Propileno",
+        availability: "December to January",
+        packaging: "25kg. Polypropylene New Bags",
         quality_standard: "HACCP;BPM",
-        thumbnail: ``,
+        thumbnail: `${arveja}`,
       },
     },
   ],
