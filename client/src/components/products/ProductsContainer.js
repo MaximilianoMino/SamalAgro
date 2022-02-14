@@ -5,7 +5,6 @@ import dataEn from "../../api/dataEn";
 import ProductsEn from "./ProductsEn";
 import ProductsEs from "./ProductsEs";
 
-console.log(dataEs.products);
 const ProductsContainer = ({ english }) => {
   return (
     <div>

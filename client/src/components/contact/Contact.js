@@ -1,68 +1,87 @@
 import React from "react";
 import "./contact.css";
+import { useForm } from "react-hook-form";
 
-const Contact = ({ english }) => {
+const Contact = ({ english, setSuccessCard }) => {
+  const {
+    register,
+    handleSubmit,
+    watch,
+    formState: { errors },
+  } = useForm();
+  const onSubmit = (data) => {
+    try {
+      setSuccessCard(true);
+    } catch (error) {
+      console.error(error);
+    }
+  };
+  console.log(watch("name", "email", "textArea"));
   return (
     <div id="contact" className="contact-container">
       <div className="form-container">
         {english ? (
           <div>
-            <p className="form-title text-start py-4">Contact us</p>
-            <p>
-              Please, leave us your contact information so that we can
-              communicate.
+            <p className="form-title text-start">Contact us</p>
+            <p className="form-subtitle">
+              Please, leave us your contact information
+              <br /> so that we can communicate.
             </p>
           </div>
         ) : (
           <div>
-            <p className="form-title text-start py-4">CONTACTÁNOS</p>
-            <p>Por favor dejanos tus datos para que podamos contactarnos.</p>
+            <p className="form-title text-start">CONTACTÁNOS</p>
+            <p className="form-subtitle">
+              Por favor dejanos tus datos de contacto
+              <br /> para que podamos contactarnos.
+            </p>
           </div>
         )}
 
-        <form id="contactForm">
+        <form id="contactForm" onSubmit={handleSubmit(onSubmit)}>
           <div class="mb-3">
             <label class="form-label" htmlFor="name"></label>
             <input
-              class="form-control"
+              className={`form-control ${errors.name && "error"}`}
               id="name"
               type="text"
               placeholder={`${
                 english ? "Name and Surname" : "Nombre y apellido"
               }`}
-              required
+              {...register("name", { required: true })}
             />
           </div>
 
           <div class="mb-3">
-            <label class="form-label" htmlFor="emailAddress"></label>
+            <label className="form-label" htmlFor="emailAddress"></label>
             <input
-              class="form-control"
+              className={`form-control ${errors.email && "error"}`}
               id="emailAddress"
               type="email"
               placeholder="Email"
-              required
+              {...register("email", { required: true })}
             />
           </div>
 
           <div class="mb-3">
             <label class="form-label" htmlFor="message"></label>
             <textarea
-              class="form-control"
+              className={`form-control ${errors.textArea && "error"}`}
               id="message"
               type="text"
-              required
+              {...register("textArea", { required: true })}
               placeholder={`${english ? "Message" : "Mensaje"}`}
+              rows="5"
             ></textarea>
           </div>
 
           <div class="d-grid">
             {english ? (
-              <button class="btn btn-danger w-25" type="submit">
+              <button class="btn  btn-contact w-25" type="submit">
                 <strong>Submit</strong>
               </button>
             ) : (
-              <button class="btn btn-danger w-25" type="submit">
+              <button class="btn  btn-contact w-25" type="submit">
                 <strong>Enviar</strong>
               </button>
             )}

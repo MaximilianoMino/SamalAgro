@@ -15,11 +15,9 @@ const Countries = ({ english }) => {
   const [modal, setModal] = useState(false);
   const [data, setData] = useState([]);
   const [continentId, setContinentId] = useState();
-  console.log(data);
 
   const handleModal = async (id, e) => {
     e.preventDefault();
-
     try {
       if (!modal) {
         setModal(true);
@@ -44,7 +42,7 @@ const Countries = ({ english }) => {
   };
 
   return (
-    <div className="countries-container " id="exportation">
+    <div className="countries-container" id="exportation">
       <div className="countries-header-group mt-5">
         <p className="h1 text-secondary">
           {english ? "We are in 40 countries" : "Llegamos a 40 paises"}
@@ -57,7 +55,7 @@ const Countries = ({ english }) => {
       </div>
       <div className="countries-map-container container mt-5 py-5">
         <div
-          class="circle north-america"
+          className="circle north-america"
           onMouseOver={() => setNorthAm(true)}
           onMouseLeave={() => setNorthAm(false)}
         >
@@ -67,21 +65,19 @@ const Countries = ({ english }) => {
           >
             {english ? "NORTH AMÉRICA" : "AMÉRICA DEL NORTE"}
           </span>{" "}
-          {modal && continentId === 0 ? (
-            <Popup
-              data={data}
-              setModal={setModal}
-              setAfrica={setAfrica}
-              setAsia={setAsia}
-              setCaribbean={setCaribbean}
-              setEurope={setEurope}
-              setNorthAm={setNorthAm}
-              setSouthAm={setSouthAm}
-            />
-          ) : null}
-        </div>
+        </div>{" "}
+        {modal && continentId === 0 ? (
+          <Popup
+            data={data}
+            modal={modal}
+            setModal={setModal}
+            setNorthAm={setNorthAm}
+            northAm={northAm}
+            english={english}
+          />
+        ) : null}
         <div
-          class="circle south-america"
+          className="circle south-america"
           onMouseOver={() => setSouthAm(true)}
           onMouseLeave={() => setSouthAm(false)}
         >
@@ -91,21 +87,19 @@ const Countries = ({ english }) => {
           >
             {english ? "SOUTH AMÉRICA" : "AMÉRICA DEL SUR"}{" "}
           </span>
-          {modal && continentId === 2 ? (
-            <Popup
-              data={data}
-              setModal={setModal}
-              setAfrica={setAfrica}
-              setAsia={setAsia}
-              setCaribbean={setCaribbean}
-              setEurope={setEurope}
-              setNorthAm={setNorthAm}
-              setSouthAm={setSouthAm}
-            />
-          ) : null}
         </div>
+        {modal && continentId === 2 ? (
+          <Popup
+            data={data}
+            modal={modal}
+            setModal={setModal}
+            setSouthAm={setSouthAm}
+            southAm={southAm}
+            english={english}
+          />
+        ) : null}
         <div
-          class="circle caribbean"
+          className="circle caribbean"
           onMouseOver={() => setCaribbean(true)}
           onMouseLeave={() => setCaribbean(false)}
         >
@@ -117,21 +111,19 @@ const Countries = ({ english }) => {
               ? "CENTRAL AMÉRICA AND CARIBBEAN"
               : "AMÉRICA CENTRAL Y EL CARIBE"}
           </span>{" "}
-          {modal && continentId === 1 ? (
-            <Popup
-              data={data}
-              setModal={setModal}
-              setAfrica={setAfrica}
-              setAsia={setAsia}
-              setCaribbean={setCaribbean}
-              setEurope={setEurope}
-              setNorthAm={setNorthAm}
-              setSouthAm={setSouthAm}
-            />
-          ) : null}
-        </div>
+        </div>{" "}
+        {modal && continentId === 1 ? (
+          <Popup
+            data={data}
+            modal={modal}
+            setModal={setModal}
+            setCaribbean={setCaribbean}
+            caribbean={caribbean}
+            english={english}
+          />
+        ) : null}
         <div
-          class="circle europe"
+          className="circle europe"
           onMouseOver={() => setEurope(true)}
           onMouseLeave={() => setEurope(false)}
         >
@@ -141,21 +133,19 @@ const Countries = ({ english }) => {
           >
             EUROPE
           </span>{" "}
-          {modal && continentId === 3 ? (
-            <Popup
-              data={data}
-              setModal={setModal}
-              setAfrica={setAfrica}
-              setAsia={setAsia}
-              setCaribbean={setCaribbean}
-              setEurope={setEurope}
-              setNorthAm={setNorthAm}
-              setSouthAm={setSouthAm}
-            />
-          ) : null}
-        </div>
+        </div>{" "}
+        {modal && continentId === 3 ? (
+          <Popup
+            data={data}
+            modal={modal}
+            setModal={setModal}
+            setEurope={setEurope}
+            europe={europe}
+            english={english}
+          />
+        ) : null}
         <div
-          class="circle asia"
+          className="circle asia"
           onMouseOver={() => setAsia(true)}
           onMouseLeave={() => setAsia(false)}
         >
@@ -165,23 +155,21 @@ const Countries = ({ english }) => {
           >
             ASIA
           </span>{" "}
-          {modal && continentId === 5 ? (
-            <Popup
-              data={data}
-              setModal={setModal}
-              setAfrica={setAfrica}
-              setAsia={setAsia}
-              setCaribbean={setCaribbean}
-              setEurope={setEurope}
-              setNorthAm={setNorthAm}
-              setSouthAm={setSouthAm}
-            />
-          ) : null}
-        </div>
+        </div>{" "}
+        {modal && continentId === 5 ? (
+          <Popup
+            data={data}
+            modal={modal}
+            setModal={setModal}
+            setAsia={setAsia}
+            asia={asia}
+            english={english}
+          />
+        ) : null}
         <div
           onMouseOver={() => setAfrica(true)}
           onMouseLeave={() => setAfrica(false)}
-          class="circle africa"
+          className="circle africa"
         >
           <span
             onClick={(e) => handleModal(4, e)}
@@ -189,19 +177,17 @@ const Countries = ({ english }) => {
           >
             ÁFRICA
           </span>
-          {modal && continentId === 4 ? (
-            <Popup
-              data={data}
-              setModal={setModal}
-              setAfrica={setAfrica}
-              setAsia={setAsia}
-              setCaribbean={setCaribbean}
-              setEurope={setEurope}
-              setNorthAm={setNorthAm}
-              setSouthAm={setSouthAm}
-            />
-          ) : null}
-        </div>
+        </div>{" "}
+        {modal && continentId === 4 ? (
+          <Popup
+            data={data}
+            setModal={setModal}
+            modal={modal}
+            setAfrica={setAfrica}
+            africa={africa}
+            english={english}
+          />
+        ) : null}
       </div>
     </div>
   );

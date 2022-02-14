@@ -1,0 +1,48 @@
+.success-card-container {
+  background-image: url("../../assets/images/Landing/3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: roboto;
+  background-position: center 35%;
+  height: 100vh;
+  margin: auto;
+  position: relative;
+  vertical-align: center;
+  border: solid 1px #707070;
+}
+.success-content-container {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  height: 80%;
+  margin: auto;
+  width: 40%;
+  margin-top: 5rem;
+  margin-left: 10rem;
+  padding-left: 5rem;
+  border-radius: 5px;
+}
+
+.success-card-title {
+  font-size: 50px;
+  font-weight: lighter;
+  line-height: 1.14;
+  text-align: left;
+  color: #333;
+}
+.success-card-subtitle {
+  color: #707070;
+  font-weight: 500;
+  font-size: 1.7rem;
+}
+
+.check-icon {
+  align-self: flex-start;
+  width: 5rem;
+}
+.close-icon {
+  align-self: end;
+  font-size: 1.5rem;
+  margin: 2rem;
+  cursor: pointer;
+}

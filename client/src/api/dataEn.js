@@ -166,13 +166,13 @@ const data = {
       title: "NORTH AMERICA",
       countries: [
         {
-          country: "EE.UU.",
+          country: "U.S.A",
           since: 2018,
           annual_tons: "446,46",
           annual_shipments: 10,
         },
         {
-          country: "CANADÁ",
+          country: "CANADA",
           since: 2017,
           annual_tons: "424,47",
           annual_shipments: 7,
@@ -198,8 +198,8 @@ const data = {
           annual_shipments: 3,
         },
         {
-          country: "TRINIDAD Y TOBAGO",
-          since: 2012,
+          country: "TRINIDAD AND TOBAGO",
+          since: 2021,
           annual_tons: "47,96",
           annual_shipments: 2,
         },
@@ -253,28 +253,28 @@ const data = {
     {
       id: 3,
 
-      title: "EUROPA",
+      title: "EUROPE",
       countries: [
         {
-          country: "PAISES BAJOS",
+          country: "NETHERLANDS",
           since: 2013,
           annual_tons: "59,42",
           annual_shipments: 2,
         },
         {
-          country: "BÉLGICA",
+          country: "BELGIUM",
           since: 2013,
           annual_tons: "70,84",
           annual_shipments: 2,
         },
         {
-          country: "FRANCIA",
+          country: "FRANCE",
           since: 2017,
           annual_tons: "71,88",
           annual_shipments: 1,
         },
         {
-          country: "REINO UNIDO",
+          country: "UNITED KINGDOM",
           since: 2017,
           annual_tons: "119,63",
           annual_shipments: 4,
@@ -286,16 +286,16 @@ const data = {
           annual_shipments: 4,
         },
         {
-          country: "ITALIA",
+          country: "ITALY",
           since: 2018,
           annual_tons: "3.668,22",
           annual_shipments: 61,
         },
         {
-          country: "ESPAÑA",
+          country: "SPAIN",
           since: 2019,
           annual_tons: "859.96",
-          annual_shipments: 1,
+          annual_shipments: 11,
         },
         {
           country: "PORTUGAL",
@@ -304,14 +304,14 @@ const data = {
           annual_shipments: 1,
         },
         {
-          country: "RUSIA",
+          country: "RUSSIA",
           since: 2021,
           annual_tons: "167,77",
           annual_shipments: 2,
         },
         {
-          country: "TURQUÍA",
-          since: 2016,
+          country: "TURKEY",
+          since: 2014,
           annual_tons: "2.245,31",
           annual_shipments: 28,
         },
@@ -324,21 +324,21 @@ const data = {
       title: "ÁFRICA",
       countries: [
         {
-          country: "KENIA",
+          country: "KENYA",
           since: 2017,
           annual_tons: "100,69",
           annual_shipments: 1,
         },
         {
-          country: "SUDÁFRICA",
+          country: "SOUTH AFRICA",
           since: 2017,
           annual_tons: "24,14",
           annual_shipments: 1,
         },
         {
-          country: "ARABIA SAUDITA",
+          country: "SAUDI ARABIA",
           since: 2017,
-          annual_tons: "647,69",
+          annual_tons: "649,69",
           annual_shipments: 3,
         },
         {
@@ -348,7 +348,7 @@ const data = {
           annual_shipments: 7,
         },
         {
-          country: "TUNEZ",
+          country: "TUNISIA",
           since: 2016,
           annual_tons: "168",
           annual_shipments: 4,
@@ -374,7 +374,7 @@ const data = {
           annual_shipments: 60,
         },
         {
-          country: "MALASIA",
+          country: "MALAYSIA",
           since: 2015,
           annual_tons: "5.670,97",
           annual_shipments: 140,
@@ -410,19 +410,19 @@ const data = {
           annual_shipments: 15,
         },
         {
-          country: "FILIPINAS",
+          country: "PHILIPPINES",
           since: 2018,
           annual_tons: "1.079,47",
           annual_shipments: 12,
         },
         {
-          country: "CHIPRE",
+          country: "CYPPRUS",
           since: 2021,
           annual_tons: "71,66",
           annual_shipments: 3,
         },
         {
-          country: "TAILANDIA",
+          country: "THAILAND",
           since: 2020,
           annual_tons: "479,2",
           annual_shipments: 4,

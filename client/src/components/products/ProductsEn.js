@@ -9,9 +9,9 @@ const ProductsEn = ({ productsEn }) => {
     <div id="products" className="products-container">
       <p className="our-products">Our products</p>
       <div className="cards">
-        {productsEn.map((product) => {
+        {productsEn.map((product, index) => {
           return (
-            <div class="card border-0 bg-transparent">
+            <div class="card border-0 bg-transparent" key={index}>
               <div class="card-body">
                 <h5 class="card-title mb-5">
                   <span className="pb-1">{product.title}</span>

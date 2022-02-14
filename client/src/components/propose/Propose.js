@@ -10,11 +10,11 @@ const Propose = ({ english, proposesEs, proposesEn }) => {
       ) : (
         <h1>¿Por qué elegirnos?</h1>
       )}
-      <div class="cards-propose-container text-white">
+      <div className="cards-propose-container text-white">
         {english
-          ? proposesEn.map((proposeEn) => {
+          ? proposesEn.map((proposeEn, index) => {
               return (
-                <div className="card bg-transparent border-0">
+                <div className="card bg-transparent border-0" key={index}>
                   <div className="propose-gifs">
                     <img
                       className="w-50"
@@ -36,9 +36,9 @@ const Propose = ({ english, proposesEs, proposesEn }) => {
                 </div>
               );
             })
-          : proposesEs.map((proposeEs) => {
+          : proposesEs.map((proposeEs, index) => {
               return (
-                <div className="card bg-transparent border-0">
+                <div className="card bg-transparent border-0" key={index}>
                   <div className="propose-gifs">
                     <img
                       className="w-50"

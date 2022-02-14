@@ -6,14 +6,13 @@ import standard from "../../assets/Iconos/normas.png";
 import packaging from "../../assets/Iconos/packaging.png";
 
 const ProductsEs = ({ productsEs }) => {
-  console.log("product es" + productsEs);
   return (
     <div id="products" className="products-container">
       <p className="our-products">Nuestros productos</p>
       <div className="cards">
-        {productsEs.map((product) => {
+        {productsEs.map((product, index) => {
           return (
-            <div class="card border-0 bg-transparent">
+            <div class="card border-0 bg-transparent" key={index}>
               <div class="card-body">
                 <h5 class="card-title mb-5">
                   <span className="pb-1">{product.title}</span>

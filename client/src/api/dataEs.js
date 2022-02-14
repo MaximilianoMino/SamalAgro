@@ -38,10 +38,10 @@ const data = {
   ],
   products: [
     {
-      title: "MUNG",
+      title: "MUNG VERDE",
       description: {
-        quality: "N° 1 | Processing | Manufacturing",
-        availability: "March to July",
+        quality: "N° 1 | Procesamiento | Fabricación",
+        availability: "March a July",
         packaging: "25Kg. Polipropileno",
         quality_standard: "HACCP; BPM",
         thumbnail: `${mung}`,
@@ -51,7 +51,7 @@ const data = {
       title: "ADZUKI",
       description: {
         quality: "4mm up",
-        availability: "April to July",
+        availability: "April a July",
         packaging: "25kg. Propileno",
         quality_standard: "HACCP; BPM",
         thumbnail: `${adzuki}`,
@@ -60,7 +60,7 @@ const data = {
     {
       title: "ALUBIA",
       description: {
-        quality: "Processing | Manufacturing",
+        quality: "Procesamiento | Fabricación",
         availability: "Marzo a Julio",
         packaging: "25kg. Polipropileno",
         quality_standard: "HCCP;BPM",
@@ -181,7 +181,7 @@ const data = {
     {
       id: 1,
 
-      title: "AMÉRICA CENTRAL Y EL CARIBE",
+      title: "CENTROAMÉRICA Y CARIBE",
       countries: [
         {
           country: "MÉXICO",
@@ -197,7 +197,7 @@ const data = {
         },
         {
           country: "TRINIDAD Y TOBAGO",
-          since: 2012,
+          since: 2021,
           annual_tons: "47,96",
           annual_shipments: 2,
         },
@@ -293,7 +293,7 @@ const data = {
           country: "ESPAÑA",
           since: 2019,
           annual_tons: "859.96",
-          annual_shipments: 1,
+          annual_shipments: 11,
         },
         {
           country: "PORTUGAL",
@@ -309,7 +309,7 @@ const data = {
         },
         {
           country: "TURQUÍA",
-          since: 2016,
+          since: 2014,
           annual_tons: "2.245,31",
           annual_shipments: 28,
         },
