@@ -45,7 +45,7 @@ const Countries = ({ english }) => {
     <div className="countries-container" id="exportation">
       <div className="countries-header-group mt-5">
         <p className="h1 text-secondary">
-          {english ? "We are in 40 countries" : "Llegamos a 40 paises"}
+          {english ? "We are in 40 countries" : "Llegamos a 40 países"}
         </p>
         <p className="h5 text-secondary">
           {english

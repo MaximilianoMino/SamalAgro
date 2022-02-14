@@ -13,7 +13,7 @@ const InfoEs = () => {
         </p>
       </div>
       <div className="info-article supervision">
-        <p className="info-title">SUPERVISION</p>
+        <p className="info-title">SUPERVISIÓN</p>
         <p className="info-text">
           Nuestro equipo de <span>ingenieros</span> lleva{" "}
           <span>el control de todos</span> los cultivos

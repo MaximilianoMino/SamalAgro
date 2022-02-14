@@ -321,7 +321,7 @@ const data = {
     {
       id: 4,
 
-      title: "ÁFRICA",
+      title: "AFRICA",
       countries: [
         {
           country: "KENYA",

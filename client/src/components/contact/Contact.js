@@ -1,22 +1,47 @@
 import React from "react";
 import "./contact.css";
 import { useForm } from "react-hook-form";
+import emailjs from "@emailjs/browser";
 
 const Contact = ({ english, setSuccessCard }) => {
   const {
     register,
     handleSubmit,
-    watch,
     formState: { errors },
   } = useForm();
-  const onSubmit = (data) => {
+  const onSubmit = (data, e) => {
+    e.preventDefault();
+    console.log(data);
+    const { name, email, message } = data;
+    const msg = {
+      name,
+      email,
+      message: `<html><h1>${message}</h1></html>`,
+    };
+    const form = document.querySelector("#contactForm");
+    console.log(msg.message);
+
     try {
+      emailjs
+        .sendForm(
+          "service_jlnxp0b",
+          "template_eyawgje",
+          form,
+          "user_Nci45Ir3ZSNRSm9x9iPsY"
+        )
+        .then(
+          (result) => {
+            console.log("Mensaje enviado con exito: " + result.text);
+          },
+          (error) => {
+            console.log("Error; " + error.text);
+          }
+        );
       setSuccessCard(true);
     } catch (error) {
       console.error(error);
     }
   };
-  console.log(watch("name", "email", "textArea"));
   return (
     <div id="contact" className="contact-container">
       <div className="form-container">
@@ -42,9 +67,10 @@ const Contact = ({ english, setSuccessCard }) => {
           <div class="mb-3">
             <label class="form-label" htmlFor="name"></label>
             <input
-              className={`form-control ${errors.name && "error"}`}
               id="name"
               type="text"
+              name="name"
+              className={`form-control ${errors.name && "error"}`}
               placeholder={`${
                 english ? "Name and Surname" : "Nombre y apellido"
               }`}
@@ -55,9 +81,10 @@ const Contact = ({ english, setSuccessCard }) => {
           <div class="mb-3">
             <label className="form-label" htmlFor="emailAddress"></label>
             <input
-              className={`form-control ${errors.email && "error"}`}
-              id="emailAddress"
+              id="email"
               type="email"
+              className={`form-control ${errors.email && "error"}`}
+              name="email"
               placeholder="Email"
               {...register("email", { required: true })}
             />
@@ -66,10 +93,11 @@ const Contact = ({ english, setSuccessCard }) => {
           <div class="mb-3">
             <label class="form-label" htmlFor="message"></label>
             <textarea
-              className={`form-control ${errors.textArea && "error"}`}
               id="message"
+              className={`form-control ${errors.message && "error"}`}
+              name="message"
               type="text"
-              {...register("textArea", { required: true })}
+              {...register("message", { required: true })}
               placeholder={`${english ? "Message" : "Mensaje"}`}
               rows="5"
             ></textarea>
@@ -77,13 +105,17 @@ const Contact = ({ english, setSuccessCard }) => {
 
           <div class="d-grid">
             {english ? (
-              <button class="btn  btn-contact w-25" type="submit">
-                <strong>Submit</strong>
-              </button>
+              <input
+                className="btn  btn-contact w-25"
+                type="submit"
+                value="Submit"
+              ></input>
             ) : (
-              <button class="btn  btn-contact w-25" type="submit">
-                <strong>Enviar</strong>
-              </button>
+              <input
+                className="btn  btn-contact w-25"
+                type="submit"
+                value="Enviar"
+              ></input>
             )}
           </div>
         </form>
