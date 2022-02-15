@@ -6,7 +6,7 @@ import ClientIcon from "../../assets/Iconos/clientes.png";
 const NavBar = ({ handleLanguage, english }) => {
   const [csoon, setCsoon] = useState(false);
   return (
-    <nav className="navbar navbar-expand-lg bg-transparent mb-5">
+    <nav className="navbar navbar-expand-lg bg-transparent mb-4">
       <div className="">
         <img className="mt-3 samal-logo" src={`${SamalLogo}`} alt="SamalLogo" />
       </div>

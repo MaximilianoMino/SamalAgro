@@ -26,7 +26,7 @@ const data = {
     {
       title: "TRAZABILIDAD",
       description:
-        "Conectamos con un equipo técnico de ingenieros, con conocimientos específicos que participan en toda la cadena de valor, garantizando un estricto control de trazabilidad.",
+        "Contamos con un equipo técnico de ingenieros, con conocimientos específicos que participan en toda la cadena de valor, garantizando un estricto control de trazabilidad.",
       thumbnail: `${trazability}`,
     },
     {
@@ -41,7 +41,7 @@ const data = {
       title: "MUNG VERDE",
       description: {
         quality: "N° 1 | Procesamiento | Fabricación",
-        availability: "March a July",
+        availability: "Marzo a Julio",
         packaging: "25Kg. Polipropileno",
         quality_standard: "HACCP; BPM",
         thumbnail: `${mung}`,
@@ -51,8 +51,8 @@ const data = {
       title: "ADZUKI",
       description: {
         quality: "4mm up",
-        availability: "April a July",
-        packaging: "25kg. Propileno",
+        availability: "Abril a Julio",
+        packaging: "25kg. Polipropileno",
         quality_standard: "HACCP; BPM",
         thumbnail: `${adzuki}`,
       },
@@ -60,7 +60,7 @@ const data = {
     {
       title: "ALUBIA",
       description: {
-        quality: "Procesamiento | Fabricación",
+        quality: "Gje. 180/11/ a 240/100",
         availability: "Marzo a Julio",
         packaging: "25kg. Polipropileno",
         quality_standard: "HCCP;BPM",
@@ -72,7 +72,7 @@ const data = {
       description: {
         quality: "99% pureza 3% partido",
         availability: "Noviembre a Enero",
-        packaging: "25kg. Propileno",
+        packaging: "25kg. Polipropileno",
         quality_standard: "HACCP;BPM",
         thumbnail: `${coriandro}`,
       },
@@ -82,7 +82,7 @@ const data = {
       description: {
         quality: "7mm | 8mm | 9mm",
         availability: "Noviembre a Enero",
-        packaging: "25kg. Propileno",
+        packaging: "25kg. Polipropileno",
         quality_standard: "HACCP;BPM",
         thumbnail: `${garbanzo}`,
       },
@@ -92,7 +92,7 @@ const data = {
       description: {
         quality: "Gje. 180/100 a 240/100",
         availability: "Mayo a Julio",
-        packaging: "25kg. Propileno",
+        packaging: "25kg. Polipropileno",
         quality_standard: "HACCP;BPM",
         thumbnail: `${cranberry}`,
       },
@@ -102,7 +102,7 @@ const data = {
       description: {
         quality: "4mm up",
         availability: "Junio a Julio",
-        packaging: "25kg. Propileno",
+        packaging: "25kg. Polipropileno",
         quality_standard: "HACCP;BPM",
         thumbnail: `${negro}`,
       },
@@ -112,7 +112,7 @@ const data = {
       description: {
         quality: "Gje. 180/100 a 240/100",
         availability: "Junio a Julio",
-        packaging: "25kg. Propileno",
+        packaging: "25kg. Polipropileno",
         quality_standard: "HACCP;BPM",
         thumbnail: `${lrk}`,
       },
@@ -122,7 +122,7 @@ const data = {
       description: {
         quality: "Acidez 2% máximo",
         availability: "Junio a Julio",
-        packaging: "25kg. Propileno",
+        packaging: "25kg. Polipropileno",
         quality_standard: "HACCP;BPM",
         thumbnail: `${sesamo}`,
       },
@@ -132,7 +132,7 @@ const data = {
       description: {
         quality: "Gje. 180/100 a 240/100",
         availability: "Junio a Julio",
-        packaging: "25kg. Propileno",
+        packaging: "25kg. Polipropileno",
         quality_standard: "HACCP;BPM",
         thumbnail: `${drk}`,
       },
@@ -142,7 +142,7 @@ const data = {
       description: {
         quality: "Expansión 40-42 Explosion 98% | K-10 65",
         availability: "Marzo a Junio",
-        packaging: "25kg. Propileno",
+        packaging: "25kg. Polipapel",
         quality_standard: "HACCP;BPM",
         thumbnail: `${pisingallo}`,
       },
@@ -152,7 +152,7 @@ const data = {
       description: {
         quality: "5mm up",
         availability: "Diciembre a Enero",
-        packaging: "25kg. Propileno",
+        packaging: "25kg. Polipropileno",
         quality_standard: "HACCP;BPM",
         thumbnail: `${arveja}`,
       },

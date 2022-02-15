@@ -54,6 +54,15 @@
 .seed {
   margin-left: 10%;
   margin-top: 22%;
+  animation: seedMove 5s;
+}
+@keyframes seedMove {
+  from {
+    left: -70%;
+  }
+  to {
+    left: 0;
+  }
 }
 
 .seed::before {
@@ -72,6 +81,7 @@
 .supervision {
   margin-left: 30%;
   margin-top: 10%;
+  animation: seedMove 5s;
 }
 
 .supervision::after {
@@ -90,6 +100,7 @@
 .process {
   margin-top: 3%;
   margin-left: 71%;
+  animation: seedMove 5s;
 }
 
 .process::before {
@@ -120,6 +131,7 @@
 .logistics {
   margin-left: 71%;
   margin-top: 20%;
+  animation: seedMove 5s;
 }
 
 .logistics::after {
@@ -138,6 +150,7 @@
 .exports {
   margin-left: 55%;
   margin-top: 32%;
+  animation: seedMove 5s;
 }
 
 .exports::after {
@@ -157,4 +170,19 @@
   height: 80%;
   margin-left: 14%;
   margin-top: 8%;
+  animation: fadeImg 5s;
+}
+@keyframes fadeImg {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
 }

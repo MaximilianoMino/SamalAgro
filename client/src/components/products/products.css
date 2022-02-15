@@ -2,9 +2,9 @@
   position: relative;
   height: 100vh;
   z-index: 1;
-  max-width: 90%;
   margin: auto;
   overflow: hidden;
+  cursor: grab;
 }
 
 .products-container::before {
@@ -21,6 +21,13 @@
   height: 100%;
   opacity: 0.14;
   width: 100%;
+  animation: mymove 10s linear infinite;
+  animation-delay: -5s;
+}
+@keyframes mymove {
+  100% {
+    background-position: center;
+  }
 }
 .our-products {
   font-family: "Roboto";
@@ -34,11 +41,41 @@
   text-align: center;
   color: #707070;
   position: relative;
+  animation: shake 2s linear;
+}
+
+@keyframes shake {
+  0%,
+  7% {
+    transform: rotateZ(0);
+    opacity: 0;
+  }
+  15% {
+    transform: rotateZ(-15deg);
+    opacity: 1;
+  }
+  20% {
+    transform: rotateZ(10deg);
+  }
+  25% {
+    transform: rotateZ(-10deg);
+  }
+  30% {
+    transform: rotateZ(6deg);
+  }
+  35% {
+    transform: rotateZ(-4deg);
+  }
+  40%,
+  100% {
+    transform: rotateZ(0);
+  }
 }
 
 .cards {
   position: relative;
-  margin-top: 35px;
+  margin-top: 3%;
+  padding-left: 3%;
   display: grid;
   grid-template-columns: repeat(12, 300px);
   grid-gap: 50px;
@@ -50,8 +87,7 @@
 
 .card-title {
   position: relative;
-  width: 260px;
-  height: 42px;
+
   font-family: "Roboto";
   font-size: 28px;
   font-weight: bold;
@@ -65,13 +101,20 @@
 .card-title > span {
   border-bottom: solid 3px #c6261e;
 }
+.img-card-container {
+  display: flex;
+  box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.16);
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
 .card-img {
-  width: 209px;
-  height: 209px;
-  clip-path: circle(50%);
-  background-color: #fff;
-  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px !important;
   margin-bottom: 1.6rem;
+  clip-path: circle(50%);
+  object-fit: cover;
+  width: 200px;
+  height: 200px;
+  top: 55px;
 }
 
 .list-item {
@@ -79,7 +122,7 @@
   margin-top: -12px;
 }
 .Calidad-No-1-Processing-Manufacturing {
-  font-size: 15px;
+  font-size: 14px;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;

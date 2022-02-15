@@ -1,14 +1,18 @@
 import "./products.css";
-
+import { useRef } from "react";
+import useDraggableScroll from "use-draggable-scroll";
 import quality from "../../assets/Iconos/calidad.png";
 import availability from "../../assets/Iconos/disponibilidad.png";
 import standard from "../../assets/Iconos/normas.png";
 import packaging from "../../assets/Iconos/packaging.png";
 const ProductsEn = ({ productsEn }) => {
+  const ref = useRef(null);
+
+  const { onMouseDown } = useDraggableScroll(ref, { direction: "horizontal" });
   return (
     <div id="products" className="products-container">
       <p className="our-products">Our products</p>
-      <div className="cards">
+      <div className="cards" ref={ref} onMouseDown={onMouseDown}>
         {productsEn.map((product, index) => {
           return (
             <div class="card border-0 bg-transparent" key={index}>
@@ -16,11 +20,11 @@ const ProductsEn = ({ productsEn }) => {
                 <h5 class="card-title mb-5">
                   <span className="pb-1">{product.title}</span>
                 </h5>
-                <div>
+                <div className="img-card-container">
                   <img
                     src={`${product.description.thumbnail}`}
                     alt="card"
-                    className="card-img"
+                    className="card-img  shadow-sm"
                   />
                 </div>
 

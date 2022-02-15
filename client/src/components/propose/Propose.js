@@ -5,19 +5,20 @@ import "./propose.css";
 const Propose = ({ english, proposesEs, proposesEn }) => {
   return (
     <div id="propose" className="propose-container">
+      {" "}
       {english ? (
-        <h1 className="">Why choose us?</h1>
+        <p className="propose-title">Why choose us?</p>
       ) : (
-        <h1>¿Por qué elegirnos?</h1>
-      )}
+        <p className="propose-title">¿Por qué elegirnos?</p>
+      )}{" "}
       <div className="cards-propose-container text-white">
         {english
           ? proposesEn.map((proposeEn, index) => {
               return (
                 <div className="card bg-transparent border-0" key={index}>
-                  <div className="propose-gifs">
+                  <div className="propose-gifs-container">
                     <img
-                      className="w-50"
+                      className="propose-gifs"
                       src={`${proposeEn.thumbnail}`}
                       alt="gif"
                     />
@@ -25,7 +26,7 @@ const Propose = ({ english, proposesEs, proposesEn }) => {
 
                   <div className="card-body">
                     <div>
-                      <p className="card-propose-title ">{proposeEn.title}</p>
+                      <p className="card-propose-title">{proposeEn.title}</p>
                     </div>
                     <div>
                       <p className="card-propose-text">
@@ -39,9 +40,9 @@ const Propose = ({ english, proposesEs, proposesEn }) => {
           : proposesEs.map((proposeEs, index) => {
               return (
                 <div className="card bg-transparent border-0" key={index}>
-                  <div className="propose-gifs">
+                  <div className="propose-gifs-container">
                     <img
-                      className="w-50"
+                      className="propose-gifs"
                       src={`${proposeEs.thumbnail}`}
                       alt="gif"
                     />
@@ -49,7 +50,7 @@ const Propose = ({ english, proposesEs, proposesEn }) => {
 
                   <div className="card-body">
                     <div>
-                      <p className="card-propose-title ">{proposeEs.title}</p>
+                      <p className="card-propose-title">{proposeEs.title}</p>
                     </div>
                     <div>
                       <p className="card-propose-text">

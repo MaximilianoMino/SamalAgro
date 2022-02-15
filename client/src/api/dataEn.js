@@ -144,7 +144,7 @@ const data = {
       description: {
         quality: "Expansion 40-42 Explosion 98% | K-10 65",
         availability: "March to June",
-        packaging: "25kg. Polypropylene New Bags",
+        packaging: "25kg. Polypaper New Bags",
         quality_standard: "HACCP;BPM",
         thumbnail: `${pisingallo}`,
       },
@@ -416,7 +416,7 @@ const data = {
           annual_shipments: 12,
         },
         {
-          country: "CYPPRUS",
+          country: "CYPRUS",
           since: 2021,
           annual_tons: "71,66",
           annual_shipments: 3,

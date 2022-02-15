@@ -16,7 +16,7 @@ const AboutEs = () => {
 
       <div className="text-start ms-5 mt-4">
         <a className="btn btn-contact" href="#contact">
-          CONTACTÁNOS
+          CONTÁCTANOS
         </a>
       </div>
 

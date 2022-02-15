@@ -8,7 +8,8 @@ const AboutEn = () => {
         Pulses and grains producers and exporters.
       </p>
       <p className="ps-5 about-subtitle">
-        We generate <strong>a world</strong> of possibilities for
+        We generate <strong>a world</strong> of possibilities
+        <br /> for
         <strong> agriculture.</strong>
         <strong> Work with us!</strong>
       </p>
