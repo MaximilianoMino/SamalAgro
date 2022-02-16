@@ -98,3 +98,59 @@ hr {
   color: #c6261e;
   margin-bottom: 0;
 }
+@media only screen and (max-width: 600px) {
+  .popup-container {
+    margin-top: 2em;
+    position: relative;
+    max-height: 45vh;
+    left: 0;
+    margin-left: 3em;
+    max-width: 80%;
+  }
+  .mobile-container {
+    background: #f7f7f7;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    margin-top: 10em;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    cursor: grab;
+    padding: 0 auto;
+  }
+  .card-mobile::-webkit-scrollbar {
+    width: 0;
+  }
+  .card-mobile {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(6, 400px);
+    grid-gap: 0em;
+    overflow-x: scroll;
+  }
+  .countries-header-group > .h1 {
+    margin: 0 auto;
+    line-height: 1.2;
+    max-width: 40%;
+    margin-bottom: 1em;
+  }
+  .popup-title {
+    display: flex;
+    justify-items: start;
+    background-color: #c6261e;
+    width: 100%;
+
+    padding: 0;
+    align-self: center;
+    color: white;
+    margin-bottom: 0.5rem;
+    font-weight: bolder;
+    font-size: 1rem;
+    border-radius: 1px;
+  }
+  .popup-title > p {
+    position: relative;
+    left: 0;
+  }
+}

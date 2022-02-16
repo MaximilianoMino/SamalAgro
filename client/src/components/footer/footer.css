@@ -35,3 +35,36 @@
   text-decoration: inherit;
   font-weight: inherit;
 }
+@media only screen and (max-width: 600px) {
+  .footer-container {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    height: 20vh;
+    width: 100%;
+    align-items: center;
+  }
+
+  .footer-logo {
+    width: 50px;
+    height: 50px;
+    margin: 0 1em 0 1em;
+  }
+
+  .footer-icon {
+    font-size: 1.1em;
+  }
+
+  .footer-icons-container {
+    width: 18%;
+    margin-left: 0.7em;
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+    min-height: 100%;
+  }
+  .footer-text {
+    position: relative;
+    font-size: 0.7em;
+  }
+}

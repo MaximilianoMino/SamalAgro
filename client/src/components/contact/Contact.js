@@ -55,9 +55,9 @@ const Contact = ({ english, setSuccessCard }) => {
           </div>
         ) : (
           <div>
-            <p className="form-title text-start">CONTACTÁNOS</p>
+            <p className="form-title text-start">Contáctanos</p>
             <p className="form-subtitle">
-              Por favor dejanos tus datos de contacto
+              Por favor déjanos tus datos de contacto
               <br /> para que podamos contactarnos.
             </p>
           </div>

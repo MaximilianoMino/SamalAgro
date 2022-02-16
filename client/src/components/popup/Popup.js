@@ -1,6 +1,7 @@
 import React from "react";
 import "./popup.css";
 import shipments from "../../assets/Iconos/envios_samal.png";
+
 const Popup = ({
   data,
   setModal,
@@ -19,7 +20,7 @@ const Popup = ({
   english,
 }) => {
   const { countries, title } = data;
-
+  console.log("popup data: " + data);
   const handleClose = (e) => {
     e.preventDefault();
     try {

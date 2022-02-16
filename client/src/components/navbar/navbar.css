@@ -49,7 +49,35 @@
   width: max-content;
 }
 @media only screen and (max-width: 600px) {
-  .navbar {
-    display: none;
+  .burguer-toogle {
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    height: 15%;
+  }
+  .burguer-toogle-img {
+    cursor: pointer;
+    opacity: 0.6;
+    right: 0;
+    margin: 2em;
+    width: 25%;
+  }
+  .samal-logo {
+    width: 150px;
+    height: 40px;
+    left: 0;
+    margin: 0 0 0 1em;
+  }
+  .lang {
+    margin-left: 0.6em;
+    cursor: pointer;
+  }
+  .navbar-nav {
+    display: flex;
+    flex-direction: row;
+    margin-left: 2em;
+    font-size: 0.9em;
   }
 }

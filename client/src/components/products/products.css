@@ -142,3 +142,39 @@
   position: absolute;
   padding: 3px 2px 7.8px 0.4px;
 }
+@media only screen and (max-width: 600px) {
+  .products-container {
+    height: 100%;
+  }
+  .our-products {
+    font-size: 2.3em;
+    width: 65%;
+    padding-top: 1.4em;
+    line-height: 0.9em;
+    margin: auto;
+  }
+
+  .cards::-webkit-scrollbar {
+    width: 0;
+  }
+
+  .card-title {
+    position: relative;
+    font-size: 1.5em;
+    line-height: 1.88;
+  }
+
+  .list-item {
+    text-align: start;
+  }
+  .Calidad-No-1-Processing-Manufacturing {
+    font-size: 0.8em;
+    padding-bottom: 0.4em;
+  }
+
+  .products-icons {
+    width: 23.6px;
+    height: 37.4px;
+    padding-top: 0.1em;
+  }
+}

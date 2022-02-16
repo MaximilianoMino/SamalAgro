@@ -13,12 +13,12 @@ const Footer = ({ english }) => {
           />
         </a>
         {english ? (
-          <strong>
-            <small>&copy; 2020 SamalAgro. All rights reserved .</small>
+          <strong className="footer-text">
+            <small>&copy; 2022 SamalAgro. All rights reserved .</small>
           </strong>
         ) : (
-          <strong>
-            <small>&copy; 2020 SamalAgro. Todos los derechos reservados.</small>
+          <strong className="footer-text">
+            <small>&copy; 2022 SamalAgro. Todos los derechos reservados.</small>
           </strong>
         )}
       </div>

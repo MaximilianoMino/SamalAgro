@@ -85,3 +85,73 @@ input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
   -webkit-box-shadow: 0 0 0 30px white inset !important;
 }
+@media only screen and (max-width: 600px) {
+  .contact-container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .form-container {
+    background: rgba(223, 223, 223, 0.1);
+    -webkit-backdrop-filter: blur(11.9px);
+    backdrop-filter: blur(11.9px);
+    border-radius: 10px;
+    margin: 3em;
+    padding: 3.5em;
+    border-radius: 7px;
+    color: white;
+  }
+  .form-title {
+    font-size: 2.3em;
+    color: #fff;
+  }
+  .form-subtitle {
+    font-size: 1.1rem;
+    width: 100%;
+    color: #fff;
+  }
+  .form-control {
+    background: rgba(223, 223, 223, 0.1);
+    -webkit-backdrop-filter: blur(11.9px);
+    backdrop-filter: blur(11.9px);
+    color: #fff !important;
+    font-size: 0.7em;
+  }
+  .form-control::placeholder {
+    color: #fff;
+  }
+  .form-control:focus {
+    color: #fff;
+    background: rgba(223, 223, 223, 0.1);
+    -webkit-backdrop-filter: blur(11.9px);
+    backdrop-filter: blur(11.9px);
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(15, 15, 15, 0.25) !important;
+  }
+  .error:focus {
+    color: #fff;
+    background: rgba(223, 223, 223, 0.1);
+    -webkit-backdrop-filter: blur(11.9px);
+    backdrop-filter: blur(11.9px);
+    border-color: #c81f0e !important;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgb(200, 31, 14, 0.25) !important;
+  }
+  .error::selection {
+    background-color: #c81f0e;
+  }
+
+  .error::placeholder {
+    color: #c81f0e;
+    opacity: 1;
+  }
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active {
+    background: rgba(223, 223, 223, 0.1);
+    -webkit-backdrop-filter: blur(11.9px);
+    backdrop-filter: blur(11.9px);
+    color: #fff;
+  }
+}

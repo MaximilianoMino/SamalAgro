@@ -13,6 +13,17 @@
   top: 0;
   left: 0;
   height: 100vh;
-  min-width: 100%;
+  width: 100%;
   object-fit: cover;
+}
+@media only screen and (max-width: 600px) {
+  .header-container {
+    background-image: url("../../assets/images/Landing/5.jpg");
+    background-position: 67% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  .videoTag {
+    display: none;
+  }
 }

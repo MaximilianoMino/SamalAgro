@@ -4,7 +4,7 @@ import dataEn from "../../api/dataEn";
 import "./countries.css";
 import Popup from "../popup/Popup";
 
-const Countries = ({ english }) => {
+const Countries = ({ english, modal, setModal }) => {
   const [northAm, setNorthAm] = useState(false);
   const [southAm, setSouthAm] = useState(false);
   const [africa, setAfrica] = useState(false);
@@ -12,7 +12,6 @@ const Countries = ({ english }) => {
   const [europe, setEurope] = useState(false);
   const [caribbean, setCaribbean] = useState(false);
 
-  const [modal, setModal] = useState(false);
   const [data, setData] = useState([]);
   const [continentId, setContinentId] = useState();
 
@@ -43,7 +42,7 @@ const Countries = ({ english }) => {
 
   return (
     <div className="countries-container" id="exportation">
-      <div className="countries-header-group mt-5">
+      <div className=" mt-5">
         <p className="h1 text-secondary">
           {english ? "We are in 40 countries" : "Llegamos a 40 países"}
         </p>

@@ -9,11 +9,7 @@ const SuccessCard = ({ english, setSuccessCard }) => {
     <div id="contact" className="success-card-container">
       {english ? (
         <div className="success-content-container">
-          {" "}
-          <i
-            className="bi close-icon bi-x-circle"
-            onClick={handleClose}
-          ></i>{" "}
+          <i className="bi close-icon bi-x-circle" onClick={handleClose}></i>{" "}
           <img src={`${check}`} className="check-icon" alt="success" />
           <p className="success-card-title py-4">
             Thanks for

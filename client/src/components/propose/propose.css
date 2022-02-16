@@ -8,6 +8,7 @@
   background-color: #c6261e;
   color: white;
 }
+
 .propose-title {
   font-weight: 300;
   font-family: Helvetica, sans-serif;
@@ -22,12 +23,13 @@
   flex-direction: row;
   width: 84%;
 }
-
-.card-propose-text {
-  font-size: 1.3rem;
-  line-height: 1;
-  color: #fff;
-  width: 85%;
+.propose-gifs-container {
+  width: 80%;
+  margin: auto;
+}
+.propose-gifs {
+  max-width: 75%;
+  height: 11em;
   margin: auto;
 }
 .card-propose-title {
@@ -38,12 +40,51 @@
   color: #fff;
   margin-bottom: 2rem;
 }
-.propose-gifs-container {
-  width: 80%;
+.card-propose-text {
+  font-size: 1.3rem;
+  line-height: 1;
+  color: #fff;
+  width: 85%;
   margin: auto;
 }
-.propose-gifs {
-  max-width: 75%;
-  height: 11em;
-  margin: auto;
+
+@media only screen and (max-width: 600px) {
+  .propose-container {
+    height: 100%;
+    padding-bottom: 2em;
+  }
+  .propose-title {
+    font-size: 1.8em;
+    margin-top: 1.7em;
+    margin-bottom: 2rem;
+  }
+  .cards-propose-container {
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    width: 84%;
+  }
+  .propose-gifs-container {
+    width: 70%;
+    margin: auto;
+  }
+  .propose-gifs {
+    max-width: 75%;
+    height: 7em;
+    margin: auto;
+  }
+  .card-propose-title {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.32;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 0.4em;
+  }
+  .card-propose-text {
+    font-size: 1em;
+    line-height: 1;
+    color: #fff;
+    width: 70%;
+  }
 }

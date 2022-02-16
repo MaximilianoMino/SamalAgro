@@ -8,20 +8,20 @@ const AboutEs = () => {
         Producimos y<br /> exportamos granos
         <br /> y legumbres.
       </p>
-      <p className="ps-5 about-subtitle">
+      <p className="about-subtitle">
         Generamos un <strong>mundo</strong> de posibilidades para la
         <strong> agricultura.</strong>
         <strong> ¡Trabaja con nosotros!</strong>
       </p>
 
-      <div className="text-start ms-5 mt-4">
+      <div className="text-start btn-container">
         <a className="btn btn-contact" href="#contact">
           CONTÁCTANOS
         </a>
       </div>
 
       <ul className="nav justify-content-center">
-        <li className="me-4">
+        <li className="">
           <p className="about-numbers">
             +<CountUp end={17000} />
           </p>
@@ -29,22 +29,22 @@ const AboutEs = () => {
             Toneladas <br /> anuales
           </p>
         </li>
-        <li className="me-4">
+        <li className="">
           <p className="about-numbers">
             +<CountUp end={1000} />
           </p>
           <p className="about-descr">
-            Clientes en el <br></br> mundo
+            Clientes en el <br /> mundo
           </p>
         </li>
-        <li className="me-4">
+        <li className="">
           <p className="about-numbers">
             <CountUp end={12} />
           </p>
 
           <p className="about-descr">Productos</p>
         </li>
-        <li className="me-4">
+        <li className="">
           <p className="about-numbers">
             <CountUp end={40} />
           </p>
