@@ -4,6 +4,7 @@
   flex-direction: row;
   justify-content: space-around;
   height: 20vh;
+  width: 100%;
   vertical-align: center;
 }
 

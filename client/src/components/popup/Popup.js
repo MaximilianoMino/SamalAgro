@@ -20,7 +20,6 @@ const Popup = ({
   english,
 }) => {
   const { countries, title } = data;
-  console.log("popup data: " + data);
   const handleClose = (e) => {
     e.preventDefault();
     try {
@@ -49,8 +48,8 @@ const Popup = ({
   };
   return (
     <div className="popup-container  shadow-sm">
-      <div className="text-start shadow-sm popup-title">
-        <p className="pt-2 ms-5">{title}</p>
+      <div className="shadow-sm popup-title">
+        <p className="">{title}</p>
         <i className="bi bi-x-circle" onClick={handleClose}></i>
       </div>
       <div className="popup-body">

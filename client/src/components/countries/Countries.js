@@ -130,7 +130,7 @@ const Countries = ({ english, modal, setModal }) => {
             onClick={(e) => handleModal(3, e)}
             className={` ${europe && !modal ? "visible" : "invisible"}`}
           >
-            EUROPE
+            {english ? "EUROPE" : "EUROPA"}
           </span>{" "}
         </div>{" "}
         {modal && continentId === 3 ? (

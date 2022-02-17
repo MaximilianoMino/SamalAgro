@@ -22,6 +22,7 @@ const ProductsEn = ({ productsEn }) => {
                 </h5>
                 <div className="img-card-container">
                   <img
+                    loading="lazy"
                     src={`${product.description.thumbnail}`}
                     alt="card"
                     className="card-img  shadow-sm"
@@ -31,7 +32,8 @@ const ProductsEn = ({ productsEn }) => {
                 <ul className="list-group list-unstyled mt-4">
                   <li className="list-item mb-2">
                     <img
-                      class="products-icons"
+                      loading="lazy"
+                      className="products-icons"
                       src={`${quality}`}
                       alt="quality-icon"
                     />
@@ -42,7 +44,8 @@ const ProductsEn = ({ productsEn }) => {
                   </li>
                   <li className="list-item mb-2">
                     <img
-                      class="products-icons"
+                      loading="lazy"
+                      className="products-icons"
                       src={`${availability}`}
                       alt="availability-icon"
                     />
@@ -55,7 +58,8 @@ const ProductsEn = ({ productsEn }) => {
                   </li>
                   <li className="list-item mb-2">
                     <img
-                      class="products-icons"
+                      loading="lazy"
+                      className="products-icons"
                       src={`${packaging}`}
                       alt="packaging-icon"
                     />
@@ -66,7 +70,8 @@ const ProductsEn = ({ productsEn }) => {
                   </li>
                   <li className="list-item mb-2">
                     <img
-                      class="products-icons"
+                      loading="lazy"
+                      className="products-icons"
                       src={`${standard}`}
                       alt="standard-icon"
                     />

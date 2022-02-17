@@ -9,7 +9,7 @@
   height: 70vh;
   margin-left: 189px;
   width: 37%;
-  animation: aboutMove 5s;
+  animation: aboutMove 2s;
 }
 
 @keyframes aboutMove {
@@ -103,6 +103,7 @@
     flex-direction: column;
     margin: auto;
     top: 2rem;
+    height: 75vh;
     width: 80%;
   }
 

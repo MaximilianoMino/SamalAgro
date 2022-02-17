@@ -1,7 +1,7 @@
 import React from "react";
 import AboutEs from "../about/AboutEs";
 import NavBar from "../navbar/NavBar";
-import video from "../../assets/videos/Samal_fragmento.mp4";
+import video from "../../assets/videos/Samal_fragmento_7.mp4";
 import "./header.css";
 import AboutEn from "../about/AboutEn";
 

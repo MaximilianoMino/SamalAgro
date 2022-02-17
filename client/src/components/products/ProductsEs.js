@@ -17,13 +17,14 @@ const ProductsEs = ({ productsEs }) => {
       <div className="cards" ref={ref} onMouseDown={onMouseDown}>
         {productsEs.map((product, index) => {
           return (
-            <div class="card border-0 bg-transparent" key={index}>
-              <div class="card-body">
-                <h5 class="card-title mb-5">
+            <div className="card border-0 bg-transparent" key={index}>
+              <div className="card-body">
+                <h5 className="card-title mb-5">
                   <span className="pb-1">{product.title}</span>
                 </h5>
                 <div>
                   <img
+                    loading="lazy"
                     src={`${product.description.thumbnail}`}
                     alt="card"
                     className="card-img"
@@ -33,7 +34,8 @@ const ProductsEs = ({ productsEs }) => {
                 <ul className="list-group list-unstyled mt-4">
                   <li className="list-item mb-2">
                     <img
-                      class="products-icons"
+                      loading="lazy"
+                      className="products-icons"
                       src={`${quality}`}
                       alt="quality-icon"
                     />
@@ -44,7 +46,8 @@ const ProductsEs = ({ productsEs }) => {
                   </li>
                   <li className="list-item mb-2">
                     <img
-                      class="products-icons"
+                      loading="lazy"
+                      className="products-icons"
                       src={`${availability}`}
                       alt="availability-icon"
                     />
@@ -57,7 +60,8 @@ const ProductsEs = ({ productsEs }) => {
                   </li>
                   <li className="list-item mb-2">
                     <img
-                      class="products-icons"
+                      loading="lazy"
+                      className="products-icons"
                       src={`${packaging}`}
                       alt="packaging-icon"
                     />
@@ -68,7 +72,8 @@ const ProductsEs = ({ productsEs }) => {
                   </li>
                   <li className="list-item mb-2">
                     <img
-                      class="products-icons"
+                      loading="lazy"
+                      className="products-icons"
                       src={`${standard}`}
                       alt="standard-icon"
                     />

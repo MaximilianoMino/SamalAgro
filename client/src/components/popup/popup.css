@@ -22,28 +22,30 @@
 }
 
 .popup-title {
+  position: relative;
   display: flex;
-  justify-content: space-between;
+  align-items: center;
   background-color: #c6261e;
   width: 100%;
-  padding: 1.3rem;
-  align-self: center;
+  max-height: 2.2em;
+
   color: white;
-  margin-bottom: 0.5rem;
   font-weight: bolder;
-  font-size: 1.1rem;
+  font-size: 1rem;
   border-radius: 1px;
 }
 .popup-title > p {
-  position: absolute;
-  margin-top: 0.3rem;
-  top: 0;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 2em;
+  width: 100%;
+  margin-top: 1.1em;
 }
 .popup-title > .bi {
-  position: absolute;
-  margin-top: 0.8rem;
-  top: 0;
-  right: 0;
+  position: relative;
+  height: 100%;
+  margin-top: 0.2em;
   margin-right: 3rem;
   cursor: pointer;
 }
