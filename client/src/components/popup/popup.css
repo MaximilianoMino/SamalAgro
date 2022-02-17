@@ -121,6 +121,21 @@ hr {
     cursor: grab;
     padding: 0 auto;
   }
+  .countries-header-group {
+    width: 50%;
+    line-height: 1;
+    margin: 0 auto;
+  }
+  .mobile-header-title {
+    font-size: 1.9em;
+    font-weight: 300;
+    color: #707070;
+  }
+  .mobile-header-subtitle {
+    font-size: 0.9em;
+    color: #707070;
+    font-weight: 500;
+  }
   .card-mobile::-webkit-scrollbar {
     width: 0;
   }
@@ -130,6 +145,7 @@ hr {
     grid-template-columns: repeat(6, 400px);
     grid-gap: 0em;
     overflow-x: scroll;
+    margin-right: 1em;
   }
   .countries-header-group > .h1 {
     margin: 0 auto;

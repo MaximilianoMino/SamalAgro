@@ -9,13 +9,13 @@ const CountriesMobile = ({ english, data }) => {
 
   return (
     <div className="mobile-container">
-      <div className="countries-header-group mt-5">
-        <p className="h1 text-secondary">
+      <div className="countries-header-group">
+        <p className="mobile-header-title">
           {english ? "We are in 40 countries" : "Llegamos a 40 países"}
         </p>
-        <p className="h5 text-secondary">
+        <p className="mobile-header-subtitle">
           {english
-            ? "Scroll for more information"
+            ? "Swipe for more information"
             : "Desliza para más información"}
         </p>
       </div>
