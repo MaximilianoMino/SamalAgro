@@ -20,7 +20,8 @@ const Propose = ({ english, proposesEs, proposesEn }) => {
                     <img
                       className="propose-gifs"
                       src={`${proposeEn.thumbnail}`}
-                      alt="gif"
+                      alt="samal-agro-gif"
+                      loading="lazy"
                     />
                   </div>
 
@@ -44,7 +45,8 @@ const Propose = ({ english, proposesEs, proposesEn }) => {
                     <img
                       className="propose-gifs"
                       src={`${proposeEs.thumbnail}`}
-                      alt="gif"
+                      alt="samal-agro-gif"
+                      loading="lazy"
                     />
                   </div>
 

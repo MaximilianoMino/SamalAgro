@@ -11,6 +11,7 @@ const NavBarMobile = ({ setOpenToogle, english }) => {
           className="mobile-samal-logo"
           src={`${SamalLogo}`}
           alt="SamalLogo"
+          loading="lazy"
         />
         <p className="mobile-close-btn" onClick={() => setOpenToogle(false)}>
           X

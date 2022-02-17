@@ -19,39 +19,39 @@ const AboutEs = () => {
           CONTÁCTANOS
         </a>
       </div>
-
-      <ul className="nav justify-content-center">
-        <li className="">
+      <div className="numbers-container">
+        <div>
+          {" "}
           <p className="about-numbers">
             +<CountUp end={17000} />
           </p>
           <p className="about-descr">
             Toneladas <br /> anuales
           </p>
-        </li>
-        <li className="">
+        </div>
+        <div>
           <p className="about-numbers">
             +<CountUp end={1000} />
           </p>
           <p className="about-descr">
             Clientes en el <br /> mundo
           </p>
-        </li>
-        <li className="">
+        </div>
+        <div>
+          {" "}
           <p className="about-numbers">
             <CountUp end={12} />
           </p>
-
           <p className="about-descr">Productos</p>
-        </li>
-        <li className="">
+        </div>{" "}
+        <div>
+          {" "}
           <p className="about-numbers">
             <CountUp end={40} />
           </p>
-
           <p className="about-descr">Paises</p>
-        </li>
-      </ul>
+        </div>
+      </div>
     </div>
   );
 };

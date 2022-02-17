@@ -24,8 +24,8 @@ const CountriesMobile = ({ english, data }) => {
         {data.map((continent, index) => {
           return (
             <div className="popup-container shadow-sm" key={index}>
-              <div className="text-start shadow-sm popup-title">
-                <p className="pt-2 ms-5">{continent.title}</p>
+              <div className="shadow-sm popup-title">
+                <p>{continent.title}</p>
               </div>
               <div className="popup-body">
                 {continent.countries.map((country, index) => {
@@ -48,7 +48,8 @@ const CountriesMobile = ({ english, data }) => {
                           <img
                             className="popup-icons"
                             src={`${shipments}`}
-                            alt="availability-icon"
+                            alt="samal agro availability-icon"
+                            loading="lazy"
                           />
                           <div className="ms-3 me-5 text-start d-flex flex-column">
                             <p className="popup-info-number">

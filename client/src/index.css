@@ -4,7 +4,6 @@ body {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
-  max-width: 100%;
   font-family: Helvetica, sans-serif;
 }
 @media only screen and (max-width: 601px) {

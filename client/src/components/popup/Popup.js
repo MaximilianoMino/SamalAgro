@@ -71,7 +71,8 @@ const Popup = ({
                   <img
                     className="popup-icons"
                     src={`${shipments}`}
-                    alt="availability-icon"
+                    alt="samal-availability-icon"
+                    loading="lazy"
                   />
                   <div className="ms-3 me-5 text-start d-flex flex-column">
                     <p className="popup-info-number">

@@ -27,7 +27,12 @@ const SuccessCard = ({ english, setSuccessCard }) => {
             className="bi close-icon bi-x-circle"
             onClick={handleClose}
           ></i>{" "}
-          <img src={`${check}`} className="check-icon" alt="success" />
+          <img
+            src={`${check}`}
+            className="check-icon"
+            alt="samal-success"
+            loading="lazy"
+          />
           <p className="success-card-title py-4">
             ¡Gracias por
             <br /> contactarte con

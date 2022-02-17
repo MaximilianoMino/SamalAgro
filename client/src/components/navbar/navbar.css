@@ -1,9 +1,11 @@
 .navbar {
   display: flex;
   justify-content: space-around;
-  max-width: 95%;
-  margin-left: 6rem;
+  max-width: 100%;
+  margin-left: 3rem;
   margin-top: 2rem;
+  font-size: 1em;
+  line-height: 0.4;
 }
 
 .nav-link:hover {
@@ -21,9 +23,9 @@
 }
 
 .client-icon {
-  width: 20.6px;
-  height: 33.4px;
-  margin: 1rem 0.3rem 0 0.8rem;
+  width: 1.3em;
+  height: 2em;
+  margin: 0.8rem 0.3rem 0 0.8rem;
 
   padding: 3px 2px 7.8px 0.4px;
 }
@@ -40,7 +42,7 @@
   position: absolute;
   font-size: 0.8rem;
   margin-top: 3.1rem;
-  padding: 0.2rem 0.6rem 0.2rem 0.6rem;
+  padding: 0.3rem 0.6rem 0.4rem 0.6rem;
   border-radius: 20px;
   background-color: #c6261e;
   cursor: pointer;
@@ -79,5 +81,65 @@
     flex-direction: row;
     margin-left: 2em;
     font-size: 0.9em;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    margin-left: 1rem;
+    margin-top: 2rem;
+    font-size: 1em;
+    line-height: 0.4;
+  }
+  .navbar-nav {
+    display: flex;
+    flex-direction: row;
+    margin-left: 2em;
+    font-size: 0.9em;
+  }
+  .nav-link:hover {
+    color: #c6261e !important;
+  }
+
+  .samal-logo {
+    width: 200px;
+    height: 80px;
+    margin: 0;
+  }
+  .nav-link {
+    margin-top: 1rem;
+    margin-right: 0.6rem;
+  }
+
+  .client-icon {
+    width: 1.3em;
+    height: 2em;
+    margin: 0.8rem 0.3rem 0 0.8rem;
+
+    padding: 3px 2px 7.8px 0.4px;
+  }
+  .client-icon:hover {
+    cursor: pointer;
+  }
+
+  .bold-word {
+    font-weight: bold;
+    color: #c6261e !important;
+  }
+
+  .nav-feature {
+    position: absolute;
+    font-size: 0.8rem;
+    margin-top: 3.1rem;
+    padding: 0.3rem 0.6rem 0.4rem 0.6rem;
+    border-radius: 20px;
+    background-color: #c6261e;
+    cursor: pointer;
+    color: white;
+    margin-left: -1.4rem;
+    width: max-content;
   }
 }

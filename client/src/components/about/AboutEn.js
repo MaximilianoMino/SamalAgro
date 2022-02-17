@@ -18,35 +18,36 @@ const AboutEn = () => {
           CONTACT US
         </a>
       </div>
+      <div className="numbers-container">
+        <ul className="nav justify-content-center">
+          <li className="">
+            <p className="about-numbers">
+              +<CountUp end={17000} />
+            </p>
+            <p className="about-descr">annual metric tons</p>
+          </li>
+          <li className="">
+            <p className="about-numbers">
+              +<CountUp end={1000} />
+            </p>
+            <p className="about-descr">Clients around the world</p>
+          </li>
+          <li className="">
+            <p className="about-numbers">
+              <CountUp end={12} />
+            </p>
 
-      <ul className="nav justify-content-center">
-        <li className="">
-          <p className="about-numbers">
-            +<CountUp end={17000} />
-          </p>
-          <p className="about-descr">annual metric tons</p>
-        </li>
-        <li className="">
-          <p className="about-numbers">
-            +<CountUp end={1000} />
-          </p>
-          <p className="about-descr">Clients around the world</p>
-        </li>
-        <li className="">
-          <p className="about-numbers">
-            <CountUp end={12} />
-          </p>
+            <p className="about-descr">Products</p>
+          </li>
+          <li className="">
+            <p className="about-numbers">
+              <CountUp end={40} />
+            </p>
 
-          <p className="about-descr">Products</p>
-        </li>
-        <li className="">
-          <p className="about-numbers">
-            <CountUp end={40} />
-          </p>
-
-          <p className="about-descr">Countries</p>
-        </li>
-      </ul>
+            <p className="about-descr">Countries</p>
+          </li>
+        </ul>
+      </div>
     </div>
   );
 };

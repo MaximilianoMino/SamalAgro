@@ -32,6 +32,7 @@ const NavBar = ({ handleLanguage, english }) => {
               className="mt-3 samal-logo"
               src={`${SamalLogo}`}
               alt="SamalLogo"
+              loading="lazy"
             />
           </div>
           <div className="justify-content-around navbar-light">
@@ -136,6 +137,7 @@ const NavBar = ({ handleLanguage, english }) => {
                       className="client-icon"
                       src={`${ClientIcon}`}
                       alt="icon client"
+                      loading="lazy"
                     />
                   </span>
                   <a
@@ -156,6 +158,7 @@ const NavBar = ({ handleLanguage, english }) => {
                       className="client-icon"
                       src={`${ClientIcon}`}
                       alt="icon client"
+                      loading="lazy"
                     />
                   </span>
                   <a

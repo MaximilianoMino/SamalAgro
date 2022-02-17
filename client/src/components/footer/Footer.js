@@ -9,7 +9,8 @@ const Footer = ({ english }) => {
           <img
             src={`${SamalFooter}`}
             className="footer-logo"
-            alt="Samal Footer"
+            alt="Samal agro Footer"
+            loading="lazy"
           />
         </a>
         {english ? (

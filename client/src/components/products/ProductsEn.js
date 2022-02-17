@@ -35,7 +35,7 @@ const ProductsEn = ({ productsEn }) => {
                       loading="lazy"
                       className="products-icons"
                       src={`${quality}`}
-                      alt="quality-icon"
+                      alt="samal agro quality-icon"
                     />
                     <p class="Calidad-No-1-Processing-Manufacturing">
                       <span class="text-style-1">Quality:</span>
@@ -47,7 +47,7 @@ const ProductsEn = ({ productsEn }) => {
                       loading="lazy"
                       className="products-icons"
                       src={`${availability}`}
-                      alt="availability-icon"
+                      alt="samal agro availability-icon"
                     />
                     <p class="Calidad-No-1-Processing-Manufacturing">
                       <span class="text-style-1">
@@ -61,7 +61,7 @@ const ProductsEn = ({ productsEn }) => {
                       loading="lazy"
                       className="products-icons"
                       src={`${packaging}`}
-                      alt="packaging-icon"
+                      alt="samal agro packaging-icon"
                     />
                     <p class="Calidad-No-1-Processing-Manufacturing">
                       <span class="text-style-1">Packaging:</span>
@@ -73,7 +73,7 @@ const ProductsEn = ({ productsEn }) => {
                       loading="lazy"
                       className="products-icons"
                       src={`${standard}`}
-                      alt="standard-icon"
+                      alt="samal agro standard-icon"
                     />
                     <p class="Calidad-No-1-Processing-Manufacturing">
                       <span class="text-style-1">Quality Standars:</span>

@@ -1,6 +1,7 @@
 .products-container {
   position: relative;
   height: 100vh;
+  min-width: 100vh;
   z-index: 1;
   margin: auto;
   overflow: hidden;

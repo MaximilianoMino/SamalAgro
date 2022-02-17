@@ -26,7 +26,7 @@ const ProductsEs = ({ productsEs }) => {
                   <img
                     loading="lazy"
                     src={`${product.description.thumbnail}`}
-                    alt="card"
+                    alt="samal agro product card"
                     className="card-img"
                   />
                 </div>
@@ -37,7 +37,7 @@ const ProductsEs = ({ productsEs }) => {
                       loading="lazy"
                       className="products-icons"
                       src={`${quality}`}
-                      alt="quality-icon"
+                      alt="samal agro quality-icon"
                     />
                     <p class="Calidad-No-1-Processing-Manufacturing">
                       <span class="text-style-1">Calidad:</span>
@@ -49,7 +49,7 @@ const ProductsEs = ({ productsEs }) => {
                       loading="lazy"
                       className="products-icons"
                       src={`${availability}`}
-                      alt="availability-icon"
+                      alt="samal-availability-icon"
                     />
                     <p class="Calidad-No-1-Processing-Manufacturing">
                       <span class="text-style-1">
@@ -75,7 +75,7 @@ const ProductsEs = ({ productsEs }) => {
                       loading="lazy"
                       className="products-icons"
                       src={`${standard}`}
-                      alt="standard-icon"
+                      alt="samal-standard-icon"
                     />
                     <p class="Calidad-No-1-Processing-Manufacturing">
                       <span class="text-style-1">Normas de calidad:</span>

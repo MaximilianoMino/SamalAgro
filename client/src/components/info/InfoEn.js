@@ -4,7 +4,12 @@ import spoon from "../../assets/images/Landing/mung-beans-in-wood-spoon-isolated
 const InfoEn = () => {
   return (
     <div className="info-container">
-      <img className="article-img" src={`${spoon}`} alt="" />
+      <img
+        className="article-img"
+        src={`${spoon}`}
+        alt="samal-spoon"
+        loading="lazy"
+      />
       <div className="info-article seed">
         <p className="info-title">SOWING</p>
         <p className="info-text">

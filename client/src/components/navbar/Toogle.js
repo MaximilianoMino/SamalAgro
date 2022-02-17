@@ -20,7 +20,12 @@ const Toogle = ({ english, SamalLogo, handleLanguage }) => {
   return (
     <div className="burguer-toogle">
       <div className="">
-        <img className="samal-logo" src={`${SamalLogo}`} alt="SamalLogo" />
+        <img
+          className="samal-logo"
+          src={`${SamalLogo}`}
+          alt="SamalLogo"
+          loading="lazy"
+        />
       </div>
       <div className="lang-container">
         <ul className="navbar-nav">
@@ -56,6 +61,7 @@ const Toogle = ({ english, SamalLogo, handleLanguage }) => {
           className="burguer-toogle-img"
           alt="burguer-toogle"
           onClick={handleToogle}
+          loading="lazy"
         />
       </div>
       {openToogle ? (
