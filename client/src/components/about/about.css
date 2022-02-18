@@ -139,7 +139,7 @@
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    max-width: 85%;
+    max-width: 75%;
     margin-left: 1em;
     margin-right: 1em;
     padding-bottom: 1em;
@@ -263,5 +263,36 @@
     font-family: "Roboto";
     font-size: 0.8rem;
     font-weight: 700;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .produce_and_exports {
+    font-size: 1.8em;
+    padding-right: 1em;
+    padding-top: 1em;
+  }
+  .btn-contact {
+    min-width: 65%;
+    margin: 0;
+    font-size: 0.8em;
+  }
+  .numbers-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 85%;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    text-align: center;
+  }
+  .about-numbers {
+    font-size: 14px;
+    margin: 1.2em 0.8em 0.4em 2.3em;
+    max-width: 40%;
+  }
+  .about-descr {
+    font-family: "Roboto";
+    font-size: 0.7rem;
   }
 }

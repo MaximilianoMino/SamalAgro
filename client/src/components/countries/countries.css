@@ -117,3 +117,24 @@
     margin-top: -19%;
   }
 }
+
+@media only screen and (max-width: 767px) and (min-width: 600px) {
+  .caribbean {
+    margin-top: -12%;
+    margin-left: 19%;
+  }
+
+  .south-america {
+    margin-top: 10%;
+    margin-left: 27%;
+  }
+
+  .europe {
+    margin-left: 55%;
+    margin-top: -22%;
+  }
+  .africa {
+    margin-left: 50%;
+    margin-top: 2%;
+  }
+}

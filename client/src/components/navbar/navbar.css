@@ -199,3 +199,29 @@
     margin-right: 0em;
   }
 }
+
+@media only screen and (max-width: 767px) and (min-width: 600px) {
+  .burguer-toogle-img {
+    cursor: pointer;
+    opacity: 0.6;
+    right: 0;
+    margin: 3em;
+    width: 15%;
+  }
+  .samal-logo {
+    width: 230px;
+    height: 80px;
+    left: 0;
+    margin: 0 5em 0 4em;
+  }
+  .lang {
+    margin-left: 0.6em;
+    cursor: pointer;
+  }
+  .navbar-nav {
+    display: flex;
+    flex-direction: row;
+    margin-left: 2em;
+    font-size: 0.9em;
+  }
+}
