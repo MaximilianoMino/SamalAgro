@@ -12,18 +12,17 @@
 }
 .form-container {
   background: #fff;
-  height: 80%;
-  margin-top: 5rem;
-  padding: 5rem;
+  height: 90%;
+  margin-top: 3rem;
+  padding: 5em;
   margin-left: 10rem;
   border-radius: 7px;
 }
 
 .form-title {
-  font-family: Roboto;
-  font-size: 3rem;
+  font-family: ubuntu;
+  font-size: 2.8rem;
   font-weight: 300;
-  font-stretch: normal;
   font-style: normal;
   line-height: 1.14;
   letter-spacing: normal;
@@ -43,7 +42,7 @@
 }
 .btn-contact {
   width: 180px;
-  margin: 0px 0 0;
+  margin: 0;
   border-radius: 4px;
   font-family: Roboto;
   padding: 9px -10px 9px 10px;
@@ -85,7 +84,7 @@ input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
   -webkit-box-shadow: 0 0 0 30px white inset !important;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 767px) {
   .contact-container {
     height: 100%;
     display: flex;
@@ -153,5 +152,18 @@ input:-webkit-autofill:active {
     -webkit-backdrop-filter: blur(11.9px);
     backdrop-filter: blur(11.9px);
     color: #fff;
+  }
+}
+@media only screen and (max-width: 321px) {
+  .form-container {
+    background: rgba(223, 223, 223, 0.1);
+    -webkit-backdrop-filter: blur(11.9px);
+    backdrop-filter: blur(11.9px);
+    border-radius: 10px;
+    margin: 0em;
+    padding: 3em;
+  }
+  .btn-contact {
+    width: 50% !important;
   }
 }

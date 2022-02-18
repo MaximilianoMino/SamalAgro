@@ -1,10 +1,12 @@
 import React from "react";
 import "./footer.css";
 import SamalFooter from "../../assets/images/Landing/samalfooter.png";
+import FacebookIcon from "../../assets/Iconos/facebook-icon.png";
+
 const Footer = ({ english }) => {
   return (
-    <footer class="footer-container">
-      <div class="text-start">
+    <footer className="footer-container">
+      <div className="footer-logo">
         <a href="#header">
           <img
             src={`${SamalFooter}`}
@@ -13,12 +15,14 @@ const Footer = ({ english }) => {
             loading="lazy"
           />
         </a>
+      </div>
+      <div className="footer-text">
         {english ? (
-          <strong className="footer-text">
+          <strong>
             <small>&copy; 2022 SamalAgro. All rights reserved .</small>
           </strong>
         ) : (
-          <strong className="footer-text">
+          <strong>
             <small>&copy; 2022 SamalAgro. Todos los derechos reservados.</small>
           </strong>
         )}
@@ -26,19 +30,23 @@ const Footer = ({ english }) => {
       <div className="footer-icons-container">
         <a
           className="anchor-footer"
-          href="https://www.facebook.com/samalagro/"
-          rel="noreferrer"
-          target="_blank"
-        >
-          <i class="bi footer-icon bi-facebook"></i>
-        </a>
-        <a
-          className="anchor-footer"
           href="https://www.instagram.com/samalagro/?hl=es-la"
           rel="noreferrer"
           target="_blank"
         >
           <i class="bi footer-icon bi-instagram"></i>
+        </a>{" "}
+        <a
+          className="anchor-footer"
+          href="https://www.facebook.com/samalagro/"
+          rel="noreferrer"
+          target="_blank"
+        >
+          <img
+            src={`${FacebookIcon}`}
+            alt="samal agro icon facebook"
+            className="facebook-icon"
+          />
         </a>
         <a
           className="anchor-footer"

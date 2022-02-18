@@ -7,11 +7,11 @@ import Toogle from "./Toogle";
 const NavBar = ({ handleLanguage, english }) => {
   const [csoon, setCsoon] = useState(false);
   const [mQuery, setMQuery] = useState({
-    matches: window.innerWidth > 600 ? true : false,
+    matches: window.innerWidth > 1100 ? true : false,
   });
 
   useEffect(() => {
-    let mediaQuery = window.matchMedia("(min-width: 600px)");
+    let mediaQuery = window.matchMedia("(min-width: 1100px)");
     mediaQuery.addEventListener("change", setMQuery);
     // this is the cleanup function to remove the listener
     return () => mediaQuery.removeEventListener("change", setMQuery);
@@ -26,17 +26,17 @@ const NavBar = ({ handleLanguage, english }) => {
           handleLanguage={handleLanguage}
         />
       ) : (
-        <nav className="navbar navbar-expand-lg bg-transparent mb-4">
-          <div className="">
+        <nav className="navbar-container">
+          <div className="samal-logo-container">
             <img
-              className="mt-3 samal-logo"
+              className="samal-logo"
               src={`${SamalLogo}`}
               alt="SamalLogo"
               loading="lazy"
             />
           </div>
-          <div className="justify-content-around navbar-light">
-            <ul className="navbar-nav">
+          <div className="nav-middle">
+            <ul className="">
               <li className="">
                 {english ? (
                   <span className="border-bottom bold-word nav-link border-danger pb-2">
@@ -94,8 +94,8 @@ const NavBar = ({ handleLanguage, english }) => {
               </li>
             </ul>
           </div>
-          <div className="navbar-light ms-5">
-            <ul className="navbar-nav">
+          <div className="navbar-lang">
+            <ul className="">
               <li className="nav-item">
                 <a
                   className="nav-link"

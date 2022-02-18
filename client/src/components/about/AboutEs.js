@@ -26,7 +26,7 @@ const AboutEs = () => {
             +<CountUp end={17000} />
           </p>
           <p className="about-descr">
-            Toneladas <br /> anuales
+            toneladas <br /> anuales
           </p>
         </div>
         <div>
@@ -34,7 +34,7 @@ const AboutEs = () => {
             +<CountUp end={1000} />
           </p>
           <p className="about-descr">
-            Clientes en el <br /> mundo
+            clientes en el <br /> mundo
           </p>
         </div>
         <div>
@@ -42,14 +42,14 @@ const AboutEs = () => {
           <p className="about-numbers">
             <CountUp end={12} />
           </p>
-          <p className="about-descr">Productos</p>
+          <p className="about-descr">productos</p>
         </div>{" "}
         <div>
           {" "}
           <p className="about-numbers">
             <CountUp end={40} />
           </p>
-          <p className="about-descr">Paises</p>
+          <p className="about-descr">paises</p>
         </div>
       </div>
     </div>

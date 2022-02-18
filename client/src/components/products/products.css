@@ -149,10 +149,10 @@
   }
   .our-products {
     font-size: 2.3em;
-    width: 65%;
+    text-align: left;
+    margin-left: 2rem;
     padding-top: 1.4em;
     line-height: 0.9em;
-    margin: auto;
   }
 
   .cards::-webkit-scrollbar {
@@ -178,4 +178,6 @@
     height: 37.4px;
     padding-top: 0.1em;
   }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
 }

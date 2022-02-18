@@ -47,7 +47,7 @@ const Contact = ({ english, setSuccessCard }) => {
       <div className="form-container">
         {english ? (
           <div>
-            <p className="form-title text-start">Contact us</p>
+            <p className="form-title">Contact us</p>
             <p className="form-subtitle">
               Please, leave us your contact information
               <br /> so that we can communicate.
@@ -55,7 +55,7 @@ const Contact = ({ english, setSuccessCard }) => {
           </div>
         ) : (
           <div>
-            <p className="form-title text-start">Contáctanos</p>
+            <p className="form-title">Contáctanos</p>
             <p className="form-subtitle">
               Por favor déjanos tus datos de contacto
               <br /> para que podamos contactarnos.
@@ -108,7 +108,7 @@ const Contact = ({ english, setSuccessCard }) => {
               <input
                 className="btn  btn-contact w-25"
                 type="submit"
-                value="Submit"
+                value="Send"
               ></input>
             ) : (
               <input

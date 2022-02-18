@@ -40,7 +40,7 @@ const data = {
     {
       title: "MUNG VERDE",
       description: {
-        quality: "N° 1 | Procesamiento | Fabricación",
+        quality: "N° 1 | Processing | Manufacturing",
         availability: "Marzo a Julio",
         packaging: "25Kg. Polipropileno",
         quality_standard: "HACCP; BPM",
