@@ -264,7 +264,7 @@
   .info-container .logistics::before {
     margin-top: -245px;
     padding-top: 250px;
-    right: 15px;
+    margin-right: 15px;
   }
 
   .info-container .exports {
@@ -469,7 +469,7 @@
     margin-left: -115px;
   }
   .info-container .process::before {
-    margin-top: 8px;
+    margin-top: 9px;
     margin-left: -180px;
     padding-top: 0;
     padding-left: 0px;
