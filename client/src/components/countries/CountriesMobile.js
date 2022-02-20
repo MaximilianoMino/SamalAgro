@@ -8,7 +8,7 @@ const CountriesMobile = ({ english, data }) => {
   const { onMouseDown } = useDraggableScroll(ref, { direction: "horizontal" });
 
   return (
-    <div className="mobile-container">
+    <div className="mobile-container" id="exportation">
       <div className="countries-header-group">
         <p className="mobile-header-title">
           {english ? "We are in 40 countries" : "Llegamos a 40 países"}

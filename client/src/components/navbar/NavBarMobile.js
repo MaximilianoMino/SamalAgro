@@ -30,7 +30,7 @@ const NavBarMobile = ({ setOpenToogle, english }) => {
             </a>
           </li>
           <li className="nav-mobile-item">
-            <a className="nav-mobile-link" href="#exportations">
+            <a className="nav-mobile-link" href="#exportation">
               {english ? "Export" : "Exportación"}
             </a>
           </li>
