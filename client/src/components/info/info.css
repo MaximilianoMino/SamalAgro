@@ -367,12 +367,10 @@
     font-weight: bold;
   }
   .info-container .supervision {
-    top: 200px;
+    top: 201px;
     left: 20px;
   }
-  .info-container .superv-en {
-    top: 201px;
-  }
+
   .info-container .seed {
     top: 50px;
     left: 70px;

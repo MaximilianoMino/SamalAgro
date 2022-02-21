@@ -116,9 +116,10 @@ hr {
     display: flex;
     margin-top: 10em;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     overflow: hidden;
     cursor: grab;
+    padding-top: 3em;
     padding: 0 auto;
   }
   .countries-header-group {

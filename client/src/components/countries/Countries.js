@@ -42,7 +42,7 @@ const Countries = ({ english, modal, setModal }) => {
 
   return (
     <div className="countries-container" id="exportation">
-      <div className=" mt-5">
+      <div className="mt-5">
         <p className="h1 text-secondary">
           {english ? "We are in 40 countries" : "Llegamos a 40 países"}
         </p>
