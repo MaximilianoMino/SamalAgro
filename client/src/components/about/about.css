@@ -309,6 +309,7 @@
     margin-right: 0em;
     margin-bottom: 1em;
     text-align: center;
+    padding-bottom: 1em;
   }
   .about-numbers {
     font-size: 1.2em;
@@ -318,5 +319,6 @@
   .about-descr {
     font-family: "Roboto";
     font-size: 0.7rem;
+    width: 100%;
   }
 }

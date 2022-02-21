@@ -370,7 +370,9 @@
     top: 200px;
     left: 20px;
   }
-
+  .info-container .superv-en {
+    top: 201px;
+  }
   .info-container .seed {
     top: 50px;
     left: 70px;
@@ -496,18 +498,18 @@
     margin: auto;
     width: 130px;
   }
-  .info-container > .supervision > .info-text {
+  .info-container > .superv-en > .info-text {
     width: 95px;
   }
 
   .info-container > .process > .info-text {
     width: 134px;
   }
-  .info-container > .logistics > .info-text {
+  .info-container > .log-en > .info-text {
     width: 120px;
   }
   .info-container > .exp-en > .info-text {
-    width: 120px;
+    width: 110px;
   }
   .info-container .process {
     top: 340px;
