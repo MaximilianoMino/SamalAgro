@@ -179,5 +179,12 @@
     padding-top: 0.1em;
   }
 }
-@media only screen and (min-width: 1024px) and (max-width: 1440px) {
+@media only screen and (max-width: 375.1px) {
+  .our-products {
+    font-size: 2em;
+    margin-left: 2.2rem;
+  }
+  .card-title {
+    font-size: 1.3em;
+  }
 }

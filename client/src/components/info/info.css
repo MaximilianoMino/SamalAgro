@@ -50,6 +50,14 @@
   margin-top: 0.7em;
   font-size: 1rem;
 }
+.info-container > .seed-en .info-text {
+  width: 165px;
+  margin: 0.7em auto;
+}
+.info-container > .exp-en > .info-text {
+  width: 160px;
+  margin: 0.7em auto;
+}
 .info-container .info-article .info-text > span {
   font-weight: bold;
 }
@@ -104,6 +112,7 @@
 .info-container .logistics {
   bottom: 210px;
   right: -70px;
+  width: 228px;
 }
 
 .info-container .logistics::before {
@@ -144,6 +153,15 @@
 
 /*MAX WIDTH 1100*/
 @media only screen and (max-width: 1100.1px) {
+  .info-container > .seed > .info-text {
+    width: 105px;
+    word-wrap: break-word;
+    margin: 0 auto;
+  }
+  .info-container > .exp-en > .info-text {
+    width: 160px;
+    margin: 0.7em auto;
+  }
   .info-container .article-img {
     width: 65%;
   }
@@ -215,11 +233,27 @@
   .info-container .info-article .info-title {
     font-size: 1.3rem;
   }
+  .info-container > .seed > .info-title {
+    width: 85px;
+    margin: auto;
+  }
   .info-container .info-article .info-text {
     padding-top: 0.8em;
     font-size: 0.9rem;
     margin: auto;
     width: 150px;
+  }
+
+  .info-container > .logistics > .info-text {
+    width: 135px;
+  }
+  .info-container > .seed-en > .info-text {
+    width: 81px;
+    margin: auto;
+  }
+  .info-container > .exp-en > .info-text {
+    width: 130px;
+    margin: auto;
   }
   .info-container .info-article .info-text > span {
     font-weight: bold;
@@ -316,6 +350,12 @@
     font-size: 0.9rem;
     margin: auto;
     width: 150px;
+  }
+  .info-container > .supervision > .info-text {
+    width: 120px;
+  }
+  .info-container > .exp-en > .info-text {
+    width: 120px;
   }
   .info-container .info-article .info-text > span {
     font-weight: bold;
@@ -440,7 +480,7 @@
 
 /*MAX WIDTH 330*/
 
-@media only screen and (max-width: 330.5px) {
+@media only screen and (max-width: 334.5px) {
   .info-container .info-article .info-title {
     font-size: 1.1rem;
   }
@@ -450,11 +490,24 @@
     margin: auto;
     width: 130px;
   }
+  .info-container > .supervision > .info-text {
+    width: 105px;
+  }
 
+  .info-container > .process > .info-text {
+    width: 134px;
+  }
+  .info-container > .logistics > .info-text {
+    width: 120px;
+  }
+  .info-container > .exp-en > .info-text {
+    width: 120px;
+  }
   .info-container .process {
     top: 340px;
     right: 0;
   }
+
   .info-container .seed::before {
     margin-top: 6px;
     margin-left: 64px;

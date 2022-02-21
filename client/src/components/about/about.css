@@ -9,7 +9,7 @@
   max-height: 80vh;
   margin-left: 15%;
   width: 35%;
-  padding-bottom: 3em;
+  padding-bottom: 2em;
   animation: aboutMove 2s;
 }
 
@@ -101,19 +101,10 @@
   max-width: 100%;
 }
 
-/*SCREEN BETWEEN 0 AND 600 PX*/
-
 @media only screen and (max-width: 767px) {
   .box {
-    background: rgba(20, 16, 16, 0.1);
-    -webkit-backdrop-filter: blur(18.9px);
-    backdrop-filter: blur(18.9px);
-    display: flex;
-    flex-direction: column;
-    top: 2rem;
-    margin-left: 10%;
-    margin-right: 10%;
-    min-width: 80%;
+    margin: -1em auto;
+    width: 500px;
   }
   .produce_and_exports {
     font-family: "Roboto";
@@ -139,7 +130,7 @@
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    max-width: 80%;
+    width: 100%;
     margin-left: 1em;
     margin-right: 1em;
     padding-bottom: 1em;
@@ -170,8 +161,38 @@
     display: none;
   }
 }
+/*SCREEN BETWEEN 0 AND 600 PX*/
 
-/*SCREEN BETWEEN 1440 AND 1024 PX*/
+@media only screen and (max-width: 600px) {
+  .box {
+    top: 0rem;
+    width: 80%;
+  }
+  .numbers-container {
+    width: 280px;
+  }
+  .about-numbers {
+    font-size: 1.3em;
+    font-family: "Roboto";
+    letter-spacing: 0.4;
+    font-style: normal;
+    display: flex;
+    justify-content: space-around;
+    line-height: 0;
+    letter-spacing: 0.1em;
+    color: #fff;
+    margin: 1.2em 0.8em 0 1em;
+  }
+  .about-descr {
+    padding-top: 0.5em;
+    margin: 15%;
+    font-size: 0.7rem;
+    color: #fff;
+    text-align: center;
+    width: 70%;
+  }
+}
+/*SCREEN BETWEEN 960 AND 1440 PX*/
 @media only screen and (min-width: 960px) and (max-width: 1440px) {
   .box {
     max-height: 70vh;
@@ -238,7 +259,7 @@
     color: white;
     min-height: 70vh;
     margin-left: 15%;
-    width: 50%;
+    width: 600px;
   }
 
   .produce_and_exports {
@@ -266,6 +287,9 @@
   }
 }
 @media only screen and (max-width: 370px) {
+  .box {
+    width: 90%;
+  }
   .produce_and_exports {
     font-size: 1.8em;
     padding-right: 1em;
@@ -280,14 +304,14 @@
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    max-width: 85%;
-    margin-left: 1em;
-    margin-right: 1em;
+    width: 278px;
+    margin-left: 0em;
+    margin-right: 0em;
     margin-bottom: 1em;
     text-align: center;
   }
   .about-numbers {
-    font-size: 14px;
+    font-size: 1.2em;
     margin: 1.2em 0.8em 0.4em 2.3em;
     max-width: 40%;
   }

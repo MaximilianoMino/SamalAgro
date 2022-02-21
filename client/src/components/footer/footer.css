@@ -83,6 +83,21 @@
     align-self: center;
   }
 }
+@media only screen and (max-width: 376px) {
+  .footer-text {
+    width: 100vmax;
+    font-size: 0.5em;
+    text-align: left;
+    align-self: center;
+  }
+  .facebook-icon {
+    width: 1.1em;
+  }
+  .footer-icon {
+    font-size: 1.1em;
+    margin: 0;
+  }
+}
 @media only screen and (max-width: 321px) {
   .footer-text {
     max-width: 30%;

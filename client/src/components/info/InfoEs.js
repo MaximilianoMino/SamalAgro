@@ -24,7 +24,7 @@ const InfoEs = () => {
           <span>el control de todos</span> los cultivos
         </p>
       </div>
-      <div className="info-article process">
+      <div className="info-article process ">
         <p className="info-title">PROCESO</p>
         <p className="info-text">
           <span>Bajo normas HACCP, BPM, POES, Y MIP</span>. Seleccionamos por
