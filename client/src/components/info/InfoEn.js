@@ -16,7 +16,7 @@ const InfoEn = () => {
           We plant in <span>6 strategically regions</span>, of Argentina.
         </p>
       </div>
-      <div className="info-article supervision">
+      <div className="info-article supervision superv-en">
         <p className="info-title">SUPERVISION</p>
         <p className="info-text">
           Our team of <br />
@@ -34,7 +34,7 @@ const InfoEn = () => {
           technologies
         </p>
       </div>
-      <div className="info-article logistics">
+      <div className="info-article logistics log-en">
         <p className="info-title">LOGISTICS</p>
         <p className="info-text">
           We <span>have our own trucks</span> and a national and international

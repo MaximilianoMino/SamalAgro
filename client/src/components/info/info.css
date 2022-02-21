@@ -357,6 +357,12 @@
   .info-container > .exp-en > .info-text {
     width: 120px;
   }
+  .info-container > .superv-en > .info-text {
+    width: 100px;
+  }
+  .info-container > .log-en > .info-text {
+    width: 135px;
+  }
   .info-container .info-article .info-text > span {
     font-weight: bold;
   }
@@ -491,7 +497,7 @@
     width: 130px;
   }
   .info-container > .supervision > .info-text {
-    width: 105px;
+    width: 95px;
   }
 
   .info-container > .process > .info-text {
@@ -548,5 +554,34 @@
     border-top: 0;
     border-bottom: 2px solid #c71d0e;
     border-left: 0;
+  }
+}
+@media only screen and (min-width: 1488.5px) {
+  .info-container {
+    width: 900px;
+    height: 715px;
+  }
+  .info-container .supervision {
+    top: 150px;
+    left: 200px;
+  }
+
+  .info-container .seed {
+    bottom: 185px;
+    left: -70px;
+  }
+
+  .info-container .process {
+    top: 80px;
+    right: -80px;
+  }
+  .info-container .logistics {
+    bottom: 215px;
+    right: -70px;
+    width: 228px;
+  }
+  .info-container .exports {
+    bottom: 15px;
+    right: 160px;
   }
 }
