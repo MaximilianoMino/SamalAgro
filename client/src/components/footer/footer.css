@@ -3,15 +3,15 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  height: 20vh;
+  height: 120px;
   width: 100%;
   vertical-align: center;
-  padding: 0 7em 0 7em;
+  padding: 0 7em 0 5em;
 }
 
 .footer-logo {
-  width: 166px;
-  height: 166px;
+  width: 120px;
+  height: 120px;
 }
 
 .footer-icon {
@@ -21,19 +21,18 @@
   margin: 0 0.2em 0 0.2em;
 }
 .facebook-icon {
-  width: 2.5em;
+  width: 2.2em;
 }
 .footer-text {
-  width: 100vmax;
-  justify-self: center;
+  width: 100%;
+  justify-self: flex-start;
   align-self: center;
 }
 .footer-icons-container {
-  width: 10%;
+  width: 20px;
   justify-content: space-around;
   display: flex;
   align-items: center;
-  min-height: 100%;
 }
 .anchor-footer,
 .anchor-footer:link,
@@ -44,12 +43,11 @@
   text-decoration: inherit;
   font-weight: inherit;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768.1px) {
   .footer-container {
     display: flex;
     flex-direction: row;
     position: relative;
-    height: 20vh;
     width: 100%;
     align-items: center;
     padding: 0 0.4em 0 1em;
@@ -78,15 +76,15 @@
   }
   .footer-text {
     width: 100vmax;
-    font-size: 0.6em;
+    font-size: 0.8em;
     text-align: start;
     align-self: center;
   }
 }
-@media only screen and (max-width: 376px) {
+@media only screen and (max-width: 450px) {
   .footer-text {
     width: 100vmax;
-    font-size: 0.5em;
+    font-size: 0.7em;
     text-align: left;
     align-self: center;
   }
@@ -98,11 +96,11 @@
     margin: 0;
   }
 }
-@media only screen and (max-width: 321px) {
+@media only screen and (max-width: 323px) {
   .footer-text {
     max-width: 30%;
-    font-size: 0.6em;
-    text-align: center;
+    font-size: 0.5em;
+    text-align: left;
     align-self: center;
   }
 }

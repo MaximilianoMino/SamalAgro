@@ -1,9 +1,9 @@
 .products-container {
   position: relative;
-  height: 100vh;
-  min-width: 100vh;
+  height: 700px;
+  width: 100%;
   z-index: 1;
-  margin: auto;
+  margin: 2em auto;
   overflow: hidden;
   cursor: grab;
 }
@@ -123,7 +123,7 @@
   margin-top: -12px;
 }
 .Calidad-No-1-Processing-Manufacturing {
-  font-size: 14px;
+  font-size: 12.7px;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
@@ -149,8 +149,7 @@
   }
   .our-products {
     font-size: 2.3em;
-    text-align: left;
-    margin-left: 3rem;
+    text-align: center;
     padding-top: 1.4em;
     line-height: 0.9em;
   }
@@ -168,10 +167,6 @@
   .list-item {
     text-align: start;
   }
-  .Calidad-No-1-Processing-Manufacturing {
-    font-size: 0.8em;
-    padding-bottom: 0.4em;
-  }
 
   .products-icons {
     width: 23.6px;
@@ -182,8 +177,8 @@
 @media only screen and (max-width: 375.1px) {
   .our-products {
     font-size: 2em;
-    margin-left: 2.2rem;
   }
+
   .card-title {
     font-size: 1.3em;
   }

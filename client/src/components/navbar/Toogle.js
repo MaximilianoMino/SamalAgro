@@ -59,7 +59,7 @@ const Toogle = ({ english, SamalLogo, handleLanguage }) => {
         <img
           src={`${ToogleIcon}`}
           className="burguer-toogle-img"
-          alt="burguer-toogle"
+          alt="samal agro burguer-toogle"
           onClick={handleToogle}
           loading="lazy"
         />

@@ -14,29 +14,29 @@ const InfoEs = () => {
         <div className="info-article seed">
           <p className="info-title">SIEMBRA</p>
           <p className="info-text">
-            <span>Sembramos en 6 regiones de Argentina</span>, estrategicamente
-            ubicadas
+            <strong>Sembramos en 6 regiones de Argentina</strong>,
+            estrategicamente ubicadas
           </p>
         </div>
         <div className="info-article supervision">
           <p className="info-title">SUPERVISIÓN</p>
           <p className="info-text">
-            Nuestro equipo de <span>ingenieros</span> lleva{" "}
-            <span>el control de todos</span> los cultivos
+            Nuestro equipo de <strong>ingenieros</strong> lleva{" "}
+            <strong>el control de todos</strong> los cultivos
           </p>
         </div>
         <div className="info-article process ">
           <p className="info-title">PROCESO</p>
           <p className="info-text">
-            <span>Bajo normas HACCP, BPM, POES, Y MIP</span>. Seleccionamos por
-            tamaño, peso especifico y color. Disponemos de tecnologia Sortex
+            <strong>Bajo normas HACCP, BPM, POES, Y MIP</strong>. Seleccionamos
+            por tamaño, peso especifico y color. Disponemos de tecnologia Sortex
           </p>
         </div>
         <div className="info-article logistics">
           <p className="info-title">LOGÍSTICA</p>
           <p className="info-text">
-            Contamos con <span>camiones propios</span> y un departamento de{" "}
-            <span>logistica nacional e internacional</span>
+            Contamos con <strong>camiones propios</strong> y un departamento de{" "}
+            <strong>logistica nacional e internacional</strong>
           </p>
         </div>
         <div className="info-article exports">
@@ -44,7 +44,7 @@ const InfoEs = () => {
           <p className="info-text">
             Nuestro departamento de comercio exterior da respuestas a las
             necesidades documentales de
-            <span> mas de 40 paises a los que exportamos</span>
+            <strong> mas de 40 paises a los que exportamos</strong>
           </p>
         </div>
       </div>

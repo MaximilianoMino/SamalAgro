@@ -1,29 +1,41 @@
 .header-container {
   min-width: 100vmax;
-  min-height: 100vh;
+  height: 700px;
 }
 
 .header-body {
   position: absolute;
-  min-height: 100vh;
+  height: 700px;
   z-index: 100;
+  width: 100%;
+}
+.imgBg {
+  display: none;
 }
 .videoTag {
   position: absolute;
   top: 0;
   left: 0;
-  height: 100vh;
+  height: 750px !important;
   width: 100%;
   object-fit: cover;
+  pointer-events: none;
 }
 @media only screen and (max-width: 600px) {
-  .header-container {
-    background-image: url("../../assets/images/Landing/5.jpg");
+  .imgBg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 750px !important;
+    width: 100%;
+    object-fit: cover;
+    display: block;
     background-position: 67% 50%;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    width: 100%;
+    pointer-events: none;
   }
+
   .videoTag {
     display: none;
   }
