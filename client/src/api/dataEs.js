@@ -60,7 +60,7 @@ const data = {
     {
       title: "ALUBIA",
       description: {
-        quality: "Gje. 180/11/ a 240/100",
+        quality: "Gje. 180/100 a 240/100",
         availability: "Marzo a Julio",
         packaging: "25kg. Polipropileno",
         quality_standard: "HCCP;BPM",
@@ -120,7 +120,7 @@ const data = {
     {
       title: "SÉSAMO",
       description: {
-        quality: "Acidez 2% máximo",
+        quality: "Acidez 2% máximo 99,9% pureza",
         availability: "Junio a Julio",
         packaging: "25kg. Polipropileno",
         quality_standard: "HACCP;BPM",

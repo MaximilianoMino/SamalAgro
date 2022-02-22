@@ -5,7 +5,7 @@ import dataEs from "../../api/dataEs";
 import dataEn from "../../api/dataEn";
 const CountriesContainer = ({ english }) => {
   const [mQuery, setMQuery] = useState({
-    matches: window.innerWidth > 600 ? true : false,
+    matches: window.innerWidth > 768.1 ? true : false,
   });
   const [modal, setModal] = useState(false);
 
@@ -17,7 +17,7 @@ const CountriesContainer = ({ english }) => {
     } else {
       setData(dataEs.scope);
     }
-    let mediaQuery = window.matchMedia("(min-width: 600px)");
+    let mediaQuery = window.matchMedia("(min-width: 768.1px)");
     mediaQuery.addEventListener("change", setMQuery);
     // this is the cleanup function to remove the listener
     return () => mediaQuery.removeEventListener("change", setMQuery);

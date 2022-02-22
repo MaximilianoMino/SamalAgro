@@ -99,7 +99,7 @@ hr {
   color: #c6261e;
   margin-bottom: 0;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768.1px) {
   .popup-container {
     margin-top: 2em;
     position: relative;
@@ -114,9 +114,9 @@ hr {
     position: relative;
     height: 100vh;
     display: flex;
-    margin-top: 10em;
+    margin-top: 15em;
     flex-direction: column;
-    justify-content: start;
+    justify-content: flex-start;
     overflow: hidden;
     cursor: grab;
     padding-top: 3em;
@@ -156,7 +156,7 @@ hr {
   }
   .popup-title {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     background-color: #c6261e;
     width: 100%;
     padding: 0;

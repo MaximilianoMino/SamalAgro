@@ -140,12 +140,9 @@ const NavBar = ({ handleLanguage, english }) => {
                       loading="lazy"
                     />
                   </span>
-                  <a
-                    className={`nav-link ${csoon ? "invisible" : null}`}
-                    href="2"
-                  >
+                  <p className={`nav-link ${csoon ? "invisible" : null}`}>
                     Clients
-                  </a>{" "}
+                  </p>{" "}
                   {csoon ? <span class="nav-feature">Coming Soon</span> : null}
                 </li>
               ) : (
@@ -161,12 +158,9 @@ const NavBar = ({ handleLanguage, english }) => {
                       loading="lazy"
                     />
                   </span>
-                  <a
-                    className={`nav-link ${csoon ? "invisible" : null}`}
-                    href="2"
-                  >
+                  <p className={`nav-link ${csoon ? "invisible" : null}`}>
                     Clientes
-                  </a>
+                  </p>
                   {csoon ? <span class="nav-feature">Proximamente</span> : null}
                 </li>
               )}

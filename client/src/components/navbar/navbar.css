@@ -118,8 +118,6 @@
     display: flex;
     width: 100vmax;
     justify-self: end;
-    align-items: center;
-    margin-bottom: 2em;
   }
   .burguer-toogle-img {
     justify-self: flex-end;
@@ -129,11 +127,15 @@
     margin: 3em 0 0 4em;
     width: 10%;
   }
+  .samal-logo-container {
+    display: flex;
+    margin-top: 1em;
+  }
   .samal-logo {
     width: 300px;
     height: 80px;
     left: 0;
-    margin: 4em 0 0 4em;
+    margin: 2em 0 0 4em;
   }
   .lang {
     margin: 3em 0 0 0.6em;
@@ -184,7 +186,7 @@
     min-width: 100%;
     display: flex;
     margin-left: 1em;
-    justify-content: start;
+    justify-content: flex-start;
     font-size: 0.8em;
   }
 
