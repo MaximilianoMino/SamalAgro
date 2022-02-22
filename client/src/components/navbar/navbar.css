@@ -163,7 +163,7 @@
     width: 100%;
     justify-content: space-around;
     align-items: center;
-    height: 15%;
+    top: -2em;
   }
   .burguer-toogle-img {
     position: relative;

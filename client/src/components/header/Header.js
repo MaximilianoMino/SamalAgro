@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 import AboutEs from "../about/AboutEs";
 import NavBar from "../navbar/NavBar";
-import video from "../../assets/videos/Samal_fragmento_3.mp4";
+import video from "../../assets/videos/Samal_fragmento_7.mp4";
 import imgBg from "../../assets/images/Landing/5.jpg";
 import "./header.css";
 import AboutEn from "../about/AboutEn";

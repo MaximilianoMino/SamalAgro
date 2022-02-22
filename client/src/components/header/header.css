@@ -29,10 +29,8 @@
     height: 750px !important;
     width: 100%;
     object-fit: cover;
-    display: block;
-    background-position: 67% 50%;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    display: flex;
+
     pointer-events: none;
   }
 
