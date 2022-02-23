@@ -1,165 +1,167 @@
 .countries-container {
-  margin-top: 5em;
-  min-height: 700px;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  background-color: #f7f7f7;
-}
-@media only screen and (max-width: 1300px) {
-  .countries-container {
-    height: 800px;
+    margin-top: 5em;
+    min-height: 700px;
     display: flex;
     flex-direction: column;
     width: 100%;
     background-color: #f7f7f7;
-  }
 }
+
+@media only screen and (max-width: 1300px) {
+    .countries-container {
+        height: 800px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-color: #f7f7f7;
+    }
+}
+
 .countries-map-container {
-  background-image: url("../../assets/images/Landing/map_samal.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  height: 100vh;
-  object-fit: cover;
+    background-image: url("../../assets/images/Landing/map_samal.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100vh;
+    object-fit: cover;
 }
 
 .circle {
-  position: relative;
-  height: 2rem;
-  width: 2rem;
-  border: solid 5px #c6261e;
-  -moz-border-radius: 50px;
-  -webkit-border-radius: 50px;
-  border-radius: 50%;
-  cursor: pointer;
+    position: relative;
+    height: 2rem;
+    width: 2rem;
+    border: solid 5px #c6261e;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50%;
+    cursor: pointer;
 }
+
 .north-america {
-  margin-top: 7%;
-  margin-left: 12%;
+    margin-top: 7%;
+    margin-left: 12%;
 }
 
 .caribbean {
-  margin-top: -12%;
-  margin-left: 20%;
+    margin-top: -12%;
+    margin-left: 20%;
 }
 
 .south-america {
-  margin-top: 22%;
-  margin-left: 28%;
+    margin-top: 22%;
+    margin-left: 28%;
 }
 
 .europe {
-  margin-left: 55%;
-  margin-top: -18%;
+    margin-left: 55%;
+    margin-top: -18%;
 }
 
 .asia {
-  margin-left: 72%;
+    margin-left: 72%;
 }
 
 .africa {
-  margin-left: 53%;
-  margin-top: 12%;
+    margin-left: 53%;
+    margin-top: 12%;
 }
 
-.circle > span {
-  position: absolute;
-  cursor: pointer;
-  color: white;
-  width: max-content;
-  margin-top: -0.3rem;
-  padding: 0.5rem 0.6rem 0.4rem 0.6rem;
-  border-radius: 20px;
-  background-color: #c6261e;
-  font-weight: 700;
+.circle>span {
+    position: absolute;
+    cursor: pointer;
+    color: white;
+    width: max-content;
+    margin-top: -0.3rem;
+    padding: 0.5rem 0.6rem 0.4rem 0.6rem;
+    border-radius: 20px;
+    background-color: #c6261e;
+    font-weight: 700;
 }
 
-.north-america > span {
-  margin-left: -9.8rem;
+.north-america>span {
+    margin-left: -9.8rem;
 }
 
-.caribbean > span {
-  margin-top: -0.4em;
-  margin-left: -15rem;
-}
-.south-america > span {
-  margin-left: -8.8rem;
+.caribbean>span {
+    margin-top: -0.4em;
+    margin-left: -15rem;
 }
 
-.europe > span {
-  margin-left: -4rem;
+.south-america>span {
+    margin-left: -8.8rem;
 }
-.asia > span {
-  margin-left: -2.6rem;
+
+.europe>span {
+    margin-left: -4rem;
 }
-.africa > span {
-  margin-left: -3.7rem;
+
+.asia>span {
+    margin-left: -2.6rem;
 }
+
+.africa>span {
+    margin-left: -3.7rem;
+}
+
 @media only screen and (max-width: 1100px) {
-  .countries-container {
-    height: 700px;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    background-color: #f7f7f7;
-  }
-  .caribbean {
-    margin-top: -12%;
-    margin-left: 20%;
-  }
-
-  .south-america {
-    margin-top: 20%;
-    margin-left: 28%;
-  }
-
-  .europe {
-    margin-left: 55%;
-    margin-top: -18%;
-  }
+    .countries-container {
+        height: 700px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-color: #f7f7f7;
+    }
+    .caribbean {
+        margin-top: -12%;
+        margin-left: 20%;
+    }
+    .south-america {
+        margin-top: 20%;
+        margin-left: 28%;
+    }
+    .europe {
+        margin-left: 55%;
+        margin-top: -18%;
+    }
 }
+
 @media only screen and (max-width: 980px) and (min-width: 768px) {
-  .caribbean {
-    margin-top: -12%;
-    margin-left: 19%;
-  }
-
-  .south-america {
-    margin-top: 15%;
-    margin-left: 27%;
-  }
-
-  .europe {
-    margin-left: 55%;
-    margin-top: -19%;
-  }
+    .caribbean {
+        margin-top: -12%;
+        margin-left: 19%;
+    }
+    .south-america {
+        margin-top: 15%;
+        margin-left: 27%;
+    }
+    .europe {
+        margin-left: 55%;
+        margin-top: -19%;
+    }
 }
 
 @media only screen and (max-width: 768.1px) and (min-width: 600px) {
-  .countries-container {
-    height: 550px;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin-top: 3em !important;
-    background-color: #f7f7f7;
-  }
-  .caribbean {
-    margin-top: -12%;
-    margin-left: 19%;
-  }
-
-  .south-america {
-    margin-top: 10%;
-    margin-left: 27%;
-  }
-
-  .europe {
-    margin-left: 55%;
-    margin-top: -22%;
-  }
-  .africa {
-    margin-left: 50%;
-    margin-top: 2%;
-  }
+    .countries-container {
+        height: 550px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 3em !important;
+        background-color: #f7f7f7;
+    }
+    .caribbean {
+        margin-top: -12%;
+        margin-left: 19%;
+    }
+    .south-america {
+        margin-top: 10%;
+        margin-left: 27%;
+    }
+    .europe {
+        margin-left: 55%;
+        margin-top: -22%;
+    }
+    .africa {
+        margin-left: 50%;
+        margin-top: 2%;
+    }
 }

@@ -1,185 +1,172 @@
 .products-container {
-  position: relative;
-  height: 700px;
-  width: 100%;
-  z-index: 1;
-  margin: 2em auto;
-  overflow: hidden;
-  cursor: grab;
+    position: relative;
+    height: 700px;
+    width: 100%;
+    z-index: 1;
+    margin: 2em auto;
+    overflow: hidden;
+    cursor: grab;
 }
 
 .products-container::before {
-  background-image: url("../../assets/images/Landing/Grit11-byGhostlyPixels.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50% 0;
-  content: "";
-  display: block;
-  font-family: "Roboto";
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  opacity: 0.14;
-  width: 100%;
-  animation: mymove 10s linear infinite;
-  animation-delay: -5s;
-}
-@keyframes mymove {
-  100% {
-    background-position: center;
-  }
-}
-.our-products {
-  font-family: "Roboto";
-  font-size: 50px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  padding-top: 65px;
-  text-align: center;
-  color: #707070;
-  position: relative;
-  animation: shake 2s linear;
+    background-image: url("../../assets/images/Landing/Grit11-byGhostlyPixels.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    content: "";
+    display: block;
+    font-family: "Roboto";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    opacity: 0.14;
+    width: 100%;
+    animation: mymove 10s linear infinite;
+    animation-delay: -5s;
 }
 
-@keyframes shake {
-  0%,
-  7% {
-    transform: rotateZ(0);
-    opacity: 0;
-  }
-  15% {
-    transform: rotateZ(-15deg);
-    opacity: 1;
-  }
-  20% {
-    transform: rotateZ(10deg);
-  }
-  25% {
-    transform: rotateZ(-10deg);
-  }
-  30% {
-    transform: rotateZ(6deg);
-  }
-  35% {
-    transform: rotateZ(-4deg);
-  }
-  40%,
-  100% {
-    transform: rotateZ(0);
-  }
+@keyframes mymove {
+    100% {
+        background-position: center;
+    }
+}
+
+.our-products {
+    font-family: "Roboto";
+    font-size: 50px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    padding-top: 65px;
+    text-align: center;
+    color: #707070;
+    position: relative;
+    animation: ourProductsFade 2s linear;
+}
+
+@keyframes ourProductsFade {
+    0% {
+        opacity: 0;
+        top: -200px;
+    }
+    100% {
+        top: 0;
+        opacity: 1;
+    }
 }
 
 .cards {
-  position: relative;
-  margin-top: 3%;
-  padding-left: 3%;
-  display: grid;
-  grid-template-columns: repeat(12, 300px);
-  grid-gap: 50px;
-  overflow-x: scroll;
+    position: relative;
+    margin-top: 3%;
+    padding-left: 3%;
+    display: grid;
+    grid-template-columns: repeat(12, 300px);
+    grid-gap: 50px;
+    overflow-x: scroll;
 }
+
 .cards::-webkit-scrollbar {
-  width: 0;
+    width: 0;
 }
 
 .card-title {
-  position: relative;
+    position: relative;
+    font-family: "Roboto";
+    font-size: 28px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.88;
+    letter-spacing: normal;
+    text-align: left;
+    color: #707070;
+}
 
-  font-family: "Roboto";
-  font-size: 28px;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.88;
-  letter-spacing: normal;
-  text-align: left;
-  color: #707070;
+.card-title>span {
+    border-bottom: solid 3px #c6261e;
 }
-.card-title > span {
-  border-bottom: solid 3px #c6261e;
-}
+
 .img-card-container {
-  display: flex;
-  box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.16);
-  border-radius: 50%;
-  width: 200px;
-  height: 200px;
+    display: flex;
+    box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.16);
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
 }
+
 .card-img {
-  margin-bottom: 1.6rem;
-  clip-path: circle(50%);
-  object-fit: cover;
-  width: 200px;
-  height: 200px;
-  top: 55px;
+    margin-bottom: 1.6rem;
+    clip-path: circle(50%);
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+    top: 55px;
 }
 
 .list-item {
-  text-align: start;
-  margin-top: -12px;
+    text-align: start;
+    margin-top: -12px;
 }
+
 .Calidad-No-1-Processing-Manufacturing {
-  font-size: 12.7px;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1;
-  letter-spacing: normal;
-  color: #707070;
-  margin-left: 37px;
-  margin-top: 2px;
+    font-size: 12.7px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    color: #707070;
+    margin-left: 37px;
+    margin-top: 2px;
 }
+
 .Calidad-No-1-Processing-Manufacturing .text-style-1 {
-  font-weight: normal;
+    font-weight: normal;
 }
 
 .products-icons {
-  width: 27.6px;
-  height: 41.4px;
-  position: absolute;
-  padding: 3px 2px 7.8px 0.4px;
+    width: 27.6px;
+    height: 41.4px;
+    position: absolute;
+    padding: 3px 2px 7.8px 0.4px;
 }
+
 @media only screen and (max-width: 600px) {
-  .products-container {
-    height: 100%;
-  }
-  .our-products {
-    font-size: 2.3em;
-    text-align: center;
-    padding-top: 1.4em;
-    line-height: 0.9em;
-  }
-
-  .cards::-webkit-scrollbar {
-    width: 0;
-  }
-
-  .card-title {
-    position: relative;
-    font-size: 1.5em;
-    line-height: 1.88;
-  }
-
-  .list-item {
-    text-align: start;
-  }
-
-  .products-icons {
-    width: 23.6px;
-    height: 37.4px;
-    padding-top: 0.1em;
-  }
+    .products-container {
+        height: 100%;
+    }
+    .our-products {
+        font-size: 2.3em;
+        text-align: center;
+        padding-top: 1.4em;
+        line-height: 0.9em;
+    }
+    .cards::-webkit-scrollbar {
+        width: 0;
+    }
+    .card-title {
+        position: relative;
+        font-size: 1.5em;
+        line-height: 1.88;
+    }
+    .list-item {
+        text-align: start;
+    }
+    .products-icons {
+        width: 23.6px;
+        height: 37.4px;
+        padding-top: 0.1em;
+    }
 }
-@media only screen and (max-width: 375.1px) {
-  .our-products {
-    font-size: 2em;
-  }
 
-  .card-title {
-    font-size: 1.3em;
-  }
+@media only screen and (max-width: 375.1px) {
+    .our-products {
+        font-size: 2em;
+    }
+    .card-title {
+        font-size: 1.3em;
+    }
 }
