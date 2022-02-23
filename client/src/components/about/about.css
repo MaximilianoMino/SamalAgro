@@ -139,9 +139,9 @@
 }
 @media only screen and (max-width: 500px) {
   .box {
-    height: 500px;
+    height: 510px;
     width: 350px;
-    margin: 2em auto;
+    margin: 0 auto;
   }
   .produce_and_exports {
     font-size: 1.8em;
@@ -155,7 +155,7 @@
     width: 350px;
   }
   .btn-container {
-    margin: 2.5em 0 2.5em 2.8em;
+    margin: 2.5em 0 2.8em 2.8em;
   }
 
   .btn-contact {
@@ -166,7 +166,7 @@
     justify-content: space-around;
     margin: auto;
     flex-wrap: wrap;
-    width: 220px;
+    width: 230px;
   }
   .about-numbers {
     font-size: 1.6em;
@@ -180,7 +180,7 @@
 @media only screen and (max-width: 375px) {
   .box {
     width: 300px;
-    height: 450px;
+    height: 500px;
     margin: auto;
   }
   .produce_and_exports {

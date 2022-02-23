@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   position: absolute;
-  width: 55vh;
+  width: 380px;
   max-height: 60vh;
   border-radius: 10px;
   overflow: hidden;
@@ -125,7 +125,7 @@ hr {
   .countries-header-group {
     width: 50%;
     line-height: 1;
-    margin: 0 auto;
+    margin: 2em auto;
   }
   .mobile-header-title {
     font-size: 1.9em;
@@ -149,7 +149,7 @@ hr {
     margin-right: 1em;
   }
   .countries-header-group > .h1 {
-    margin: 0 auto;
+    margin: 2em auto;
     line-height: 1.2;
     max-width: 40%;
     margin-bottom: 1em;
@@ -171,5 +171,15 @@ hr {
     position: relative;
     left: 0;
     margin-right: 1em;
+  }
+  .popup-country > p {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-right: 0.5rem;
+  }
+  .popup-country > span {
+    font-size: 0.6rem;
+    font-weight: 100;
+    font-style: italic;
   }
 }
