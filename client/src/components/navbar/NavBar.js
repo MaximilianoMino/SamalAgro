@@ -3,7 +3,8 @@ import "./navbar.css";
 import SamalLogo from "../../assets/images/Landing/IMG_3697.PNG";
 import ClientIcon from "../../assets/Iconos/clientes.png";
 import Toogle from "./Toogle";
-
+import Aos from "aos";
+import "aos/dist/aos.css";
 const NavBar = ({ handleLanguage, english }) => {
   const [csoon, setCsoon] = useState(false);
   const [mQuery, setMQuery] = useState({
@@ -11,6 +12,9 @@ const NavBar = ({ handleLanguage, english }) => {
   });
 
   useEffect(() => {
+    Aos.init({
+      duration: 2000,
+    });
     let mediaQuery = window.matchMedia("(min-width: 1100px)");
     mediaQuery.addEventListener("change", setMQuery);
     // this is the cleanup function to remove the listener
@@ -26,7 +30,7 @@ const NavBar = ({ handleLanguage, english }) => {
           handleLanguage={handleLanguage}
         />
       ) : (
-        <nav className="navbar-container">
+        <nav className="navbar-container" data-aos="zoom-in">
           <div className="samal-logo-container">
             <img
               className="samal-logo"

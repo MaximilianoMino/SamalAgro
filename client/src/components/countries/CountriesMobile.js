@@ -1,14 +1,22 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import "../popup/popup.css";
 import useDraggableScroll from "use-draggable-scroll";
 import shipments from "../../assets/Iconos/envios_samal.png";
-
+import Aos from "aos";
+import "aos/dist/aos.css";
 const CountriesMobile = ({ english, data }) => {
   const ref = useRef(null);
+
+  useEffect(() => {
+    Aos.init({
+      duration: 2000,
+    });
+  }, []);
+
   const { onMouseDown } = useDraggableScroll(ref, { direction: "horizontal" });
 
   return (
-    <div className="mobile-container" id="exportation">
+    <div className="mobile-container" id="exportation" data-aos="fade-down-top">
       <div className="countries-header-group">
         <p className="mobile-header-title">
           {english ? "We are in 40 countries" : "Llegamos a 40 países"}

@@ -1,23 +1,37 @@
 import "./products.css";
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 import useDraggableScroll from "use-draggable-scroll";
 import quality from "../../assets/Iconos/calidad.png";
 import availability from "../../assets/Iconos/disponibilidad.png";
 import standard from "../../assets/Iconos/normas.png";
 import packaging from "../../assets/Iconos/packaging.png";
+import Aos from "aos";
+import "aos/dist/aos.css";
 const ProductsEn = ({ productsEn }) => {
   const ref = useRef(null);
-
+  useEffect(() => {
+    Aos.init({
+      duration: 2000,
+    });
+  }, []);
   const { onMouseDown } = useDraggableScroll(ref, { direction: "horizontal" });
   return (
-    <div id="products" className="products-container">
-      <p className="our-products">Our products</p>
+    <section id="products" className="products-container">
+      <p className="our-products" data-aos="fade-down-right">
+        Our products
+      </p>
       <div className="cards" ref={ref} onMouseDown={onMouseDown}>
         {productsEn.map((product, index) => {
           return (
             <div class="card border-0 bg-transparent" key={index}>
               <div class="card-body">
-                <h5 class="card-title mb-5">
+                <h5
+                  class="card-title mb-5"
+                  data-aos="fade-zoom-in"
+                  data-aos-easing="ease-in-back"
+                  data-aos-delay="300"
+                  data-aos-offset="0"
+                >
                   <span className="pb-1">{product.title}</span>
                 </h5>
                 <div className="img-card-container">
@@ -86,7 +100,7 @@ const ProductsEn = ({ productsEn }) => {
           );
         })}
       </div>
-    </div>
+    </section>
   );
 };
 

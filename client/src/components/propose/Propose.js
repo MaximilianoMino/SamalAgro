@@ -1,15 +1,25 @@
-import React from "react";
-
+import { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 import "./propose.css";
 
 const Propose = ({ english, proposesEs, proposesEn }) => {
+  useEffect(() => {
+    Aos.init({
+      duration: 2000,
+    });
+  }, []);
   return (
-    <div id="propose" className="propose-container">
+    <section id="propose" className="propose-container">
       {" "}
       {english ? (
-        <p className="propose-title">Why choose us?</p>
+        <p className="propose-title" data-aos="fade-down-top">
+          Why choose us?
+        </p>
       ) : (
-        <p className="propose-title">¿Por qué elegirnos?</p>
+        <p className="propose-title" data-aos="fade-down">
+          ¿Por qué elegirnos?
+        </p>
       )}{" "}
       <div className="cards-propose-container text-white">
         {english
@@ -64,7 +74,7 @@ const Propose = ({ english, proposesEs, proposesEn }) => {
               );
             })}
       </div>
-    </div>
+    </section>
   );
 };
 

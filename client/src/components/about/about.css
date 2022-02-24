@@ -11,16 +11,6 @@
     width: 450px;
     margin-top: 2em;
     padding: 2em 0 2em 0;
-    animation: aboutMove 2s;
-}
-
-@keyframes aboutMove {
-    from {
-        left: -70%;
-    }
-    to {
-        left: 0;
-    }
 }
 
 .produce_and_exports {

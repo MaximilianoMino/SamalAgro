@@ -1,9 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./contact.css";
 import { useForm } from "react-hook-form";
 import emailjs from "@emailjs/browser";
-
+import Aos from "aos";
+import "aos/dist/aos.css";
 const Contact = ({ english, setSuccessCard }) => {
+  useEffect(() => {
+    Aos.init({
+      duration: 2000,
+    });
+  }, []);
+
   const {
     register,
     handleSubmit,
@@ -43,7 +50,7 @@ const Contact = ({ english, setSuccessCard }) => {
     }
   };
   return (
-    <div id="contact" className="contact-container">
+    <section id="contact" className="contact-container" data-aos="zoom-in">
       <div className="form-container">
         {english ? (
           <div>
@@ -120,7 +127,7 @@ const Contact = ({ english, setSuccessCard }) => {
           </div>
         </form>
       </div>
-    </div>
+    </section>
   );
 };
 

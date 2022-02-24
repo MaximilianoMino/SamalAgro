@@ -1,9 +1,23 @@
-import React from "react";
+import { useEffect } from "react";
 import CountUp from "react-countup";
 import "./about.css";
+import Aos from "aos";
+import "aos/dist/aos.css";
 const AboutEs = () => {
+  useEffect(() => {
+    Aos.init({
+      duration: 3000,
+      once: false,
+      mirror: false,
+    });
+  }, []);
   return (
-    <div className="box">
+    <section
+      className="box"
+      data-aos="fade-right"
+      data-aos-offset="500"
+      data-aos-easing="ease-in-sine"
+    >
       <p className="produce_and_exports">
         Producimos y<br /> exportamos granos
         <br /> y legumbres.
@@ -52,7 +66,7 @@ const AboutEs = () => {
           <p className="about-descr">paises</p>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

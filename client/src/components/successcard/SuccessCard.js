@@ -1,12 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./succes.css";
 import check from "../../assets/Iconos/check.png";
+import Aos from "aos";
+import "aos/dist/aos.css";
 const SuccessCard = ({ english, setSuccessCard }) => {
+  useEffect(() => {
+    Aos.init({
+      duration: 2000,
+    });
+  }, []);
+
   const handleClose = () => {
     setSuccessCard(false);
   };
   return (
-    <div id="contact" className="success-card-container">
+    <section id="contact" className="success-card-container" data-aos="zoom-in">
       {english ? (
         <div className="success-content-container">
           <i className="bi close-icon bi-x-circle" onClick={handleClose}></i>{" "}
@@ -44,7 +52,7 @@ const SuccessCard = ({ english, setSuccessCard }) => {
           </p>{" "}
         </div>
       )}
-    </div>
+    </section>
   );
 };
 

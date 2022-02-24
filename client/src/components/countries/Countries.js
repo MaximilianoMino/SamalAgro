@@ -1,8 +1,10 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import dataEs from "../../api/dataEs";
 import dataEn from "../../api/dataEn";
 import "./countries.css";
 import Popup from "../popup/Popup";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Countries = ({ english, modal, setModal }) => {
   const [northAm, setNorthAm] = useState(false);
@@ -14,6 +16,12 @@ const Countries = ({ english, modal, setModal }) => {
 
   const [data, setData] = useState([]);
   const [continentId, setContinentId] = useState();
+
+  useEffect(() => {
+    Aos.init({
+      duration: 2000,
+    });
+  }, []);
 
   const handleModal = async (id, e) => {
     e.preventDefault();
@@ -41,7 +49,11 @@ const Countries = ({ english, modal, setModal }) => {
   };
 
   return (
-    <div className="countries-container" id="exportation">
+    <section
+      className="countries-container"
+      id="exportation"
+      data-aos="fade-down-top"
+    >
       <div className="mt-5">
         <p className="h1 text-secondary">
           {english ? "We are in 40 countries" : "Llegamos a 40 países"}
@@ -188,7 +200,7 @@ const Countries = ({ english, modal, setModal }) => {
           />
         ) : null}
       </div>
-    </div>
+    </section>
   );
 };
 

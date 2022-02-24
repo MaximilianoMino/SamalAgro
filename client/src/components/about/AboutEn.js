@@ -1,9 +1,21 @@
-import React from "react";
+import { useEffect } from "react";
 import CountUp from "react-countup";
-
+import "./about.css";
+import Aos from "aos";
+import "aos/dist/aos.css";
 const AboutEn = () => {
+  useEffect(() => {
+    Aos.init({
+      duration: 2000,
+    });
+  }, []);
   return (
-    <div className="box">
+    <section
+      className="box"
+      data-aos="fade-right"
+      data-aos-offset="300"
+      data-aos-easing="ease-in-sine"
+    >
       <p className="produce_and_exports">
         Pulses and grains producers and exporters.
       </p>
@@ -51,7 +63,7 @@ const AboutEn = () => {
           <p className="about-descr">countries</p>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

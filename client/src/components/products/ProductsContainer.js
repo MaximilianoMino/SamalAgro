@@ -7,13 +7,13 @@ import ProductsEs from "./ProductsEs";
 
 const ProductsContainer = ({ english }) => {
   return (
-    <div>
+    <main>
       {english ? (
         <ProductsEn productsEn={dataEn.products} />
       ) : (
         <ProductsEs productsEs={dataEs.products} />
       )}
-    </div>
+    </main>
   );
 };
 

@@ -1,11 +1,17 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import SamalLogo from "../../assets/images/Landing/IMG_3697.PNG";
 import "./navbarmobile.css";
+import Aos from "aos";
+import "aos/dist/aos.css";
 const NavBarMobile = ({ setOpenToogle, english }) => {
   const [csoon, setCsoon] = useState(false);
-
+  useEffect(() => {
+    Aos.init({
+      duration: 1000,
+    });
+  }, []);
   return (
-    <nav className="nav-mobile-container">
+    <nav className="nav-mobile-container" data-aos="zoom-out-left">
       <div className="nav-mobile-header">
         <img
           className="mobile-samal-logo"
@@ -19,27 +25,56 @@ const NavBarMobile = ({ setOpenToogle, english }) => {
       </div>
       <div className="nav-mobile">
         <ul className="nav-mobile-ul">
-          <li className="nav-mobile-item">
+          <li
+            className="nav-mobile-item"
+            data-aos="zoom-in"
+            data-aos-easing="linear"
+            data-aos-duration="500"
+          >
             <a className="nav-mobile-link" href="#products">
               {english ? "Products" : "Productos"}
             </a>
           </li>
-          <li className="nav-mobile-item">
+          <li
+            className="nav-mobile-item"
+            data-aos="fade-left"
+            data-aos-anchor="#example-anchor"
+            data-aos-offset="500"
+            data-aos-duration="1000"
+          >
             <a className="nav-mobile-link" href="#propose">
               {english ? "Value prop" : "Propuesta de valor"}
             </a>
           </li>
-          <li className="nav-mobile-item">
+          <li
+            className="nav-mobile-item"
+            data-aos="fade-left"
+            data-aos-anchor="#example-anchor"
+            data-aos-offset="500"
+            data-aos-duration="1500"
+          >
             <a className="nav-mobile-link" href="#exportation">
               {english ? "Export" : "Exportación"}
             </a>
           </li>
-          <li className="nav-mobile-item">
+          <li
+            className="nav-mobile-item"
+            data-aos="fade-left"
+            data-aos-anchor="#example-anchor"
+            data-aos-offset="500"
+            data-aos-duration="2000"
+          >
             <a className="nav-mobile-link" href="#contact">
               {english ? "Contact" : "Contacto"}{" "}
             </a>
           </li>{" "}
-          <li className="nav-mobile-item">
+          <li
+            className="nav-mobile-item"
+            data-aos="fade-left"
+            data-aos-anchor="#example-anchor"
+            data-aos-offset="500"
+            data-aos-duration="2500"
+          >
             <a
               className="nav-mobile-link"
               href="#2"

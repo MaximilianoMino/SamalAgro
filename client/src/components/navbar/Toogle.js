@@ -1,10 +1,17 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import ToogleIcon from "../../assets/Iconos/burguer-toogle.png";
 import "./navbar.css";
 import NavBarMobile from "./NavBarMobile";
-
+import Aos from "aos";
+import "aos/dist/aos.css";
 const Toogle = ({ english, SamalLogo, handleLanguage }) => {
   const [openToogle, setOpenToogle] = useState(false);
+
+  useEffect(() => {
+    Aos.init({
+      duration: 2000,
+    });
+  }, []);
 
   const handleToogle = (e) => {
     try {
@@ -18,7 +25,7 @@ const Toogle = ({ english, SamalLogo, handleLanguage }) => {
     }
   };
   return (
-    <div className="burguer-toogle">
+    <div className="burguer-toogle" data-aos="fade-left">
       <div className="">
         <img
           className="samal-logo"
