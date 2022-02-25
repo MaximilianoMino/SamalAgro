@@ -1,22 +1,87 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+html,
+body,
+div,
+span,
+plet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+ction,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    font-family: inherit;
+}
+
 .App {
-  background-color: white;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 18px;
-  text-align: center;
-  overflow: hidden;
-  font-family: "Roboto", Helvetica, sans-serif;
+    background-color: white;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: center;
+    overflow: hidden;
+    font-family: "Roboto", Helvetica, sans-serif;
 }
 
 .bg-danger,
 .btn-danger {
-  background: #c71d0e !important;
+    background: #c71d0e !important;
 }
+
 .bg-secondary {
-  background: rgb(197, 194, 194) !important;
+    background: rgb(197, 194, 194) !important;
 }
 
 .border-danger {
-  border-bottom: 2px solid #c71d0e !important;
+    border-bottom: 2px solid #c71d0e !important;
 }

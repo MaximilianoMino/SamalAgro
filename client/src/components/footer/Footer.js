@@ -10,9 +10,8 @@ const Footer = ({ english }) => {
       duration: 2000,
     });
   }, []);
-
   return (
-    <footer className="footer-container" data-aos="fade-left">
+    <footer className="footer-container" data-aos="zoom-in">
       <div className="footer-logo">
         <a href="#header">
           <img
@@ -26,7 +25,7 @@ const Footer = ({ english }) => {
       <div className="footer-text">
         {english ? (
           <strong>
-            <small>&copy; 2022 SamalAgro. All rights reserved.</small>
+            <small>&copy; 2022 SamalAgro. All rights reserved .</small>
           </strong>
         ) : (
           <strong>
