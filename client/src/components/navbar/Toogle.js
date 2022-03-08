@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import ToogleIcon from "../../assets/Iconos/burguer-toogle.png";
+import ToogleIcon from "../../assets/Iconos/burguer-toogle.WebP";
 import "./navbar.css";
 import NavBarMobile from "./NavBarMobile";
 import Aos from "aos";

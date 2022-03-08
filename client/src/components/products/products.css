@@ -9,7 +9,7 @@
 }
 
 .products-container::before {
-    background-image: url("../../assets/images/Landing/Grit11-byGhostlyPixels.png");
+    background-image: url("../../assets/images/Landing/Grit11-byGhostlyPixels.WebP");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 0;
@@ -145,7 +145,7 @@
     }
     .products-icons {
         width: 23.6px;
-        height: 37.4px;
+        height: 32.4px;
         padding-top: 0.1em;
     }
 }

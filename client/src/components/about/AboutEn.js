@@ -32,7 +32,6 @@ const AboutEn = () => {
       </div>
       <div className="numbers-container">
         <div>
-          {" "}
           <p className="about-numbers">
             +<CountUp end={17000} />
           </p>
@@ -49,14 +48,12 @@ const AboutEn = () => {
           </p>
         </div>
         <div>
-          {" "}
           <p className="about-numbers">
             <CountUp end={12} />
           </p>
           <p className="about-descr">products</p>
-        </div>{" "}
+        </div>
         <div>
-          {" "}
           <p className="about-numbers">
             <CountUp end={40} />
           </p>

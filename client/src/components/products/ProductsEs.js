@@ -1,9 +1,9 @@
 import "./products.css";
 import useDraggableScroll from "use-draggable-scroll";
-import quality from "../../assets/Iconos/calidad.png";
-import availability from "../../assets/Iconos/disponibilidad.png";
-import standard from "../../assets/Iconos/normas.png";
-import packaging from "../../assets/Iconos/packaging.png";
+import quality from "../../assets/Iconos/calidad.WebP";
+import availability from "../../assets/Iconos/disponibilidad.WebP";
+import standard from "../../assets/Iconos/normas.WebP";
+import packaging from "../../assets/Iconos/packaging.WebP";
 import { useEffect, useRef } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -66,8 +66,8 @@ const ProductsEs = ({ productsEs }) => {
                       src={`${availability}`}
                       alt="samal-availability-icon"
                     />
-                    <p class="Calidad-No-1-Processing-Manufacturing">
-                      <span class="text-style-1">
+                    <p className="Calidad-No-1-Processing-Manufacturing">
+                      <span className="text-style-1">
                         Disponibilidad a nueva cosecha:
                       </span>
                       <br /> {product.description.availability}
@@ -80,8 +80,8 @@ const ProductsEs = ({ productsEs }) => {
                       src={`${packaging}`}
                       alt="packaging-icon"
                     />
-                    <p class="Calidad-No-1-Processing-Manufacturing">
-                      <span class="text-style-1">Packaging:</span>
+                    <p className="Calidad-No-1-Processing-Manufacturing">
+                      <span className="text-style-1">Packaging:</span>
                       <br /> {product.description.packaging}
                     </p>
                   </li>
@@ -92,8 +92,8 @@ const ProductsEs = ({ productsEs }) => {
                       src={`${standard}`}
                       alt="samal-standard-icon"
                     />
-                    <p class="Calidad-No-1-Processing-Manufacturing">
-                      <span class="text-style-1">Normas de calidad:</span>
+                    <p className="Calidad-No-1-Processing-Manufacturing">
+                      <span className="text-style-1">Normas de calidad:</span>
                       <br /> {product.description.quality_standard}
                     </p>
                   </li>

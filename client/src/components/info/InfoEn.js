@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import "./info.css";
-import spoon from "../../assets/images/Landing/mung-beans-in-wood-spoon-isolated-on-white-2021-09-03-21-53-02-utc.png";
+import spoon from "../../assets/images/Landing/mung-beans-in-wood-spoon-isolated-on-white-2021-09-03-21-53-02-utc.WebP";
 import Aos from "aos";
 import "aos/dist/aos.css";
 

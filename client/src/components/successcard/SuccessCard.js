@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import "./succes.css";
-import check from "../../assets/Iconos/check.png";
+import check from "../../assets/Iconos/check.WebP";
 import Aos from "aos";
 import "aos/dist/aos.css";
 const SuccessCard = ({ english, setSuccessCard }) => {

@@ -1,10 +1,10 @@
 import "./products.css";
 import { useEffect, useRef } from "react";
 import useDraggableScroll from "use-draggable-scroll";
-import quality from "../../assets/Iconos/calidad.png";
-import availability from "../../assets/Iconos/disponibilidad.png";
-import standard from "../../assets/Iconos/normas.png";
-import packaging from "../../assets/Iconos/packaging.png";
+import quality from "../../assets/Iconos/calidad.WebP";
+import availability from "../../assets/Iconos/disponibilidad.WebP";
+import standard from "../../assets/Iconos/normas.WebP";
+import packaging from "../../assets/Iconos/packaging.WebP";
 import Aos from "aos";
 import "aos/dist/aos.css";
 const ProductsEn = ({ productsEn }) => {
@@ -23,10 +23,10 @@ const ProductsEn = ({ productsEn }) => {
       <div className="cards" ref={ref} onMouseDown={onMouseDown}>
         {productsEn.map((product, index) => {
           return (
-            <div class="card border-0 bg-transparent" key={index}>
-              <div class="card-body">
+            <div className="card border-0 bg-transparent" key={index}>
+              <div className="card-body">
                 <h5
-                  class="card-title mb-5"
+                  className="card-title mb-5"
                   data-aos="fade-zoom-in"
                   data-aos-easing="ease-in-back"
                   data-aos-delay="300"
@@ -51,8 +51,8 @@ const ProductsEn = ({ productsEn }) => {
                       src={`${quality}`}
                       alt="samal agro quality-icon"
                     />
-                    <p class="Calidad-No-1-Processing-Manufacturing">
-                      <span class="text-style-1">Quality:</span>
+                    <p className="Calidad-No-1-Processing-Manufacturing">
+                      <span className="text-style-1">Quality:</span>
                       <br /> {product.description.quality}
                     </p>
                   </li>
@@ -63,8 +63,8 @@ const ProductsEn = ({ productsEn }) => {
                       src={`${availability}`}
                       alt="samal agro availability-icon"
                     />
-                    <p class="Calidad-No-1-Processing-Manufacturing">
-                      <span class="text-style-1">
+                    <p className="Calidad-No-1-Processing-Manufacturing">
+                      <span className="text-style-1">
                         Availability of new crop:
                       </span>
                       <br /> {product.description.availability}
@@ -77,8 +77,8 @@ const ProductsEn = ({ productsEn }) => {
                       src={`${packaging}`}
                       alt="samal agro packaging-icon"
                     />
-                    <p class="Calidad-No-1-Processing-Manufacturing">
-                      <span class="text-style-1">Packaging:</span>
+                    <p className="Calidad-No-1-Processing-Manufacturing">
+                      <span className="text-style-1">Packaging:</span>
                       <br /> {product.description.packaging}
                     </p>
                   </li>
@@ -89,8 +89,8 @@ const ProductsEn = ({ productsEn }) => {
                       src={`${standard}`}
                       alt="samal agro standard-icon"
                     />
-                    <p class="Calidad-No-1-Processing-Manufacturing">
-                      <span class="text-style-1">Quality Standars:</span>
+                    <p className="Calidad-No-1-Processing-Manufacturing">
+                      <span className="text-style-1">Quality Standars:</span>
                       <br /> {product.description.quality_standard}
                     </p>
                   </li>

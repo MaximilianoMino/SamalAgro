@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import "./footer.css";
-import SamalFooter from "../../assets/images/Landing/samalfooter.png";
-import FacebookIcon from "../../assets/Iconos/facebook-icon.png";
+import SamalFooter from "../../assets/images/Landing/samalfooter.WebP";
+import FacebookIcon from "../../assets/Iconos/facebook-icon.WebP";
 import Aos from "aos";
 import "aos/dist/aos.css";
 const Footer = ({ english }) => {
@@ -40,7 +40,7 @@ const Footer = ({ english }) => {
           rel="noreferrer"
           target="_blank"
         >
-          <i class="bi footer-icon bi-instagram"></i>
+          <i className="bi footer-icon bi-instagram"></i>
         </a>{" "}
         <a
           className="anchor-footer"
@@ -60,7 +60,7 @@ const Footer = ({ english }) => {
           rel="noreferrer"
           target="_blank"
         >
-          <i class="bi footer-icon bi-whatsapp"></i>
+          <i className="bi footer-icon bi-whatsapp"></i>
         </a>
       </div>
     </footer>

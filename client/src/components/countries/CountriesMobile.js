@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import "../popup/popup.css";
 import useDraggableScroll from "use-draggable-scroll";
-import shipments from "../../assets/Iconos/envios_samal.png";
+import shipments from "../../assets/Iconos/envios_samal.WebP";
 import Aos from "aos";
 import "aos/dist/aos.css";
 const CountriesMobile = ({ english, data }) => {

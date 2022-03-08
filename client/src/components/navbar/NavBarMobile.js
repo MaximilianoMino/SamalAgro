@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import SamalLogo from "../../assets/images/Landing/IMG_3697.PNG";
+import SamalLogo from "../../assets/images/Landing/IMG_3697.WebP";
 import "./navbarmobile.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -16,8 +16,7 @@ const NavBarMobile = ({ setOpenToogle, english }) => {
         <img
           className="mobile-samal-logo"
           src={`${SamalLogo}`}
-          alt="SamalLogo"
-          loading="lazy"
+          alt="samal agro Logo"
         />
         <p className="mobile-close-btn" onClick={() => setOpenToogle(false)}>
           X
@@ -109,7 +108,7 @@ const NavBarMobile = ({ setOpenToogle, english }) => {
             rel="noreferrer"
             target="_blank"
           >
-            <i class="bi nav-mobile-icon bi-facebook"></i>
+            <i className="bi nav-mobile-icon bi-facebook"></i>
           </a>
           <a
             className="anchor-nav-mobile"
@@ -117,7 +116,7 @@ const NavBarMobile = ({ setOpenToogle, english }) => {
             rel="noreferrer"
             target="_blank"
           >
-            <i class="bi nav-mobile-icon bi-instagram"></i>
+            <i className="bi nav-mobile-icon bi-instagram"></i>
           </a>
           <a
             className="anchor-nav-mobile"
@@ -125,7 +124,7 @@ const NavBarMobile = ({ setOpenToogle, english }) => {
             rel="noreferrer"
             target="_blank"
           >
-            <i class="bi nav-mobile-icon bi-whatsapp"></i>
+            <i className="bi nav-mobile-icon bi-whatsapp"></i>
           </a>
         </div>
 

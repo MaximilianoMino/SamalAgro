@@ -50,8 +50,8 @@ const Contact = ({ english, setSuccessCard }) => {
     }
   };
   return (
-    <section id="contact" className="contact-container" data-aos="zoom-in">
-      <div className="form-container">
+    <section id="contact" className="contact-container">
+      <div className="form-container" data-aos="zoom-in">
         {english ? (
           <div>
             <p className="form-title">Contact us</p>
@@ -71,8 +71,8 @@ const Contact = ({ english, setSuccessCard }) => {
         )}
 
         <form id="contactForm" onSubmit={handleSubmit(onSubmit)}>
-          <div class="mb-3">
-            <label class="form-label" htmlFor="name"></label>
+          <div className="mb-3">
+            <label className="form-label" htmlFor="name"></label>
             <input
               id="name"
               type="text"
@@ -85,7 +85,7 @@ const Contact = ({ english, setSuccessCard }) => {
             />
           </div>
 
-          <div class="mb-3">
+          <div className="mb-3">
             <label className="form-label" htmlFor="emailAddress"></label>
             <input
               id="email"
@@ -97,8 +97,8 @@ const Contact = ({ english, setSuccessCard }) => {
             />
           </div>
 
-          <div class="mb-3">
-            <label class="form-label" htmlFor="message"></label>
+          <div className="mb-3">
+            <label className="form-label" htmlFor="message"></label>
             <textarea
               id="message"
               className={`form-control ${errors.message && "error"}`}
@@ -110,7 +110,7 @@ const Contact = ({ english, setSuccessCard }) => {
             ></textarea>
           </div>
 
-          <div class="d-grid">
+          <div className="d-grid">
             {english ? (
               <input
                 className="btn  btn-contact w-25"

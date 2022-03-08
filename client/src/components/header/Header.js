@@ -2,8 +2,8 @@ import { useEffect, useState } from "react";
 
 import AboutEs from "../about/AboutEs";
 import NavBar from "../navbar/NavBar";
-import video from "../../assets/videos/Samal_fragmento_7.mp4";
-import imgBg from "../../assets/images/Landing/5.jpg";
+import video from "../../assets/videos/Samal_fragmento_7.WebM";
+import imgBg from "../../assets/images/Landing/5.WebP";
 import "./header.css";
 import AboutEn from "../about/AboutEn";
 
@@ -26,7 +26,12 @@ const Header = ({ handleLanguage, english }) => {
           <div></div>
         </div>
       ) : null}
-      <img src={imgBg} alt="Samal agro man seeding" className="imgBg" />
+      <img
+        src={imgBg}
+        alt="Samal agro man seeding"
+        className="imgBg"
+        loading="lazy"
+      />
       <video className="videoTag" src={video} autoPlay loop muted></video>
     </div>
   );

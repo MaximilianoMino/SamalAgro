@@ -1,6 +1,6 @@
 import React from "react";
 import "./popup.css";
-import shipments from "../../assets/Iconos/envios_samal.png";
+import shipments from "../../assets/Iconos/envios_samal.WebP";
 
 const Popup = ({
   data,
@@ -72,7 +72,6 @@ const Popup = ({
                     className="popup-icons"
                     src={`${shipments}`}
                     alt="samal-availability-icon"
-                    loading="lazy"
                   />
                   <div className="ms-3 me-5 text-start d-flex flex-column">
                     <p className="popup-info-number">

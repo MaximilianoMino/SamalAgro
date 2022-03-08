@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./navbar.css";
-import SamalLogo from "../../assets/images/Landing/IMG_3697.PNG";
-import ClientIcon from "../../assets/Iconos/clientes.png";
+import SamalLogo from "../../assets/images/Landing/IMG_3697.WebP";
+import ClientIcon from "../../assets/Iconos/clientes.WebP";
 import Toogle from "./Toogle";
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -35,8 +35,7 @@ const NavBar = ({ handleLanguage, english }) => {
             <img
               className="samal-logo"
               src={`${SamalLogo}`}
-              alt="SamalLogo"
-              loading="lazy"
+              alt="samal agro Logo"
             />
           </div>
           <div className="nav-middle">
@@ -63,7 +62,7 @@ const NavBar = ({ handleLanguage, english }) => {
                   </a>
                 )}
               </li>
-              <li class="nav-item">
+              <li className="nav-item">
                 {english ? (
                   <a className="nav-link" href="#propose">
                     Value prop
@@ -74,7 +73,7 @@ const NavBar = ({ handleLanguage, english }) => {
                   </a>
                 )}
               </li>
-              <li class="nav-item">
+              <li className="nav-item">
                 {english ? (
                   <a className="nav-link" href="#exportation">
                     Exportation
@@ -115,7 +114,7 @@ const NavBar = ({ handleLanguage, english }) => {
                   </span>
                 </a>
               </li>
-              <li class="nav-item">
+              <li className="nav-item">
                 <a
                   className="nav-link"
                   onClick={(e) => handleLanguage("en", e)}
@@ -132,11 +131,12 @@ const NavBar = ({ handleLanguage, english }) => {
               </li>
 
               {english ? (
-                <li class="nav-item d-flex">
-                  <span
-                    onMouseOver={() => setCsoon(true)}
-                    onMouseLeave={() => setCsoon(false)}
-                  >
+                <li
+                  className="nav-item d-flex"
+                  onMouseOver={() => setCsoon(true)}
+                  onMouseLeave={() => setCsoon(false)}
+                >
+                  <span>
                     <img
                       className="client-icon"
                       src={`${ClientIcon}`}
@@ -147,14 +147,17 @@ const NavBar = ({ handleLanguage, english }) => {
                   <p className={`nav-link ${csoon ? "invisible" : null}`}>
                     Clients
                   </p>{" "}
-                  {csoon ? <span class="nav-feature">Coming Soon</span> : null}
+                  {csoon ? (
+                    <span className="nav-feature">Coming Soon</span>
+                  ) : null}
                 </li>
               ) : (
-                <li class="nav-item d-flex">
-                  <span
-                    onMouseOver={() => setCsoon(true)}
-                    onMouseLeave={() => setCsoon(false)}
-                  >
+                <li
+                  class="nav-item d-flex"
+                  onMouseOver={() => setCsoon(true)}
+                  onMouseLeave={() => setCsoon(false)}
+                >
+                  <span>
                     <img
                       className="client-icon"
                       src={`${ClientIcon}`}
@@ -165,7 +168,9 @@ const NavBar = ({ handleLanguage, english }) => {
                   <p className={`nav-link ${csoon ? "invisible" : null}`}>
                     Clientes
                   </p>
-                  {csoon ? <span class="nav-feature">Proximamente</span> : null}
+                  {csoon ? (
+                    <span className="nav-feature">Proximamente</span>
+                  ) : null}
                 </li>
               )}
             </ul>
