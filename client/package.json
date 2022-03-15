@@ -24,7 +24,7 @@
     },
     "scripts": {
         "start": "serve -s build",
-        "prestart": "sudo npm install -g serve",
+        "prestart": "npm install -g serve",
         "local": "react-scripts start",
         "build": "react-scripts build",
         "test": "react-scripts test --env=jsdom",
