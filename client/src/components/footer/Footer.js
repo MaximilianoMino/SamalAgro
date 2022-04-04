@@ -11,7 +11,7 @@ const Footer = ({ english }) => {
     });
   }, []);
   return (
-    <footer className="footer-container" data-aos="zoom-in">
+    <footer className="footer-container">
       <div className="footer-logo">
         <a href="#header">
           <img

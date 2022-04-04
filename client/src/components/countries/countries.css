@@ -81,13 +81,25 @@
     margin-left: -9.8rem;
 }
 
+.north-america>span.en {
+    margin-left: -7.8rem;
+}
+
 .caribbean>span {
-    margin-top: -0.4em;
+    margin-top: -0.35em;
     margin-left: -15rem;
+}
+
+.caribbean>span.en {
+    margin-left: -17rem;
 }
 
 .south-america>span {
     margin-left: -8.8rem;
+}
+
+.south-america>span.en {
+    margin-left: -8rem;
 }
 
 .europe>span {
@@ -95,7 +107,7 @@
 }
 
 .asia>span {
-    margin-left: -2.6rem;
+    margin-left: -2.3rem;
 }
 
 .africa>span {

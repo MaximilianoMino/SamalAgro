@@ -72,11 +72,13 @@ const Countries = ({ english, modal, setModal }) => {
         >
           <span
             onClick={(e) => handleModal(0, e)}
-            className={` ${northAm && !modal ? "visible" : "invisible"}`}
+            className={` ${northAm && !modal ? "visible" : "invisible"} ${
+              english ? "en" : ""
+            }`}
           >
             {english ? "NORTH AMÉRICA" : "AMÉRICA DEL NORTE"}
-          </span>{" "}
-        </div>{" "}
+          </span>
+        </div>
         {modal && continentId === 0 ? (
           <Popup
             data={data}
@@ -94,7 +96,9 @@ const Countries = ({ english, modal, setModal }) => {
         >
           <span
             onClick={(e) => handleModal(2, e)}
-            className={` ${southAm && !modal ? "visible" : "invisible"}`}
+            className={` ${southAm && !modal ? "visible" : "invisible"} ${
+              english ? "en" : ""
+            }`}
           >
             {english ? "SOUTH AMÉRICA" : "AMÉRICA DEL SUR"}{" "}
           </span>
@@ -116,7 +120,9 @@ const Countries = ({ english, modal, setModal }) => {
         >
           <span
             onClick={(e) => handleModal(1, e)}
-            className={` ${caribbean && !modal ? "visible" : "invisible"}`}
+            className={` ${caribbean && !modal ? "visible" : "invisible"} ${
+              english ? "en" : ""
+            }`}
           >
             {english
               ? "CENTRAL AMÉRICA AND CARIBBEAN"

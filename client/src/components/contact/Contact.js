@@ -72,42 +72,46 @@ const Contact = ({ english, setSuccessCard }) => {
 
         <form id="contactForm" onSubmit={handleSubmit(onSubmit)}>
           <div className="mb-3">
-            <label className="form-label" htmlFor="name"></label>
             <input
               id="name"
               type="text"
               name="name"
               className={`form-control ${errors.name && "error"}`}
-              placeholder={`${
-                english ? "Name and Surname" : "Nombre y apellido"
-              }`}
+              placeholder=" "
               {...register("name", { required: true })}
-            />
+            />{" "}
+            <label className="form-label" htmlFor="name">
+              {english ? "Name and Surname" : "Nombre y apellido"}
+            </label>
           </div>
 
           <div className="mb-3">
-            <label className="form-label" htmlFor="emailAddress"></label>
             <input
               id="email"
               type="email"
               className={`form-control ${errors.email && "error"}`}
               name="email"
-              placeholder="Email"
+              placeholder=" "
               {...register("email", { required: true })}
-            />
+            />{" "}
+            <label className="form-label" htmlFor="email">
+              Email
+            </label>
           </div>
 
           <div className="mb-3">
-            <label className="form-label" htmlFor="message"></label>
             <textarea
               id="message"
-              className={`form-control ${errors.message && "error"}`}
+              className={`form-control textarea ${errors.message && "error"}`}
               name="message"
               type="text"
               {...register("message", { required: true })}
-              placeholder={`${english ? "Message" : "Mensaje"}`}
+              placeholder=" "
               rows="5"
-            ></textarea>
+            ></textarea>{" "}
+            <label className="form-label" htmlFor="message">
+              {english ? "Message" : "Mensaje"}
+            </label>
           </div>
 
           <div className="d-grid">
