@@ -1,0 +1,343 @@
+.modal-container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-height: 550px;
+    width: 100%;
+    max-width: 550px;
+    min-width: 320px;
+    z-index: 9999;
+    background: rgb(255, 255, 255);
+    border-radius: 0.625rem;
+    opacity: 0;
+    animation: fade-in-animation .6s ease-in forwards;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.modal-wrapp {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    left: 0;
+    width: 100%;
+}
+
+@keyframes fade-in-animation {
+    from {
+      opacity: 0;
+      top: -5em;
+    }
+    to {
+      opacity: 1;
+      top: 50%;
+    }
+  }
+
+.modal-header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border: none;
+}
+
+.modal-title {
+    font-weight: 500;
+    font-size: 1.9rem;
+    font-family: "Roboto";
+    color: rgb(59, 59, 59);
+    height: 35px;
+}
+
+.modal-close-btn{
+    position: absolute;
+    color: #000;
+    right: 1em;
+    top: 1em;
+    font-size: 1.2rem;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+
+.modal-form-container {
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+.modal-form-control{
+    width: 90%;
+    position: relative;
+    margin: auto;
+    margin-top: .2em;
+}
+
+.input-form-control {
+    padding: 0.5em;
+    padding-left: 1em;
+    min-width: 100%;
+    margin-top: 1.2em;
+    height: 30px !important;
+    border: none !important;
+    border-radius: 0 !important;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.8);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25) !important;
+
+}
+.input-form-control:focus {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.25) !important; 
+    outline: none;
+    box-shadow: none
+}
+
+.input-form-control[name="description"] {
+    height: 60px !important;
+    padding-top: .4em;
+    resize: none;
+}
+
+.input-form-control[name="description"] + .modal-label {
+    top: 1.5em;
+}
+
+.modal-label {
+    position: absolute;
+    top: 50%;
+    left: 1em;
+    pointer-events: none;
+    transition: all 0.3s;
+    transform-origin: top left;
+    font-size: 0.9rem;
+    color: rgba(0, 0, 0, 0.6);
+    transform: translateY(0%);
+}
+
+
+.modal-label span {
+    color: #C6261E;
+}
+
+.input-form-control:focus + .modal-label,
+.input-form-control:not(:placeholder-shown) + .modal-label {
+    transform: translateY(-100%) scale(0.90);
+}
+
+.select-focused {
+    transform: translateY(-110%) scale(0.90) !important;
+}
+
+.modal-btn-container {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    margin-top: 3em;
+    margin-bottom: 1.5em;
+}
+
+.modal-btn {
+    all: unset;
+    background: #C6261E;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 5px;
+    letter-spacing: 0.07em;
+    font-size: 1em;
+    font-family: "Roboto";
+    font-weight: 300;
+    width: 250px;
+    height: 30px;
+}
+
+.modal-btn:hover {
+    opacity: 0.95;
+}
+
+select {
+    background: #fff !important;
+    color: rgba(0, 0, 0, 0.6) !important;
+    font-size: 0.8125rem !important;
+
+}
+.custom-select__control {
+    width: 100%;
+    margin-top: .6em;
+    background: #fff !important;
+    border: none !important;
+    border-radius: 0 !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25) !important;
+    box-shadow: none !important;
+}
+
+.custom-select__options {
+    display: flex;
+    border: none !important;
+    align-items: center;
+    margin-top: .6em;
+
+}
+
+.custom-select__options__flag{
+    width: 22px;
+    height: 20px;
+    border-radius: 50%;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.3));
+}
+.custom-select__options__label {
+    font-size: .9em;
+    color: rgba(0, 0, 0, 0.8);
+    margin-left: .5em;
+    text-transform: lowercase;
+    font-family: "Roboto", sans-serif;
+
+}
+
+.custom-select__options__label:first-letter {
+    text-transform: capitalize;
+
+}
+
+
+/* Errors handle */
+.modal-error-line {
+    border-bottom: 2px solid #dd403591 !important;
+}
+.modal-error-line:focus {
+    border-bottom: 2px solid #dd403591 !important;
+}
+
+.modal-required-fields {
+    bottom: 5em;
+    font-size: .9em;
+    position: absolute;
+    color: rgba(0, 0, 0, 0.658);
+    left: 2.3em;
+}
+.modal-required-fields span {
+    color:#C6261E;
+}
+
+.modal-error-text {
+    font-family: "Roboto";
+    font-size: .85em;
+    position: absolute;
+    left: 1em;
+    bottom: -1.3em;
+    color: #C6261E;
+}
+
+.dropzone {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-top: 1em;
+    justify-content: center;
+    align-content: center;
+    border: 1px rgba(0, 0, 0, 0.3) dashed;
+    padding: .6em; 
+}
+
+.dropzone:hover {
+    cursor: pointer;
+}
+
+.file-up-icon {
+    color: rgba(0, 0, 0, 0.342);
+    font-size: 2.5em;
+    margin: auto;
+}
+
+.file-up-text {
+    color: rgba(0, 0, 0, 0.459);
+    font-size: .85em;
+    padding: 0;
+    margin-bottom: 0;
+    margin-top: .2em;
+}
+
+.file-up__name-list {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    margin: auto;
+    list-style: none;
+    color: rgba(0, 0, 0, 0.589);
+}
+
+.file-up__close__icon {
+    position: absolute;
+    margin-left: .6em;
+    cursor: pointer;
+    width: 14px;
+}
+@media (min-width: 768px) {
+
+    .modal-form-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 90%;
+    }
+ 
+    .modal-form-control {
+        grid-column: span 1;
+        margin-bottom: .2em;
+        margin-top: .6em;
+    }
+
+    .large-input-control {
+        grid-column: span 2;
+        min-width: 480px;
+    }
+    
+    .input-form-control{
+        width: 230px !important;
+    }
+     
+    .custom-file-input {
+        grid-column: span 2;
+        
+    }
+
+    select {
+        background: #fff;
+        color: rgba(0, 0, 0, 0.6) !important;
+        font-size: 0.8125rem !important;
+    }
+    
+    .modal-btn-container {
+        grid-column: span 2;
+        margin-bottom: 3em;
+        margin-top: 3em;
+    }
+    .custom-select__control {
+        width: 230px;
+    }
+
+    .dropzone {
+        grid-column: span 2;
+        min-width: 480px;
+        margin-top: 1em !important;
+        margin: auto;
+    }
+    .modal-required-fields {
+        margin-top: .5em;
+        font-size: .9em;
+        position: absolute;
+        bottom: 7em;
+        color: rgba(0, 0, 0, 0.658);
+        left: 1em;
+    }
+}
+
+

@@ -22,7 +22,7 @@ const CountriesContainer = ({ english }) => {
     // this is the cleanup function to remove the listener
     return () => mediaQuery.removeEventListener("change", setMQuery);
   }, [english]);
-  console.log(data.scope);
+  
   return (
     <div>
       {mQuery && !mQuery.matches ? (

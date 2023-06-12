@@ -5,11 +5,13 @@ import dataEn from "./api/dataEn";
 import Header from "./components/header/Header";
 import Propose from "./components/propose/Propose";
 import Footer from "./components/footer/Footer";
-import Contact from "./components/contact/Contact";
 import ProductsContainer from "./components/products/ProductsContainer";
 import InfoContainer from "./components/info/InfoContainer";
 import SuccessCard from "./components/successcard/SuccessCard";
 import CountriesContainer from "./components/countries/CountriesContainer";
+import Contact from "./components/contact/Contact";
+import MyPDF from "./components/contact/pdf/MyPDF";
+import { PDFViewer } from "@react-pdf/renderer";
 
 function App() {
   const [english, setEnglish] = useState(false);
@@ -54,6 +56,7 @@ function App() {
 
           <Contact english={english} setSuccessCard={setSuccessCard} />
           <Footer english={english} />
+
         </div>
       )}
     </div>

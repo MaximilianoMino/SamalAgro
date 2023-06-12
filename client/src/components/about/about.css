@@ -1,7 +1,7 @@
 .box {
-    z-index: 1000;
+    z-index: -10;
     position: relative;
-    background: rgba(223, 223, 223, 0.1);
+    background: rgba(92, 92, 92, 0.178);
     -webkit-backdrop-filter: blur(11.9px);
     backdrop-filter: blur(11.9px);
     border-radius: 10px;
@@ -118,6 +118,10 @@
     .btn-container {
         margin: 2em 0 2em 2.8em;
     }
+    .numbers-container{
+        display: flex;
+        flex-wrap: wrap;
+    }
     .about-numbers {
         font-size: 2em;
         line-height: 1;
@@ -154,16 +158,19 @@
         width: 160px !important;
         box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.4);
     }
-    .numbers-container {
-        justify-content: space-around;
-        margin: auto;
-        flex-wrap: wrap;
-        width: 230px;
+   
+    .numbers-content {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 35%;
     }
     .about-numbers {
+        margin: auto;
         font-size: 1.6em;
+        text-align: center;
     }
     .about-descr {
+        text-align: center;
         margin-top: 0.1em;
         font-size: 0.7rem;
         color: #fff;
@@ -196,12 +203,7 @@
         min-width: 100%;
         box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.4);
     }
-    .numbers-container {
-        justify-content: space-around;
-        margin: auto;
-        flex-wrap: wrap;
-        width: 220px;
-    }
+   
     .about-numbers {
         font-size: 1.6em;
     }

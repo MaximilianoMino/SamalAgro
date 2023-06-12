@@ -54,8 +54,8 @@ const ProductsEs = ({ productsEs }) => {
                       src={`${quality}`}
                       alt="samal agro quality-icon"
                     />
-                    <p class="Calidad-No-1-Processing-Manufacturing">
-                      <span class="text-style-1">Calidad:</span>
+                    <p className="Calidad-No-1-Processing-Manufacturing">
+                      <span className="text-style-1">Calidad:</span>
                       <br /> {product.description.quality}
                     </p>
                   </li>

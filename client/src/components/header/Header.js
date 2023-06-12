@@ -2,8 +2,6 @@ import { useEffect, useState } from "react";
 
 import AboutEs from "../about/AboutEs";
 import NavBar from "../navbar/NavBar";
-import video from "../../assets/videos/Samal_fragmento_7.WebM";
-import imgBg from "../../assets/images/Landing/5.WebP";
 import "./header.css";
 import AboutEn from "../about/AboutEn";
 
@@ -27,12 +25,12 @@ const Header = ({ handleLanguage, english }) => {
         </div>
       ) : null}
       <img
-        src={imgBg}
+        src="https://res.cloudinary.com/dpwdm3ip1/image/upload/v1686603532/home/landing/web/5_grdhj1.jpg"
         alt="Samal agro man seeding"
         className="imgBg"
         loading="lazy"
       />
-      <video className="videoTag" src={video} autoPlay loop muted></video>
+      <video className="videoTag" src="https://res.cloudinary.com/dpwdm3ip1/video/upload/v1686603760/home/landing/web/Samal_Agor_Inst-_2_euzk0a.mp4" autoPlay loop muted></video>
     </div>
   );
 };

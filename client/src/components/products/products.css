@@ -1,9 +1,9 @@
 .products-container {
     position: relative;
-    height: 700px;
+    height: 750px;
     width: 100%;
     z-index: 1;
-    margin: 2em auto;
+    padding-top: 2em;
     overflow: hidden;
     cursor: grab;
 }
@@ -12,23 +12,28 @@
     background-image: url("../../assets/images/Landing/Grit11-byGhostlyPixels.WebP");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: 50% 0;
     content: "";
     display: block;
     font-family: "Roboto";
     position: absolute;
     left: 0;
     top: 0;
-    height: 100%;
-    opacity: 0.14;
+    margin-top: 1em;
+    margin-bottom: -2em;
+    height: 730px;
+    opacity: 0.15;
     width: 100%;
-    animation: mymove 10s linear infinite;
+    animation: mymove 14s linear infinite;
     animation-delay: -5s;
+    animation-fill-mode: forwards;
+
 }
 
 @keyframes mymove {
-    100% {
-        background-position: center;
+    
+      100% {
+        transform: translateY(20px);
+        background-position: center center;      
     }
 }
 
@@ -96,7 +101,7 @@
 
 .list-item {
     text-align: start;
-    margin-top: -12px;
+    margin-top: -10px;
 }
 
 .Calidad-No-1-Processing-Manufacturing {
@@ -113,19 +118,21 @@
 
 .Calidad-No-1-Processing-Manufacturing .text-style-1 {
     font-weight: normal;
+
 }
 
 .products-icons {
     width: 27.6px;
-    height: 41.4px;
+    height: 35.4px;
     position: absolute;
-    padding: 3px 2px 7.8px 0.4px;
+    padding: 5px 2px 7.8px 0.4px;
 }
 
 @media only screen and (max-width: 600px) {
     .products-container {
         height: 100%;
     }
+
     .our-products {
         font-size: 2.3em;
         text-align: center;

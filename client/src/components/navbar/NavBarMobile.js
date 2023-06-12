@@ -1,8 +1,25 @@
 import React, { useState, useEffect } from "react";
-import SamalLogo from "../../assets/images/Landing/IMG_3697.WebP";
 import "./navbarmobile.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import { AiOutlineClose } from 'react-icons/ai';
+
+const social_media = [
+    {
+        icon: "bi-facebook",
+        go_to: "https://www.facebook.com/samalagro/"
+    },
+    {
+        icon: "bi-instagram",
+        go_to: "https://www.instagram.com/samalagro/?hl=es-la",
+    },
+    {
+        icon: "bi-whatsapp", 
+        go_to: "https://api.whatsapp.com/send?phone=543533503323&app=facebook&entry_point=page_cta&fbclid=IwAR2WWIYyNeHclXhpR0hmkKN1AHzofODxoXg4eWqqxk7OWLOPgBpIcJGaU_4"
+    }
+]
+
+
 const NavBarMobile = ({ setOpenToogle, english }) => {
   const [csoon, setCsoon] = useState(false);
   useEffect(() => {
@@ -10,17 +27,16 @@ const NavBarMobile = ({ setOpenToogle, english }) => {
       duration: 1000,
     });
   }, []);
+
   return (
     <nav className="nav-mobile-container" data-aos="zoom-out-left">
       <div className="nav-mobile-header">
         <img
           className="mobile-samal-logo"
-          src={`${SamalLogo}`}
+          src="https://res.cloudinary.com/dpwdm3ip1/image/upload/v1686603529/home/landing/web/IMG_3697_mwgpxj.png"
           alt="samal agro Logo"
         />
-        <p className="mobile-close-btn" onClick={() => setOpenToogle(false)}>
-          X
-        </p>
+        <AiOutlineClose className="mobile-close-btn" onClick={() => setOpenToogle(false)}/>
       </div>
       <div className="nav-mobile">
         <ul className="nav-mobile-ul">
@@ -66,7 +82,7 @@ const NavBarMobile = ({ setOpenToogle, english }) => {
             <a className="nav-mobile-link" href="#contact">
               {english ? "Contact" : "Contacto"}{" "}
             </a>
-          </li>{" "}
+          </li>
           <li
             className="nav-mobile-item"
             data-aos="fade-left"
@@ -81,71 +97,43 @@ const NavBarMobile = ({ setOpenToogle, english }) => {
             >
               {english ? "Clients" : "Clientes"}
             </a>
-            {csoon && english ? (
+            {csoon && 
               <span
                 className="nav-mobile-feature"
                 onClick={() => setCsoon(false)}
               >
-                Coming Soon
+               { english ? "Coming Soon" : "Proximamente" } 
               </span>
-            ) : null}
-            {csoon && !english ? (
-              <span
-                className="nav-mobile-feature"
-                onClick={() => setCsoon(false)}
-              >
-                Proximamente
-              </span>
-            ) : null}
+            }
           </li>
         </ul>
       </div>
       <div className="nav-mobile-footer">
         <div className="nav-mobile-icons">
-          <a
-            className="anchor-nav-mobile"
-            href="https://www.facebook.com/samalagro/"
-            rel="noreferrer"
-            target="_blank"
-          >
-            <i className="bi nav-mobile-icon bi-facebook"></i>
-          </a>
-          <a
-            className="anchor-nav-mobile"
-            href="https://www.instagram.com/samalagro/?hl=es-la"
-            rel="noreferrer"
-            target="_blank"
-          >
-            <i className="bi nav-mobile-icon bi-instagram"></i>
-          </a>
-          <a
-            className="anchor-nav-mobile"
-            href="https://api.whatsapp.com/send?phone=543533503323&app=facebook&entry_point=page_cta&fbclid=IwAR2WWIYyNeHclXhpR0hmkKN1AHzofODxoXg4eWqqxk7OWLOPgBpIcJGaU_4"
-            rel="noreferrer"
-            target="_blank"
-          >
-            <i className="bi nav-mobile-icon bi-whatsapp"></i>
-          </a>
+            { social_media.map( ( media, index ) => {
+              return (
+              <a 
+                className="anchor-nav-mobile"  
+                rel="noreferrer"
+                target="_blank" 
+                href={media.go_to}
+                key={index}
+                >
+                    <i className={`bi nav-mobile-icon ${media.icon}`}></i>
+                </a>
+              )
+            } )}
         </div>
 
-        {english ? (
           <div className="nav-mobile-copyright">
             <strong>
               <small>
-                &copy; 2022 SamalAgro.
-                <p>All rights reserved.</p>
-              </small>
-            </strong>{" "}
-          </div>
-        ) : (
-          <div className="nav-mobile-copyright">
-            <strong>
-              <small>
-                &copy; 2022 SamalAgro. <p>Todos los derechos reservados.</p>
+                &copy;  2022 SamalAgro.
+                <p> { english ? "All rights reserved." : "Todos los derechos reservados."}</p> 
               </small>
             </strong>
           </div>
-        )}
+       
       </div>
     </nav>
   );

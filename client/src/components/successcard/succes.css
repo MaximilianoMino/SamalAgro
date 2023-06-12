@@ -1,10 +1,10 @@
 .success-card-container {
-    background-image: url("../../assets/images/Landing/3.WebP");
+    background-image: url("https://res.cloudinary.com/dpwdm3ip1/image/upload/v1686603532/home/landing/web/3_kdmccm.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     font-family: roboto;
     background-position: center 35%;
-    height: 700px;
+    height: 100vh;
     margin: auto;
     position: relative;
     vertical-align: center;

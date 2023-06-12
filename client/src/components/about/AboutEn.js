@@ -31,31 +31,31 @@ const AboutEn = () => {
         </a>
       </div>
       <div className="numbers-container">
-        <div>
+        <div className="numbers-content">
           <p className="about-numbers">
-            +<CountUp end={17000} />
+            +<CountUp end={17000} duration={8}/>
           </p>
           <p className="about-descr">
             annual metrics <br /> tons
           </p>
         </div>
-        <div>
+        <div className="numbers-content">
           <p className="about-numbers">
-            +<CountUp end={1000} />
+            +<CountUp end={1000} duration={6}/>
           </p>
           <p className="about-descr">
             clients around <br /> the world
           </p>
         </div>
-        <div>
+        <div className="numbers-content">
           <p className="about-numbers">
-            <CountUp end={12} />
+            <CountUp end={12} duration={4}/>
           </p>
           <p className="about-descr">products</p>
         </div>
-        <div>
+        <div className="numbers-content">
           <p className="about-numbers">
-            <CountUp end={40} />
+            <CountUp end={40} duration={4}/>
           </p>
           <p className="about-descr">countries</p>
         </div>
