@@ -3,12 +3,12 @@ import { Controller } from 'react-hook-form'
 import PhoneInput from 'react-phone-input-2'
 import 'react-phone-input-2/lib/style.css'
 
-const PhonePickup = ({ register, errors, english, control}) => {
+const PhonePickup = ({ register, errors, english, control, consultStyle}) => {
 
 const preferredCountries = ['us','cn','ve', 'it', 'my']
 
   return (
-<div className='modal-form-control'>
+<div className={`modal-form-control ${consultStyle && consultStyle}`}>
     <Controller
         control={control}
         {...register("phone", { required: true, minLength: 3})}
@@ -34,9 +34,10 @@ const preferredCountries = ['us','cn','ve', 'it', 'my']
                 }}
                 containerStyle={{
                     marginTop: "1.34em",
+                    width: "100%"
                 }}
                 containerClass="modal-form-control"
-                inputClass={`input-form-control  ${errors.phone ? "modal-error-line" : null} `}
+                inputClass={`input-form-control ${errors.phone ? "modal-error-line" : null} `}
               
             /> )}
             />

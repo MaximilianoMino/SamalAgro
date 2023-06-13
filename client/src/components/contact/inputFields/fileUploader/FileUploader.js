@@ -40,9 +40,9 @@ const FileUploader = ({ english, control, selectedFiles, setSelectedFiles }) => 
         <Controller
         control={control}
         name="file"
-        render={({ field }) => (
-            <div {...getRootProps({ className: 'dropzone' })}>
-                <input {...getInputProps({...field, name:'file'})} />
+        render={() => (
+            <div {...getRootProps({ className: 'dropzone'})}>
+                <input {...getInputProps({ name:'file'})}/>
                 {fileItems.length > 0 ? <ul className='file-up__name-list'>{fileItems}</ul> : (
                 <>
                 <BsCloudUploadFill className='file-up-icon'/>

@@ -323,7 +323,10 @@ select {
     .custom-select__control {
         width: 230px;
     }
-
+    .consult-phone-picker {
+        grid-column: span 2 !important;
+        width: 100%;
+    }
     .dropzone {
         grid-column: span 2;
         min-width: 480px;

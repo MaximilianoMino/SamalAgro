@@ -1,9 +1,8 @@
 import React from 'react';
 import { Page, Text, Document, StyleSheet, View, Image, Font, Link } from '@react-pdf/renderer';
-import logo from '../../../assets/images/Landing/IMG_3697.WebP';
 import Roboto from 'assets/fonts/Roboto/Roboto-Regular.ttf'
 Font.register({ family: 'Roboto', src: Roboto, fontWeight: 'bold' });
-/*const formData = {
+/* const formData = {
     "fullname": "Some Client",
     "email": "someclient@gmail.com",
     "company": "Some Company",
@@ -27,20 +26,8 @@ Font.register({ family: 'Roboto', src: Roboto, fontWeight: 'bold' });
         "label": "ALUBIA",
         "flag": "/static/media/alubia-samal.545f9ebb4baff5049a08.WebP"
     },
-     "file": [
-        "https://res.cloudinary.com/dmrsdfpfm/image/upload/v1686465048/home/samal_agro/rarayqaghvo8rjmmrwog.jpg",
-        "https://res.cloudinary.com/dmrsdfpfm/image/upload/v1686465048/home/samal_agro/zrfskxb3aniubscz2rgy.png",
-        "https://res.cloudinary.com/dmrsdfpfm/image/upload/v1686465049/home/samal_agro/owmdmhemncdc1lwbj56v.jpg",
-        "https://res.cloudinary.com/dmrsdfpfm/image/upload/v1686465049/home/samal_agro/jgchbmjn46cqejq6sx2g.jpg",
-        "https://res.cloudinary.com/dmrsdfpfm/image/upload/v1686465048/home/samal_agro/suykaodd13luxj8ux0sw.jpg",
-        "https://res.cloudinary.com/dmrsdfpfm/image/upload/v1686465049/home/samal_agro/sv88v7wgq7f7xrnvao7f.jpg",
-        "https://res.cloudinary.com/dmrsdfpfm/image/upload/v1686465049/home/samal_agro/jgchbmjn46cqejq6sx2g.jpg",
-        "https://res.cloudinary.com/dmrsdfpfm/image/upload/v1686465048/home/samal_agro/suykaodd13luxj8ux0sw.jpg",
-        "https://res.cloudinary.com/dmrsdfpfm/image/upload/v1686465049/home/samal_agro/sv88v7wgq7f7xrnvao7f.jpg" 
-        
-    ]
-}*/
-const bgImg = "https://res.cloudinary.com/dpwdm3ip1/image/upload/v1686050911/Landing%20Page/WhatsApp_Image_2023-06-05_at_12.39.02_bkffez.jpg"
+     
+} */
 // Estilos
 const styles = StyleSheet.create({
   page: {
@@ -195,7 +182,7 @@ header_img: {
 });
 
 
-const MyPDF = ({  formData  }) => {
+const MyPDF = ({formData}) => {
 
 const titleReg = formData.province ? "Ventas" : (formData.destinity_country ? "Compra" : "Consulta")
 
@@ -203,7 +190,7 @@ const titleReg = formData.province ? "Ventas" : (formData.destinity_country ? "C
     <Document>
       <Page style={styles.page} wrap> 
         <View style={styles.header} bookmark="Encabezado">
-            <Image style={styles.header_img} src={bgImg}/>
+            <Image style={styles.header_img} src="https://res.cloudinary.com/dpwdm3ip1/image/upload/v1686661207/home/landing/web/campo_n2vwdp.jpg"/>
             <Image style={styles.logo} src="https://res.cloudinary.com/dpwdm3ip1/image/upload/v1686054146/Landing%20Page/SamalAgroLogoB_idytpc.png" />
             <View style={styles.header_user_info}>
                 <Text style={styles.header_user_info_text}>Usuario: {formData.email}</Text>
@@ -291,7 +278,7 @@ const titleReg = formData.province ? "Ventas" : (formData.destinity_country ? "C
         }
 
         <View style={styles.footer} bookmark="Footer"> 
-            <Image style={styles.header_img} src={bgImg} />
+            <Image style={styles.header_img} src="https://res.cloudinary.com/dpwdm3ip1/image/upload/v1686661207/home/landing/web/campo_n2vwdp.jpg" />
             <Image style={styles.logo} src="https://res.cloudinary.com/dpwdm3ip1/image/upload/v1686054146/Landing%20Page/SamalAgroLogoB_idytpc.png" />
             <View style={styles.footer_user_info}>
                 <Text style={styles.footer_user_info_text}>Buenos Aires 315 - 5940 Las Varillas, Cordoba. Argentina</Text>

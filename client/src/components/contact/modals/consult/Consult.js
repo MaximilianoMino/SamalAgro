@@ -7,6 +7,7 @@ const Consult = ({ english, setSuccessCard }) => {
 
      const { register, handleSubmit, errors, onSubmit, control } = useCustomForm(setSuccessCard);
 
+     const consultStyle = "consult-phone-picker"
   return (
     <form className='modal-form-container' onSubmit={handleSubmit(onSubmit)}>
         
@@ -36,7 +37,7 @@ const Consult = ({ english, setSuccessCard }) => {
             <label htmlFor="email" className="modal-label">Email <span>*</span></label>
         </div>
 
-        <PhonePickup register={register} errors={errors} english={english} control={control} />
+        <PhonePickup register={register} errors={errors} english={english} control={control} consultStyle={consultStyle}/>
     
         <div className='modal-form-control large-input-control'>
             <input type="text" id='company' className={`input-form-control large-input-control ${errors.company ? "modal-error-line" : null}`} placeholder=" " {...register("company", { required: true})}/>
