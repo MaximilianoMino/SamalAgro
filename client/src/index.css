@@ -1,15 +1,19 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 html,
 body {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
   max-width: 100%;
-  font-family: "Roboto", Helvetica, sans-serif;
+  font-family: "Roboto";
+
 }
 @media only screen and (max-width: 601px) {
   html {
     max-width: 600px;
     overflow-x: hidden;
   }
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url('./assets/fonts/Roboto/Roboto-Black.ttf') format('ttf');
 }

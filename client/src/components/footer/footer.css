@@ -3,10 +3,11 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  height: 120px;
+  height: 7.5rem;
   width: 100%;
+  padding-left: 2em;
+  padding-right: 2em;
   vertical-align: center;
-  padding: 0 7em 0 5em;
 }
 
 .footer-logo {
@@ -20,20 +21,21 @@
   cursor: pointer;
   margin: 0 0.2em 0 0.2em;
 }
-.facebook-icon {
-  width: 2.2em;
-}
+
 .footer-text {
   width: 100%;
-  justify-self: flex-start;
+  font-size: 1.17em;
+  text-align: center;
   align-self: center;
 }
 .footer-icons-container {
-  width: 20px;
+  width: 12.5rem;
   justify-content: space-around;
   display: flex;
   align-items: center;
 }
+
+
 .anchor-footer,
 .anchor-footer:link,
 .anchor-footer:visited,
@@ -49,6 +51,7 @@
     flex-direction: row;
     position: relative;
     width: 100%;
+    justify-content: space-around;
     align-items: center;
     padding: 0 0.4em 0 1em;
   }
@@ -64,43 +67,47 @@
   }
 
   .footer-icons-container {
-    width: 18%;
     margin-right: 0.4em;
     justify-content: space-around;
     display: flex;
     align-items: center;
     min-height: 100%;
+    width: 120px;
   }
-  .facebook-icon {
-    width: 1.6em;
-  }
+  
   .footer-text {
-    width: 100vmax;
     font-size: 0.8em;
-    text-align: start;
+    text-align: center;
     align-self: center;
   }
 }
 @media only screen and (max-width: 450px) {
   .footer-text {
-    width: 100vmax;
     font-size: 0.7em;
-    text-align: left;
+    text-align: center;
     align-self: center;
   }
-  .facebook-icon {
-    width: 1.1em;
-  }
+ 
   .footer-icon {
     font-size: 1.1em;
     margin: 0;
   }
 }
 @media only screen and (max-width: 323px) {
+    .footer-icons-container {
+        margin-right: 0.4em;
+        justify-content: space-around;
+        display: flex;
+        align-items: center;
+        min-height: 100%;
+        width: 3.75rem;
+      }
   .footer-text {
-    max-width: 30%;
-    font-size: 0.5em;
-    text-align: left;
+    max-width: 45%;
+    padding: 0;
+    margin: 0;
+    font-size: 0.6em;
+    text-align: center;
     align-self: center;
   }
 }

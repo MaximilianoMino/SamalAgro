@@ -1,10 +1,10 @@
 .success-card-container {
-    background-image: url("../../assets/images/Landing/3.WebP");
+    background-image: url("https://res.cloudinary.com/dpwdm3ip1/image/upload/q_auto:eco,f_auto/v1686603532/home/landing/web/3_kdmccm.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     font-family: roboto;
     background-position: center 35%;
-    height: 700px;
+    height: 100vh;
     margin: auto;
     position: relative;
     vertical-align: center;
@@ -12,20 +12,23 @@
 }
 
 .success-content-container {
+    padding-top: 3em;
+    position: relative;
     display: flex;
     flex-direction: column;
     background: #fff;
     height: 80%;
     margin: auto;
-    width: 40%;
+    width: 35em;
     margin-top: 5rem;
-    margin-left: 10rem;
+    margin-left: 5rem;
     padding-left: 5rem;
     border-radius: 5px;
 }
 
 .success-card-title {
-    font-size: 50px;
+    font-size: 3.125rem;
+    margin-top: .6em;
     font-weight: lighter;
     line-height: 1.14;
     text-align: left;
@@ -43,8 +46,10 @@
     width: 5rem;
 }
 
-.close-icon {
-    align-self: end;
+.success-card-close-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
     font-size: 1.5rem;
     margin: 2rem;
     cursor: pointer;
@@ -52,7 +57,7 @@
 
 @media only screen and (max-width: 768px) {
     .success-card-container {
-        background-image: url("../../assets/images/Landing/3.WebP");
+        background-image: url("https://res.cloudinary.com/dpwdm3ip1/image/upload/q_auto:eco,f_auto/v1686603532/home/landing/web/3_kdmccm.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center 35%;
@@ -69,10 +74,10 @@
         backdrop-filter: blur(11.9px);
         border-radius: 10px;
         height: 70%;
-        margin: 7em 3em 3em 3em;
+        margin: auto;
         padding: 3em;
         display: flex;
-        width: 100%;
+        max-width: 25em;
         border-radius: 7px;
         color: white;
     }
@@ -88,9 +93,5 @@
     .check-icon {
         width: 3rem;
         margin-top: 1em;
-    }
-    .close-icon {
-        font-size: 1rem;
-        margin: 0rem;
     }
 }

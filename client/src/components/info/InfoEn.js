@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import "./info.css";
-import spoon from "../../assets/images/Landing/mung-beans-in-wood-spoon-isolated-on-white-2021-09-03-21-53-02-utc.WebP";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
@@ -8,6 +7,7 @@ const InfoEn = () => {
   useEffect(() => {
     Aos.init({
       duration: 2000,
+      once: true
     });
   }, []);
   return (
@@ -16,7 +16,7 @@ const InfoEn = () => {
         <img
           className="article-img"
           data-aos="zoom-in"
-          src={`${spoon}`}
+          src="https://res.cloudinary.com/dpwdm3ip1/image/upload/v1686603530/home/landing/web/mung-beans-in-wood-spoon-isolated-on-white-2021-09-03-21-53-02-utc_iqhkfv.jpg"
           alt="samal-spoon"
           loading="lazy"
         />

@@ -31,14 +31,14 @@ const CountriesMobile = ({ english, data }) => {
       <div className="card-mobile" ref={ref} onMouseDown={onMouseDown}>
         {data.map((continent, index) => {
           return (
-            <div className="popup-container shadow-sm" key={index}>
-              <div className="shadow-sm popup-title">
-                <p>{continent.title}</p>
+            <div className="popup-container" key={index}>
+              <div className="popup-title">
+                <p className="popup-title-text">{continent.title}</p>
               </div>
               <div className="popup-body">
                 {continent.countries.map((country, index) => {
                   return (
-                    <div className="bg-white" key={index}>
+                    <div className="popup-body-wrap" key={index}>
                       <div className="popup-country">
                         <p className="">{country.country}</p>
                         <span>
@@ -69,12 +69,11 @@ const CountriesMobile = ({ english, data }) => {
                           </div>
                         </div>
                       </div>
-                      <hr></hr>
                     </div>
                   );
                 })}
               </div>
-              <span className="bg-white p-2"></span>
+              <span className="popup-padding-bottom"></span>
             </div>
           );
         })}{" "}

@@ -25,43 +25,37 @@ const Toogle = ({ english, SamalLogo, handleLanguage }) => {
     }
   };
   return (
-    <div className="burguer-toogle" data-aos="fade-left">
-      <div className="">
+    <div className="burguer-toogle" data-aos="zoom-in">
         <img
           className="samal-logo"
           src={`${SamalLogo}`}
           alt="SamalLogo"
           loading="lazy"
         />
-      </div>
-      <div className="lang-container">
-        <ul className="navbar-nav">
-          <li
-            className="lang"
+       <div className="navbar-lang">
+            <p
             onClick={(e) => handleLanguage("es", e)}
-            href="1"
-          >
-            <span
-              className={
-                !english ? "border-bottom bold-word  border-danger" : ""
-              }
             >
-              ESP
+            <span
+            className={
+            !english ? "active-lang" : ""
+            }
+            >
+            ESP
             </span>
-          </li>
-          <li
-            className="lang"
+            </p>
+            <p
             onClick={(e) => handleLanguage("en", e)}
-            href="1"
-          >
-            <span
-              className={english ? "border-bottom border-danger bold-word" : ""}
             >
-              ENG
+            <span
+            className={
+            english ? "active-lang" : ""
+            }
+            >
+            ENG
             </span>
-          </li>
-        </ul>{" "}
-      </div>
+            </p>
+        </div>
       <div>
         <img
           src={`${ToogleIcon}`}

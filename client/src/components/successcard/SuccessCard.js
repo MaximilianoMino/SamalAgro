@@ -3,6 +3,7 @@ import "./succes.css";
 import check from "../../assets/Iconos/check.WebP";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import { IoIosCloseCircleOutline } from "react-icons/io";
 const SuccessCard = ({ english, setSuccessCard }) => {
   useEffect(() => {
     Aos.init({
@@ -17,9 +18,9 @@ const SuccessCard = ({ english, setSuccessCard }) => {
     <section id="contact" className="success-card-container" data-aos="zoom-in">
       {english ? (
         <div className="success-content-container">
-          <i className="bi close-icon bi-x-circle" onClick={handleClose}></i>{" "}
+          <IoIosCloseCircleOutline className="success-card-close-icon" onClick={handleClose}/>
           <img src={`${check}`} className="check-icon" alt="success" />
-          <p className="success-card-title py-4">
+          <p className="success-card-title">
             Thanks for
             <br /> contact with us!
           </p>
@@ -30,18 +31,15 @@ const SuccessCard = ({ english, setSuccessCard }) => {
         </div>
       ) : (
         <div className="success-content-container">
-          {" "}
-          <i
-            className="bi close-icon bi-x-circle"
-            onClick={handleClose}
-          ></i>{" "}
+          <IoIosCloseCircleOutline className="success-card-close-icon" onClick={handleClose}/>
+
           <img
             src={`${check}`}
             className="check-icon"
             alt="samal-success"
             loading="lazy"
           />
-          <p className="success-card-title py-4">
+          <p className="success-card-title">
             ¡Gracias por
             <br /> contactarte con
             <br /> nosotros!
@@ -49,7 +47,7 @@ const SuccessCard = ({ english, setSuccessCard }) => {
           <p className="success-card-subtitle">
             Recibimos tu mensaje,
             <br /> en la brevedad tendrás una respuesta.
-          </p>{" "}
+          </p>
         </div>
       )}
     </section>
