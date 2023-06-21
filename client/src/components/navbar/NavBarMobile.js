@@ -3,18 +3,19 @@ import "./navbarmobile.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { AiOutlineClose } from 'react-icons/ai';
+import { BsFacebook, BsInstagram, BsWhatsapp } from "react-icons/bs";
 
 const social_media = [
     {
-        icon: "bi-facebook",
+        icon: <BsFacebook className="nav-mobile-icon"/>,
         go_to: "https://www.facebook.com/samalagro/"
     },
     {
-        icon: "bi-instagram",
+        icon: <BsInstagram className="nav-mobile-icon"/>,
         go_to: "https://www.instagram.com/samalagro/?hl=es-la",
     },
     {
-        icon: "bi-whatsapp", 
+        icon: <BsWhatsapp className="nav-mobile-icon"/>, 
         go_to: "https://api.whatsapp.com/send?phone=543533503323&app=facebook&entry_point=page_cta&fbclid=IwAR2WWIYyNeHclXhpR0hmkKN1AHzofODxoXg4eWqqxk7OWLOPgBpIcJGaU_4"
     }
 ]
@@ -33,7 +34,7 @@ const NavBarMobile = ({ setOpenToogle, english }) => {
       <div className="nav-mobile-header">
         <img
           className="mobile-samal-logo"
-          src="https://res.cloudinary.com/dpwdm3ip1/image/upload/v1686603529/home/landing/web/IMG_3697_mwgpxj.png"
+          src="https://res.cloudinary.com/dpwdm3ip1/image/upload/q_auto:eco,f_auto/v1686603529/home/landing/web/IMG_3697_mwgpxj.png"
           alt="samal agro Logo"
         />
         <AiOutlineClose className="mobile-close-btn" onClick={() => setOpenToogle(false)}/>
@@ -119,7 +120,7 @@ const NavBarMobile = ({ setOpenToogle, english }) => {
                 href={media.go_to}
                 key={index}
                 >
-                    <i className={`bi nav-mobile-icon ${media.icon}`}></i>
+                    {media.icon}
                 </a>
               )
             } )}

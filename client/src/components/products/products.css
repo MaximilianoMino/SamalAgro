@@ -9,7 +9,7 @@
 }
 
 .products-container::before {
-    background-image: url("../../assets/images/Landing/Grit11-byGhostlyPixels.WebP");
+    background-image: url("https://res.cloudinary.com/dpwdm3ip1/image/upload/q_auto:eco,f_auto/v1686603531/home/landing/web/Grit11-byGhostlyPixels_jijkts.png");
     background-size: cover;
     background-repeat: no-repeat;
     content: "";

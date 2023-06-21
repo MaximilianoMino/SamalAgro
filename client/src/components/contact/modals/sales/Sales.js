@@ -6,7 +6,7 @@ import SelectField from '../../inputFields/SelectField/SelectField';
 import PhonePickup from '../../inputFields/phonePickup/PhonePickup';
 import FileUploader from '../../inputFields/fileUploader/FileUploader';
 
-const Sales = ({ english, setSuccessCard }) => {
+const Sales = ({ english, setSuccessCard, setLoading }) => {
     const [selectedFiles, setSelectedFiles] = useState([]);
 
     // COUNTRIES LIST
@@ -14,7 +14,7 @@ const Sales = ({ english, setSuccessCard }) => {
     const countriesList = getOptionListData();
     const productList = getProducts()
 
-    const { register, handleSubmit, errors, onSubmit, control } = useCustomForm( setSuccessCard, selectedFiles );
+    const { register, handleSubmit, errors, onSubmit, control } = useCustomForm( setSuccessCard, setLoading, selectedFiles );
 
   return (
   

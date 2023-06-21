@@ -10,8 +10,6 @@ import InfoContainer from "./components/info/InfoContainer";
 import SuccessCard from "./components/successcard/SuccessCard";
 import CountriesContainer from "./components/countries/CountriesContainer";
 import Contact from "./components/contact/Contact";
-import MyPDF from "./components/contact/pdf/MyPDF";
-import { PDFViewer } from "@react-pdf/renderer";
 
 function App() {
   const [english, setEnglish] = useState(false);

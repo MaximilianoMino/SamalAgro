@@ -3,9 +3,9 @@ import '../container/modal.css'
 import { useCustomForm } from '../hooks/useCustomForm';
 import PhonePickup from '../../inputFields/phonePickup/PhonePickup';
 
-const Consult = ({ english, setSuccessCard }) => {
+const Consult = ({ english, setSuccessCard, setLoading }) => {
 
-     const { register, handleSubmit, errors, onSubmit, control } = useCustomForm(setSuccessCard);
+     const { register, handleSubmit, errors, onSubmit, control } = useCustomForm(setSuccessCard, setLoading);
 
      const consultStyle = "consult-phone-picker"
   return (

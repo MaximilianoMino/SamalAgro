@@ -25,7 +25,7 @@ const NavBar = ({ handleLanguage, english }) => {
       {mQuery && !mQuery.matches ? (
         <Toogle
           english={english}
-          SamalLogo="https://res.cloudinary.com/dpwdm3ip1/image/upload/v1686603529/home/landing/web/IMG_3697_mwgpxj.png"
+          SamalLogo="https://res.cloudinary.com/dpwdm3ip1/image/upload/q_auto:eco,f_auto/v1686603529/home/landing/web/IMG_3697_mwgpxj.png"
           handleLanguage={handleLanguage}
         />
       ) : (
@@ -33,87 +33,80 @@ const NavBar = ({ handleLanguage, english }) => {
           <div className="samal-logo-container">
             <img
               className="samal-logo"
-              src="https://res.cloudinary.com/dpwdm3ip1/image/upload/v1686603529/home/landing/web/IMG_3697_mwgpxj.png"
+              src="https://res.cloudinary.com/dpwdm3ip1/image/upload/q_auto:eco,f_auto/v1686603529/home/landing/web/IMG_3697_mwgpxj.png"
               alt="samal agro Logo"
             />
           </div>
           <div className="nav-middle">
 
             <ul>
-              <li className="nav-item">
-                <span className="border-bottom bold-word nav-link border-danger ">
+              <li>
+                <span className="nav-middle-item" style={{borderBottom: "#c6261e 2px solid", paddingBottom: ".3em"}}>
                     { english ? "We are Samal" : "Somos Samal" }
                 </span>
               </li>
 
-              <li className="nav-item">
-                <a className="nav-link" href="#products">
+              <li>
+                <a 
+                className="nav-middle-item"
+                href="#products">
                    { english ?  "Products" :  "Productos" }
                 </a>
               </li>
 
-              <li className="nav-item">
-                <a className="nav-link" href="#propose">
+              <li>
+                <a 
+                className="nav-middle-item"
+                href="#propose">
                     { english ?  "Value prop ": "Propuesta de valor" }
                 </a>
               </li>
 
-              <li className="nav-item">
-                <a className="nav-link" href="#exportation">
+              <li>
+                <a 
+                className="nav-middle-item"
+                href="#exportation">
                    { english ?  "Exportation" :  "Exportación" }
                 </a>
               </li>
 
-              <li className="nav-item">
-                {english ? (
-                  <a className="nav-link" href="#contact">
-                    Contact
-                  </a>
-                ) : (
-                  <a className="nav-link" href="#contact">
-                    Contacto
-                  </a>
-                )}
+              <li >
+                <a 
+                className="nav-middle-item"
+                href="#contact">
+                   { english ?  "Contact" :  "Contacto" }
+                </a>
               </li>
 
             </ul>
           </div>
-          <div className="navbar-lang">
-            <ul className="">
-              <li className="nav-item">
-                <a
-                  className="nav-link"
-                  onClick={(e) => handleLanguage("es", e)}
-                  href="1"
-                >
-                  <span
-                    className={
-                      !english ? "border-bottom bold-word  border-danger" : ""
-                    }
-                  >
-                    ESP
-                  </span>
-                </a>
-              </li>
-              <li className="nav-item">
-                <a
-                  className="nav-link"
-                  onClick={(e) => handleLanguage("en", e)}
-                  href="1"
-                >
-                  <span
-                    className={
-                      english ? "border-bottom border-danger bold-word" : ""
-                    }
-                  >
-                    ENG
-                  </span>
-                </a>
-              </li>
-
-              
+        <div className="navbar-lang">
+            <p
+            onClick={(e) => handleLanguage("es", e)}
+            >
+            <span
+            className={
+            !english ? "active-lang" : ""
+            }
+            >
+            ESP
+            </span>
+            </p>
+            <p
+            onClick={(e) => handleLanguage("en", e)}
+            >
+            <span
+            className={
+            english ? "active-lang" : ""
+            }
+            >
+            ENG
+            </span>
+            </p>
+        </div>
+  
                 <div
-                  className="nav-item login-container"
+                  className="login-container"
                   onMouseOver={() => setCsoon(true)}
                   onMouseLeave={() => setCsoon(false)}
                 >
@@ -125,15 +118,14 @@ const NavBar = ({ handleLanguage, english }) => {
                       loading="lazy"
                     />
                   </span>
-                  <p className={`nav-link ${csoon ? "invisible" : null}`}>
+                  <p className={`${csoon ? "not-visibled" : "login-container-clients"}`}>
                     {english ? "Clients" : "Clientes"}
                   </p>{" "}
                   {csoon ? (
                     <span className="nav-feature">{english ? "Coming Soon" : "Proximamente"}</span>
                   ) : null}
                 </div>
-            </ul>
-          </div>
+            
         </nav>
       )}
     </div>

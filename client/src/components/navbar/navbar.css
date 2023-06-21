@@ -2,11 +2,11 @@
     max-width: 100%;
     display: flex;
     justify-content: space-around;
-    align-content: center;
+    align-items: center;
     height: 8em;
     flex-wrap: wrap;
     animation: navbarMove 5s;
-    font-size: .9em;
+    font-size: 1em;
 }
 
 @keyframes navbarMove {
@@ -19,81 +19,91 @@
 }
 
 .nav-middle {
-    color: #707070 !important;
+    color: #707070;
     display: flex;
-
-
 }
 
 .nav-middle>ul {
     list-style: none;
     text-decoration: none;
-    color: #707070 !important;
+    text-decoration-line: none;
     display: flex;
+    justify-content:space-between;
+    align-items: center;
+    width: 35em;
     height: 100%;
-    align-items: center !important;
     flex-direction: row;
 }
 
-.nav-middle>ul>li {
-    text-decoration: none;
-    color: #707070 !important;
-    line-height: 1;
-    white-space: nowrap;
+.nav-middle-item {
+    text-decoration:none;
+    color: #707070;
+
 }
 
-.nav-link:hover {
-    color: #c6261e !important;
+.nav-middle-item:hover {
+    cursor:pointer;
+    color: #c6261e;
 }
-
 
 .samal-logo-container {
     display: flex;
+    align-self: center;
 }
 
 .samal-logo {
     width: 12.5rem;
-    height: 5rem;
-    padding: 0;
+    height: 4.5rem;
+    margin-bottom: .6em;
 }
 
-.nav-link {
-    color: #707070 !important;
+.navbar-lang {
+    display: flex;
+    width: 3.8rem;
+    align-items: center;
+    font-size: .95em;
+    font-weight: 500;
+    justify-content: space-between;
+    color: #707070;
+}
+
+.active-lang {
+    font-weight: bold;
+    color: #c6261e !important;
+    border-bottom: #c6261e 2px solid;
+}
+
+.navbar-lang:hover {
+    cursor: pointer;
+}
+
+.not-visibled {
+    color: transparent !important;
 }
 
 .client-icon {
-    width: 1.0em;
-    height: 1em;
-    margin: .45em -0.4em .8em 1em;
+    width: 1.1em;
+    height: 1.1em;
+    margin-bottom: 1.1em;
+    margin-right: .3em;
 }
 
 .client-icon:hover {
     cursor: pointer;
 }
 
-.bold-word {
-    font-weight: bold;
-    color: #c6261e !important;
-}
-
-.navbar-lang>ul {
-    height: 100%;
-    list-style: none;
-    display: flex;
-    align-items: center;
-}
-
-.navbar-lang>ul>li {
-    margin-left: -1em;
-}
-
 .login-container{
     display: flex;
+    justify-content: space-around;
     align-items: center;
+    height: auto;
+    width: 80px;
 }
-.login-container  > .nav-link {
-    margin:auto;
+
+.login-container-clients {
+    color: #707070
 }
+
 .nav-feature {
     position: absolute;
     font-size: 0.8rem;
@@ -117,24 +127,29 @@
         justify-content: space-around;
         width: 100%;
         height: 8em;
+
     }
     .burguer-toogle-img {
         justify-self: flex-end;
         cursor: pointer;
         opacity: 0.6;
         right: 0;
-        width: 2.5em;
+        width: 2em;
     }
   
-    .lang {
-        margin: 0 0 0 0.6em;
-        cursor: pointer;
+    .navbar-lang {
+        margin-top: 1.3em;
+        font-size: 1em;
+        width: 4em;
     }
     .navbar-nav {
         display: flex;
         margin-left: 4em;
         flex-direction: row;
         font-size: 1.2em;
+    }
+    .samal-logo {
+        margin-top: .9em;
     }
 }
 
@@ -156,10 +171,11 @@
     .samal-logo {
         width: 180px;
         height: 70px;
+        margin-top: 1em;
+
     }
-    .lang {
-        margin-left: 0.6em;
-        cursor: pointer;
+    .navbar-lang {
+        margin-top: 1em;
     }
     .navbar-nav {
         display: flex;
@@ -188,9 +204,8 @@
         width: 150px;
         height: 60px;
     }
-    .lang {
-        margin-left: 0.6em;
-        cursor: pointer;
+    .navbar-lang {
+        margin-top: 1em;
     }
     .navbar-nav {
         display: flex;

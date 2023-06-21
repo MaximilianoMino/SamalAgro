@@ -1,6 +1,7 @@
 import React from "react";
 import "./popup.css";
 import shipments from "../../assets/Iconos/envios_samal.WebP";
+import { IoIosCloseCircleOutline } from 'react-icons/io'
 
 const Popup = ({
   data,
@@ -47,17 +48,17 @@ const Popup = ({
     }
   };
   return (
-    <div className="popup-container  shadow-sm">
-      <div className="shadow-sm popup-title">
-        <p className="">{title}</p>
-        <i className="bi bi-x-circle" onClick={handleClose}></i>
+    <div className="popup-container">
+      <div className="popup-header">
+        <p className="popup-header-title">{title}</p>
+        <IoIosCloseCircleOutline className="popup-header-close-icon" onClick={handleClose}/>
       </div>
       <div className="popup-body">
         {countries.map((country, index) => {
           return (
-            <div className="bg-white" key={index}>
+            <div className="popup-body-wrap" key={index}>
               <div className="popup-country">
-                <p className="">{country.country}</p>
+                <p>{country.country}</p>
                 <span>
                   ({english ? "SINCE" : "DESDE"} {country.since})
                 </span>
@@ -65,15 +66,15 @@ const Popup = ({
               <div className="popup-info">
                 <div>
                   <p className="popup-info-number">{country.annual_tons}</p>
-                  <p>{english ? "metric tons" : "toneladas"}</p>
+                  <p className="popup-info-text">{english ? "metric tons" : "toneladas"}</p>
                 </div>
-                <div className="d-flex flex-row">
+                <div className="popup-icons-container">
                   <img
                     className="popup-icons"
                     src={`${shipments}`}
                     alt="samal-availability-icon"
                   />
-                  <div className="ms-3 me-5 text-start d-flex flex-column">
+                  <div className="popup-info-anual-shipments">
                     <p className="popup-info-number">
                       {country.annual_shipments}
                     </p>
@@ -81,12 +82,11 @@ const Popup = ({
                   </div>
                 </div>
               </div>
-              <hr></hr>
             </div>
           );
         })}
       </div>
-      <span className="bg-white p-2"></span>
+      <span className="popup-padding-bottom"></span>
     </div>
   );
 };

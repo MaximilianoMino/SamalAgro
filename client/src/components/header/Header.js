@@ -25,12 +25,12 @@ const Header = ({ handleLanguage, english }) => {
         </div>
       ) : null}
       <img
-        src="https://res.cloudinary.com/dpwdm3ip1/image/upload/v1686603532/home/landing/web/5_grdhj1.jpg"
+        src="https://res.cloudinary.com/dpwdm3ip1/image/upload/q_auto:eco,f_auto/v1686603532/home/landing/web/5_grdhj1.jpg"
         alt="Samal agro man seeding"
         className="imgBg"
         loading="lazy"
       />
-      <video className="videoTag" src="https://res.cloudinary.com/dpwdm3ip1/video/upload/v1686603760/home/landing/web/Samal_Agor_Inst-_2_euzk0a.mp4" autoPlay loop muted></video>
+      <video className="videoTag" src="https://res.cloudinary.com/dpwdm3ip1/video/upload/q_auto:eco,f_auto/v1686603760/home/landing/web/Samal_Agor_Inst-_2_euzk0a.mp4" autoPlay loop muted></video>
     </div>
   );
 };

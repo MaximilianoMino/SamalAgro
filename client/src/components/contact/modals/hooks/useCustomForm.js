@@ -4,11 +4,13 @@ import { sendEmailWithPDF } from '../../../../services/emailService';
 import MyPDF from '../../pdf/MyPDF';
 import { handleImages } from '../../../../services/cloudinary';
 
-export const useCustomForm = ( setSuccessCard, selectedFiles ) => {
+export const useCustomForm = ( setSuccessCard, setLoading, selectedFiles ) => {
   const { register, handleSubmit, formState: { errors }, control } = useForm();
 
   const onSubmit = async (data) => {
-  
+    
+    setLoading(true)
+
     const secure_urls =  selectedFiles?.length > 0 && await handleImages(selectedFiles)
 
     if (secure_urls.length > 0) {
@@ -17,7 +19,7 @@ export const useCustomForm = ( setSuccessCard, selectedFiles ) => {
     }
 
     try {
-          generateAndSendPDF(data);
+            generateAndSendPDF(data);
       } catch (error) {
         return error
     }
@@ -38,7 +40,7 @@ const generateAndSendPDF = async (formData) => {
             file: file
          }
 
-             sendEmailWithPDF( emailData , setSuccessCard); 
+             sendEmailWithPDF( emailData , setSuccessCard, setLoading); 
          } catch (error) {
         console.log("🚀 ~ file: useCustomForm.js:34 ~ generateAndSendPDF ~ error:", error)
         return error

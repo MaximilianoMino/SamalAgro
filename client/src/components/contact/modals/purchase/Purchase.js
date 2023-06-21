@@ -5,14 +5,14 @@ import useCountryData from '../hooks/useCustomCountries';
 import SelectField from '../../inputFields/SelectField/SelectField';
 import PhonePickup from '../../inputFields/phonePickup/PhonePickup';
 
-const Purchase = ({  english, setSuccessCard }) => {
+const Purchase = ({  english, setSuccessCard, setLoading }) => {
 
     // COUNTRIES LIST
     const { getOptionListData, getProducts } = useCountryData(english);
     const countriesList = getOptionListData();
     const productList = getProducts()
 
-    const { register, handleSubmit, errors, onSubmit, control } = useCustomForm(setSuccessCard);
+    const { register, handleSubmit, errors, onSubmit, control } = useCustomForm(setSuccessCard, setLoading);
 
     const requiredMsg = `${english ? "Required" : "Requerido"}`
 

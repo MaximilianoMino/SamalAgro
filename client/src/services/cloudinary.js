@@ -1,17 +1,16 @@
 import axios from 'axios';
-
-
-const cloud_name = 'dpwdm3ip1'
-const cloudinaryUploadURL = `https://api.cloudinary.com/v1_1/${cloud_name}/upload`;
-const cloudinaryUploadPreset = 'hutrcxnd';
-
+import { REACT_APP_CLOUDINARY_CLOUD_NAME, REACT_APP_CLOUDINARY_UPLOAD_PRESET } from '../config/globals.js'
+ console.log("🚀 ~ file: cloudinary.js:3 ~ REACT_APP_CLOUDINARY_CLOUD_NAME, REACT_APP_CLOUDINARY_UPLOAD_PRESET:", REACT_APP_CLOUDINARY_CLOUD_NAME, REACT_APP_CLOUDINARY_UPLOAD_PRESET)
+ 
+const cloudinaryUploadURL = `https://api.cloudinary.com/v1_1/${REACT_APP_CLOUDINARY_CLOUD_NAME}/upload`;
 
 export const handleImages = async (selectedFiles) => {
+
     try {
         const formDataArray = selectedFiles.map((file) => {
             const formData = new FormData();
             formData.append('file', file);
-            formData.append('upload_preset', cloudinaryUploadPreset);
+            formData.append('upload_preset', REACT_APP_CLOUDINARY_UPLOAD_PRESET);
             return formData;
           });
       
@@ -36,7 +35,7 @@ export const handlePDF = async (PDFFile) => {
     try {
         const formData = new FormData();
             formData.append("file", PDFFile);
-            formData.append("upload_preset", cloudinaryUploadPreset);
+            formData.append("upload_preset", REACT_APP_CLOUDINARY_UPLOAD_PRESET);
             formData.append("resource_type", "image");
 
         const response = await axios.post(cloudinaryUploadURL, formData, {
@@ -49,7 +48,7 @@ export const handlePDF = async (PDFFile) => {
 
        return attachmentURL
     } catch (error) {
-        console.log("🚀 ~ file: cloudinary.js:12 ~ handleImages ~ error:", error)
+        console.log("🚀 ~ file: cloudinary.js:51 ~ handlePDF ~ error:", error)
         return error
     }
 }

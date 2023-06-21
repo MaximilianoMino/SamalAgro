@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import "./footer.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import { BsFacebook, BsInstagram, BsWhatsapp } from "react-icons/bs";
 const Footer = ({ english }) => {
   useEffect(() => {
     Aos.init({
@@ -11,15 +12,15 @@ const Footer = ({ english }) => {
 
   const social_media = [
     {
-        icon: "bi-facebook",
+        icon: <BsFacebook className="footer-icon"/>,
         go_to: "https://www.facebook.com/samalagro/"
     },
     {
-        icon: "bi-instagram",
+        icon: <BsInstagram className="footer-icon"/>,
         go_to: "https://www.instagram.com/samalagro/?hl=es-la",
     },
     {
-        icon: "bi-whatsapp", 
+        icon: <BsWhatsapp className="footer-icon"/>, 
         go_to: "https://api.whatsapp.com/send?phone=543533503323&app=facebook&entry_point=page_cta&fbclid=IwAR2WWIYyNeHclXhpR0hmkKN1AHzofODxoXg4eWqqxk7OWLOPgBpIcJGaU_4"
     }
 ]
@@ -54,7 +55,7 @@ const Footer = ({ english }) => {
                 href={media.go_to}
                 key={index}
                 >
-                    <i className={`bi footer-icon ${media.icon}`}></i>
+                    {media.icon}
                 </a>
               )
             } )}

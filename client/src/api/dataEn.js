@@ -3,17 +3,17 @@ const data = {
     proposes: [{
             title: "QUANTITY-QUALITY",
             description: "We plant in diferent strategically located regions of Argentina, atomizing production risks, ensuring quantity and quality in each product.",
-            thumbnail: "https://res.cloudinary.com/dpwdm3ip1/image/upload/v1686603479/home/landing/web/cantidadcalidad_hfcylv.gif",
+            thumbnail: "https://res.cloudinary.com/dpwdm3ip1/image/upload/q_auto:eco,f_auto/v1686603479/home/landing/web/cantidadcalidad_hfcylv.gif",
         },
         {
             title: "TRACEABILITY",
             description: "We have a team of engineers with specific knowledge who participate in the entire value chain, ensuring strict traceability control.",
-            thumbnail: "https://res.cloudinary.com/dpwdm3ip1/image/upload/v1686603481/home/landing/web/trazabilidad_iqie5h.gif",
+            thumbnail: "https://res.cloudinary.com/dpwdm3ip1/image/upload/q_auto:eco,f_auto/v1686603481/home/landing/web/trazabilidad_iqie5h.gif",
 },
         {
             title: "EFFICENCY",
             description: "We have a Foreign Trade Departament that responds to the documentary needs of each country.",
-            thumbnail: "https://res.cloudinary.com/dpwdm3ip1/image/upload/v1686603479/home/landing/web/eficiencia_sd0zhl.gif",
+            thumbnail: "https://res.cloudinary.com/dpwdm3ip1/image/upload/q_auto:eco,f_auto/v1686603479/home/landing/web/eficiencia_sd0zhl.gif",
         },
     ],
     products: [{
@@ -23,7 +23,7 @@ const data = {
                 availability: "March to July",
                 packaging: "25Kg. Polypropylene New Bags",
                 quality_standard: "HACCP; BPM",
-                thumbnail: "https://res.cloudinary.com/dpwdm3ip1/image/upload/v1686603568/home/landing/products/mung-samal_n4g6hu.jpg",
+                thumbnail: "https://res.cloudinary.com/dpwdm3ip1/image/upload/q_auto:eco,f_auto/v1686603568/home/landing/products/mung-samal_n4g6hu.jpg",
             },
         },
         {
@@ -33,7 +33,7 @@ const data = {
                 availability: "April to July",
                 packaging: "25kg. Polypropylene New Bags",
                 quality_standard: "HACCP; BPM",
-                thumbnail: "https://res.cloudinary.com/dpwdm3ip1/image/upload/v1686603569/home/landing/products/adzuki-samal_xkn3os.jpg",
+                thumbnail: "https://res.cloudinary.com/dpwdm3ip1/image/upload/q_auto:eco,f_auto/v1686603569/home/landing/products/adzuki-samal_xkn3os.jpg",
             },
         },
         {
@@ -43,7 +43,7 @@ const data = {
                 availability: "June-July",
                 packaging: "25kg. Polypropylene New Bags",
                 quality_standard: "HCCP;BPM",
-                thumbnail: "https://res.cloudinary.com/dpwdm3ip1/image/upload/v1686603568/home/landing/products/alubia-samal_vbqq7t.jpg",
+                thumbnail: "https://res.cloudinary.com/dpwdm3ip1/image/upload/q_auto:eco,f_auto/v1686603568/home/landing/products/alubia-samal_vbqq7t.jpg",
             },
         },
         {
@@ -53,7 +53,7 @@ const data = {
                 availability: "November to January",
                 packaging: "25kg. Polypropylene New Bags",
                 quality_standard: "HACCP;BPM",
-                thumbnail: "https://res.cloudinary.com/dpwdm3ip1/image/upload/v1686603568/home/landing/products/coriandro-samal_i6eq57.jpg",
+                thumbnail: "https://res.cloudinary.com/dpwdm3ip1/image/upload/q_auto:eco,f_auto/v1686603568/home/landing/products/coriandro-samal_i6eq57.jpg",
             },
         },
         {
@@ -63,7 +63,7 @@ const data = {
                 availability: "November to January",
                 packaging: "25kg. Polypropylene New Bags",
                 quality_standard: "HACCP;BPM",
-                thumbnail: "https://res.cloudinary.com/dpwdm3ip1/image/upload/v1686603569/home/landing/products/garbanzo-samal_b9o4ic.jpg",
+                thumbnail: "https://res.cloudinary.com/dpwdm3ip1/image/upload/q_auto:eco,f_auto/v1686603569/home/landing/products/garbanzo-samal_b9o4ic.jpg",
             },
         },
         {
@@ -73,7 +73,7 @@ const data = {
                 availability: "May to July",
                 packaging: "25kg. Polypropylene New Bags",
                 quality_standard: "HACCP;BPM",
-                thumbnail: "https://res.cloudinary.com/dpwdm3ip1/image/upload/v1686603568/home/landing/products/cranberry-samal_ik3prx.jpg",
+                thumbnail: "https://res.cloudinary.com/dpwdm3ip1/image/upload/q_auto:eco,f_auto/v1686603568/home/landing/products/cranberry-samal_ik3prx.jpg",
             },
         },
         {
@@ -83,7 +83,7 @@ const data = {
                 availability: "June to July",
                 packaging: "25kg. Polypropylene New Bags",
                 quality_standard: "HACCP;BPM",
-                thumbnail: "https://res.cloudinary.com/dpwdm3ip1/image/upload/v1686603570/home/landing/products/negro-samal_f6dxba.jpg",
+                thumbnail: "https://res.cloudinary.com/dpwdm3ip1/image/upload/q_auto:eco,f_auto/v1686603570/home/landing/products/negro-samal_f6dxba.jpg",
             },
         },
         {
@@ -93,7 +93,7 @@ const data = {
                 availability: "June to August",
                 packaging: "25kg. Polypropylene New Bags",
                 quality_standard: "HACCP;BPM",
-                thumbnail: "https://res.cloudinary.com/dpwdm3ip1/image/upload/v1686603569/home/landing/products/lrk-samal_arzavr.jpg",
+                thumbnail: "https://res.cloudinary.com/dpwdm3ip1/image/upload/q_auto:eco,f_auto/v1686603569/home/landing/products/lrk-samal_arzavr.jpg",
             },
         },
         {
@@ -103,7 +103,7 @@ const data = {
                 availability: "June to July",
                 packaging: "25kg. Polypropylene New Bags",
                 quality_standard: "HACCP;BPM",
-                thumbnail: "https://res.cloudinary.com/dpwdm3ip1/image/upload/v1686603570/home/landing/products/sesamo-samal_ikvqht.jpg",
+                thumbnail: "https://res.cloudinary.com/dpwdm3ip1/image/upload/q_auto:eco,f_auto/v1686603570/home/landing/products/sesamo-samal_ikvqht.jpg",
             },
         },
         {
@@ -113,7 +113,7 @@ const data = {
                 availability: "June to July",
                 packaging: "25kg. Polypropylene New Bags",
                 quality_standard: "HACCP;BPM",
-                thumbnail: "https://res.cloudinary.com/dpwdm3ip1/image/upload/v1686603571/home/landing/products/drk-samal_riak1e.jpg",
+                thumbnail: "https://res.cloudinary.com/dpwdm3ip1/image/upload/q_auto:eco,f_auto/v1686603571/home/landing/products/drk-samal_riak1e.jpg",
             },
         },
         {
@@ -123,7 +123,7 @@ const data = {
                 availability: "March to June",
                 packaging: "25kg. Polypaper New Bags",
                 quality_standard: "HACCP;BPM",
-                thumbnail: "https://res.cloudinary.com/dpwdm3ip1/image/upload/v1686603570/home/landing/products/pisingallo-samal_mqpwse.jpg",
+                thumbnail: "https://res.cloudinary.com/dpwdm3ip1/image/upload/q_auto:eco,f_auto/v1686603570/home/landing/products/pisingallo-samal_mqpwse.jpg",
             },
         },
         {
@@ -133,7 +133,7 @@ const data = {
                 availability: "December to January",
                 packaging: "25kg. Polypropylene New Bags",
                 quality_standard: "HACCP;BPM",
-                thumbnail: "https://res.cloudinary.com/dpwdm3ip1/image/upload/v1686603570/home/landing/products/arveja.samal_w043a9.jpg",
+                thumbnail: "https://res.cloudinary.com/dpwdm3ip1/image/upload/q_auto:eco,f_auto/v1686603570/home/landing/products/arveja.samal_w043a9.jpg",
             },
         },
     ],

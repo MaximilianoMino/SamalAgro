@@ -1,38 +1,34 @@
 import emailjs from "@emailjs/browser";
-import axios from 'axios';
 import { handlePDF } from "./cloudinary";
-/* cloudinary.v2.config({
-  cloud_name: 'dmrsdfpfm',
-  api_key: '861318221419518',
-  api_secret: 'ZtP5Mu3_xz4Rd87Udkul3dZlrd8',
-  secure: true,
-})
- */
-const serviceId = "service_i1fmx2g";
-const templateId = "template_fmswouo";
-const userId = "user_Nci45Ir3ZSNRSm9x9iPsY";
-export const sendEmailWithPDF = async (emailData, setSuccessCard) => {
+import { REACT_APP_EMAILJS_SERVICEID, REACT_APP_EMAILJS_TEMPLATEID, REACT_APP_EMAILJS_USER_ID } from '../config/globals'
+
+ export const sendEmailWithPDF = async (emailData, setSuccessCard, setLoading) => {
     
-    const { file, email } = emailData
+    const { file } = emailData
 
     try {
         const attachmentURL = await handlePDF(file)
- 
+
         const emailSent = await emailjs
         .send(
-            serviceId,
-            templateId,
+            REACT_APP_EMAILJS_SERVICEID,
+            REACT_APP_EMAILJS_TEMPLATEID,
             {
             email: emailData.email,
             message: 'Adjunto encontrará el PDF solicitado.',
             attachment: attachmentURL
           },
-            userId
+          REACT_APP_EMAILJS_USER_ID
         )
-           setSuccessCard(true);
-  
+        
+
+        if (emailSent) {
+             setSuccessCard(true);
+             setLoading(false)
+        }
+        
       return emailSent 
     } catch (error) {
       console.error(error);
     }  
-  };
+  }; 

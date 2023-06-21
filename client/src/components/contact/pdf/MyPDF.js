@@ -2,32 +2,7 @@ import React from 'react';
 import { Page, Text, Document, StyleSheet, View, Image, Font, Link } from '@react-pdf/renderer';
 import Roboto from 'assets/fonts/Roboto/Roboto-Regular.ttf'
 Font.register({ family: 'Roboto', src: Roboto, fontWeight: 'bold' });
-/* const formData = {
-    "fullname": "Some Client",
-    "email": "someclient@gmail.com",
-    "company": "Some Company",
-     "province": "Córdoba",
-     "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\n\n",
-    "phone": "544564654654",
-     "company_origen": {
-        "id": "+5-Argentina",
-        "value": "Argentina",
-        "flag": "https://flagcdn.com/w320/ar.png",
-        "label": "Argentina"
-    }, 
-    "destinity_country": {
-        "id": "+5-Argentina",
-        "value": "Argentina",
-        "flag": "https://flagcdn.com/w320/ar.png",
-        "label": "Argentina"
-    },
-    "Product": {
-        "value": "ALUBIA",
-        "label": "ALUBIA",
-        "flag": "/static/media/alubia-samal.545f9ebb4baff5049a08.WebP"
-    },
-     
-} */
+
 // Estilos
 const styles = StyleSheet.create({
   page: {
@@ -191,7 +166,7 @@ const titleReg = formData.province ? "Ventas" : (formData.destinity_country ? "C
       <Page style={styles.page} wrap> 
         <View style={styles.header} bookmark="Encabezado">
             <Image style={styles.header_img} src="https://res.cloudinary.com/dpwdm3ip1/image/upload/v1686661207/home/landing/web/campo_n2vwdp.jpg"/>
-            <Image style={styles.logo} src="https://res.cloudinary.com/dpwdm3ip1/image/upload/v1686054146/Landing%20Page/SamalAgroLogoB_idytpc.png" />
+            <Image style={styles.logo} src="https://res.cloudinary.com/dpwdm3ip1/image/upload/v1687046049/home/landing/web/SamalAgroLogoB_w4nvuc.png" />
             <View style={styles.header_user_info}>
                 <Text style={styles.header_user_info_text}>Usuario: {formData.email}</Text>
                 <Text style={styles.header_user_info_text}>Fecha: {new Date().toLocaleDateString()}</Text>
@@ -279,7 +254,7 @@ const titleReg = formData.province ? "Ventas" : (formData.destinity_country ? "C
 
         <View style={styles.footer} bookmark="Footer"> 
             <Image style={styles.header_img} src="https://res.cloudinary.com/dpwdm3ip1/image/upload/v1686661207/home/landing/web/campo_n2vwdp.jpg" />
-            <Image style={styles.logo} src="https://res.cloudinary.com/dpwdm3ip1/image/upload/v1686054146/Landing%20Page/SamalAgroLogoB_idytpc.png" />
+            <Image style={styles.logo} src="https://res.cloudinary.com/dpwdm3ip1/image/upload/v1687046049/home/landing/web/SamalAgroLogoB_w4nvuc.png" />
             <View style={styles.footer_user_info}>
                 <Text style={styles.footer_user_info_text}>Buenos Aires 315 - 5940 Las Varillas, Cordoba. Argentina</Text>
                 <Text style={styles.footer_user_info_text}>Tel./Fax: +54-3533-422641</Text>
