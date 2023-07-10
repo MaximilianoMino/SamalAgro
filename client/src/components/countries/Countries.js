@@ -44,7 +44,7 @@ const Countries = ({ english, modal, setModal }) => {
       setData(continentRetrieved);
       setContinentId(continentRetrieved.id);
     } catch (error) {
-      console.log(error);
+    console.log("🚀 ~ file: Countries.js:47 ~ handleModal ~ error:", error)
     }
   };
 

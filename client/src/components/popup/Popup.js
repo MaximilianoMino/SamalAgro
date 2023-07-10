@@ -44,7 +44,7 @@ const Popup = ({
         setCaribbean(false);
       }
     } catch (error) {
-      console.log(error);
+    console.log("🚀 ~ file: Popup.js:47 ~ handleClose ~ error:", error)
     }
   };
   return (
