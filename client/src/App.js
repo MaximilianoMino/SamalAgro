@@ -24,7 +24,7 @@ function App() {
         setEnglish(false);
       }
     } catch (error) {
-      console.log(error);
+      console.log("🚀 ~ file: App.js:27 ~ handleLanguage ~ error:", error)
     }
   };
 

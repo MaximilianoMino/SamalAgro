@@ -8,7 +8,6 @@ import Spinner from 'components/spinner/Spinner'
 
 const ModalContainer = ({ setConsultModal, setSalesModal, setPurchaseModal, english, setSuccessCard  }) => {
     const [loading, setLoading] = useState(false);
-    console.log("🚀 ~ file: ModalContainer.js:11 ~ ModalContainer ~ loading:", loading)
     const closeToggle = () => {
         if (setConsultModal) {
           setConsultModal(false);
