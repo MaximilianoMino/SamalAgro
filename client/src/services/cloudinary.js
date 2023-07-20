@@ -1,6 +1,7 @@
 import axios from 'axios';
 import { REACT_APP_CLOUDINARY_CLOUD_NAME, REACT_APP_CLOUDINARY_UPLOAD_PRESET } from '../config/globals.js'
- 
+import { v4 as uuidv4 } from 'uuid';
+
 const cloudinaryUploadURL = `https://api.cloudinary.com/v1_1/${REACT_APP_CLOUDINARY_CLOUD_NAME}/upload`;
 
 export const handleImages = async (selectedFiles) => {
@@ -31,9 +32,14 @@ export const handleImages = async (selectedFiles) => {
 
 
 export const handlePDF = async (PDFFile) => {
+    const { name } = PDFFile
+
+    const uniqueName = `${name.split(/\s+/).join('')}-${uuidv4()}`; // Genera un nombre único para el archivo
+
     try {
         const formData = new FormData();
             formData.append("file", PDFFile);
+            formData.append("public_id", uniqueName);
             formData.append("upload_preset", REACT_APP_CLOUDINARY_UPLOAD_PRESET);
             formData.append("resource_type", "image");
 
