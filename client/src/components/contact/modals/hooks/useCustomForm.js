@@ -19,8 +19,8 @@ export const useCustomForm = ( setSuccessCard, setLoading, selectedFiles ) => {
     } 
 
     try {
-            reset()
-         generateAndSendPDF(data);
+        reset()
+        generateAndSendPDF(data);
        } catch (error) {
         return error
     }
@@ -31,7 +31,7 @@ const generateAndSendPDF = async (formData) => {
      try {
 
         const blob = await pdf(<MyPDF formData={formData} />).toBlob();
-        const file = new File([blob], "example.pdf", {
+        const file = new File([blob], `${formData.company}`, {
             type: 'application/pdf',
             lastModified: new Date().getTime()
         });
@@ -40,9 +40,10 @@ const generateAndSendPDF = async (formData) => {
             email: formData.email,
             file: file
         }
+        console.log("🚀 ~ file: useCustomForm.js:43 ~ generateAndSendPDF ~ emailData:", file)
 
-        sendEmailWithPDF(emailData, setSuccessCard, setLoading); 
-         
+         sendEmailWithPDF(emailData, setSuccessCard, setLoading); 
+          
         } catch (error) {
         console.log("🚀 ~ file: useCustomForm.js:34 ~ generateAndSendPDF ~ error:", error)
         return error
