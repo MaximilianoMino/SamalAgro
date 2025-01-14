@@ -5,8 +5,11 @@ import Consult from '../consult/Consult'
 import './modal.css'
 import { AiOutlineClose } from 'react-icons/ai';
 import Spinner from 'components/spinner/Spinner'
+import { handleClickGA } from 'services/analytics'
 
 const ModalContainer = ({ setConsultModal, setSalesModal, setPurchaseModal, english, setSuccessCard  }) => {
+
+  
     const [loading, setLoading] = useState(false);
     const closeToggle = () => {
         if (setConsultModal) {
@@ -27,9 +30,9 @@ const ModalContainer = ({ setConsultModal, setSalesModal, setPurchaseModal, engl
                 <AiOutlineClose className="modal-close-btn" onClick={() => closeToggle()}/>
             </div>
             <div className='modal-input-group'>
-                { setPurchaseModal && <Purchase english={english} setSuccessCard={setSuccessCard} setLoading={setLoading} /> }
-                { setSalesModal && <Sales english={english} setSuccessCard={setSuccessCard} setLoading={setLoading} /> }
-                { setConsultModal && <Consult english={english} setSuccessCard={setSuccessCard} setLoading={setLoading} /> }
+                { setPurchaseModal && <Purchase handleClickGA={handleClickGA} english={english} setSuccessCard={setSuccessCard} setLoading={setLoading} /> }
+                { setSalesModal && <Sales handleClickGA={handleClickGA} english={english} setSuccessCard={setSuccessCard} setLoading={setLoading} /> }
+                { setConsultModal && <Consult handleClickGA={handleClickGA} english={english} setSuccessCard={setSuccessCard} setLoading={setLoading} /> }
 
                 { loading && <Spinner /> }
             </div>
