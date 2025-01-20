@@ -1,8 +1,10 @@
 import React, { useEffect } from "react";
-import "./footer.css";
+import { handleClickGA } from "services/analytics";
+import { BsFacebook, BsInstagram, BsWhatsapp } from "react-icons/bs";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import { BsFacebook, BsInstagram, BsWhatsapp } from "react-icons/bs";
+import "./footer.css";
+
 const Footer = ({ english }) => {
   useEffect(() => {
     Aos.init({
@@ -10,18 +12,26 @@ const Footer = ({ english }) => {
     });
   }, []);
 
+  const handleClickGAOnSocialMedia = (platform) => {
+    console.log(platform);
+    handleClickGA('Social Media', 'Click', platform)
+  }
+
   const social_media = [
     {
         icon: <BsFacebook className="footer-icon"/>,
-        go_to: "https://www.facebook.com/samalagro/"
+        go_to: "https://www.facebook.com/samalagro/",
+        onClick: () => handleClickGAOnSocialMedia('Facebook')
     },
     {
         icon: <BsInstagram className="footer-icon"/>,
         go_to: "https://www.instagram.com/samalagro/?hl=es-la",
+        onClick: () => handleClickGAOnSocialMedia('Instagram')
     },
     {
         icon: <BsWhatsapp className="footer-icon"/>, 
-        go_to: "https://api.whatsapp.com/send?phone=543533503323&app=facebook&entry_point=page_cta&fbclid=IwAR2WWIYyNeHclXhpR0hmkKN1AHzofODxoXg4eWqqxk7OWLOPgBpIcJGaU_4"
+        go_to: "https://api.whatsapp.com/send?phone=543533503323&app=facebook&entry_point=page_cta&fbclid=IwAR2WWIYyNeHclXhpR0hmkKN1AHzofODxoXg4eWqqxk7OWLOPgBpIcJGaU_4",
+        onClick: () => handleClickGAOnSocialMedia('Whatsapp')
     }
 ]
 
@@ -53,6 +63,7 @@ const Footer = ({ english }) => {
                 rel="noreferrer"
                 target="_blank" 
                 href={media.go_to}
+                onClick={media.onClick}
                 key={index}
                 >
                     {media.icon}

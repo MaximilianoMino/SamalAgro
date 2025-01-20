@@ -1,5 +1,4 @@
-import { useState } from "react";
-import "./App.css";
+import { useEffect, useState } from "react";
 import dataEs from "./api/dataEs";
 import dataEn from "./api/dataEn";
 import Header from "./components/header/Header";
@@ -10,10 +9,19 @@ import InfoContainer from "./components/info/InfoContainer";
 import SuccessCard from "./components/successcard/SuccessCard";
 import CountriesContainer from "./components/countries/CountriesContainer";
 import Contact from "./components/contact/Contact";
+import { initGA, logPageView } from '../src/services/analytics';
+import { REACT_APP_TRACKING_ID } from "config/globals";
+
+import "./App.css";
 
 function App() {
   const [english, setEnglish] = useState(false);
   const [successCard, setSuccessCard] = useState(false);
+
+  useEffect(() => {
+    initGA(REACT_APP_TRACKING_ID);
+    logPageView();
+  }, []);
 
   const handleLanguage = (id, e) => {
     e.preventDefault();
