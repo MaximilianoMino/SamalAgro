@@ -1,9 +1,9 @@
 import "./products.css";
 import useDraggableScroll from "use-draggable-scroll";
-import quality from "../../assets/Iconos/calidad.WebP";
-import availability from "../../assets/Iconos/disponibilidad.WebP";
-import standard from "../../assets/Iconos/normas.WebP";
-import packaging from "../../assets/Iconos/packaging.WebP";
+import quality from "../../assets/icons/calidad.WebP";
+import availability from "../../assets/icons/disponibilidad.WebP";
+import standard from "../../assets/icons/normas.WebP";
+import packaging from "../../assets/icons/packaging.WebP";
 import { useEffect, useRef } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";

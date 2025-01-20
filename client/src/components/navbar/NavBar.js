@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./navbar.css";
-import ClientIcon from "../../assets/Iconos/clientes.WebP";
+import ClientIcon from "../../assets/icons/clientes.WebP";
 import Toogle from "./Toogle";
 import Aos from "aos";
 import "aos/dist/aos.css";
