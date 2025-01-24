@@ -22,6 +22,7 @@ function App() {
     initGA(REACT_APP_TRACKING_ID);
     logPageView();
   }, []);
+    console.log("🚀 ~ useEffect ~ REACT_APP_TRACKING_ID:", REACT_APP_TRACKING_ID)
 
   const handleLanguage = (id, e) => {
     e.preventDefault();

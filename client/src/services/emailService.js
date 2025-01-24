@@ -5,7 +5,7 @@ import { Resend } from 'resend';
 
  export const sendEmail = async (emailData, formData, setSuccessCard, setLoading) => {
    
-    const resend = new Resend(REACT_APP_RESEND_API_KEY);
+    const resend = new Resend(process.env.REACT_APP_RESEND_API_KEY);
 
     const { data, error } = await resend.emails.send({
         from: 'libertadores323@gmail.com',
