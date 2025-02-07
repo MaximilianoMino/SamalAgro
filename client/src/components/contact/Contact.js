@@ -10,7 +10,6 @@ const Contact = ({ english, setSuccessCard }) => {
     const [consultModal, setConsultModal] = useState(false);
 
     const openConsultModal = () => {
-      console.log("asd");
       
       handleClickGA("formulario", "Click", "Consulta")
 

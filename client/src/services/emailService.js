@@ -1,4 +1,4 @@
-import {  REACT_APP_EMAILJS_SERVICEID_TEST, REACT_APP_EMAILJS_TEMPLATEID_TEST, REACT_APP_EMAILJS_USER_ID } from '../config/globals'
+import {  REACT_APP_EMAILJS_SERVICEID, REACT_APP_EMAILJS_TEMPLATEID, REACT_APP_EMAILJS_USER_ID } from '../config/globals'
 
 import emailjs from "@emailjs/browser";
 
@@ -35,8 +35,8 @@ export const sendEmail = async ( formData, setSuccessCard, setLoading) => {
 
     try {
         const emailSent = await emailjs.send(
-            REACT_APP_EMAILJS_SERVICEID_TEST,
-            REACT_APP_EMAILJS_TEMPLATEID_TEST,
+            REACT_APP_EMAILJS_SERVICEID,
+            REACT_APP_EMAILJS_TEMPLATEID,
             { ...emailParams },
             REACT_APP_EMAILJS_USER_ID
         );
