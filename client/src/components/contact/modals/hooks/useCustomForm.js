@@ -1,8 +1,6 @@
 import { useForm } from 'react-hook-form';
-import { pdf } from '@react-pdf/renderer';
-import { sendEmailWithPDF } from '../../../../services/emailService';
-import MyPDF from '../../pdf/MyPDF';
 import { handleImages } from '../../../../services/cloudinary';
+import { sendEmail } from '../../../../services/emailService';
 
 export const useCustomForm = ( setSuccessCard, setLoading, selectedFiles ) => {
   const { register, handleSubmit, formState: { errors }, control, reset } = useForm();
@@ -20,35 +18,16 @@ export const useCustomForm = ( setSuccessCard, setLoading, selectedFiles ) => {
 
     try {
         reset()
-        generateAndSendPDF(data);
-       } catch (error) {
+
+        sendEmail( data, setSuccessCard, setLoading); 
+           } catch (error) {
+           console.log("🚀 ~ onSubmit ~ error:", error)
         return error
     }
    
 };
 
-const generateAndSendPDF = async (formData) => {
-     try {
 
-        const blob = await pdf(<MyPDF formData={formData} />).toBlob();
-        const file = new File([blob], `${formData.company}`, {
-            type: 'application/pdf',
-            lastModified: new Date().getTime()
-        });
- 
-        const emailData = {
-            email: formData.email,
-            file: file
-        }
-        console.log("🚀 ~ file: useCustomForm.js:43 ~ generateAndSendPDF ~ emailData:", file)
-
-         sendEmailWithPDF(emailData, setSuccessCard, setLoading); 
-          
-        } catch (error) {
-        console.log("🚀 ~ file: useCustomForm.js:34 ~ generateAndSendPDF ~ error:", error)
-        return error
-        }
-    };
 
   return { register, handleSubmit, errors, onSubmit, control };
 };

@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import "./succes.css";
-import check from "../../assets/Iconos/check.WebP";
+import check from "../../assets/icons/check.WebP";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { IoIosCloseCircleOutline } from "react-icons/io";

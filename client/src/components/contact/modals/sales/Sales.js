@@ -47,7 +47,7 @@ const Sales = ({ english, setSuccessCard, setLoading }) => {
         </div>
 
        <SelectField english={english} errors={errors} control={control} itemList={countriesList} register={register} registerText="company_origen" labelText={english ? "Company origen" : "Origen de la compañía"} />
-       <SelectField english={english} errors={errors} control={control} itemList={productList} register={register} registerText="Product" labelText={english ? "Product" : "Producto"} />
+       <SelectField english={english} errors={errors} control={control} itemList={productList} register={register} registerText="product" labelText={english ? "Product" : "Producto"} />
 
        <div className='modal-form-control'>
             <input type="text" id='province' className={`input-form-control ${errors.province ? "modal-error-line" : null}`} placeholder=" " {...register("province", { required: true} )}/>

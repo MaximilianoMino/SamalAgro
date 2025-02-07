@@ -1,6 +1,6 @@
 import React from "react";
 import "./popup.css";
-import shipments from "../../assets/Iconos/envios_samal.WebP";
+import shipments from "../../assets/icons/envios_samal.WebP";
 import { IoIosCloseCircleOutline } from 'react-icons/io'
 
 const Popup = ({
