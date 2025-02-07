@@ -1,55 +1,53 @@
-import { REACT_APP_RESEND_API_KEY  } from '../config/globals'
-console.log("🚀 ~ REACT_APP_RESEND_API_KEY:", REACT_APP_RESEND_API_KEY)
-import EmailTemplate from "components/contact/emailTemplate/EmailTemplate";
-import { Resend } from 'resend';
+import {  REACT_APP_EMAILJS_SERVICEID_TEST, REACT_APP_EMAILJS_TEMPLATEID_TEST, REACT_APP_EMAILJS_USER_ID } from '../config/globals'
 
- export const sendEmail = async (emailData, formData, setSuccessCard, setLoading) => {
-   
-    const resend = new Resend(process.env.REACT_APP_RESEND_API_KEY);
+import emailjs from "@emailjs/browser";
 
-    const { data, error } = await resend.emails.send({
-        from: 'libertadores323@gmail.com',
-        to: ['maximiliano.mino323@gmail.com'],
-        subject: 'Hello World',
-        react: <EmailTemplate formData={formData}/>,
-        
-      });
-    
-      if (error) {
-        return { error: error.message };
-      }
+export const sendEmail = async ( formData, setSuccessCard, setLoading) => {
+    const titleReg = formData.province
+        ? "Ventas"
+        : formData.destinity_country
+            ? "Compra"
+      : "Consulta";
+  
+      const imagesHTML = formData.file
+        ? formData.file
+              .map(
+                  (img) =>
+                      `<a href="${img}" target="_blank"><img src="${img}" style="width: 150px; height: 100px; border-radius: 5px; margin: 5px;"/></a>`
+              )
+              .join("")
+        : "";
+
+     const emailParams = {
+        title: titleReg,
+        date: new Date().toLocaleDateString(),
+        email: formData.email,
+        fullname: formData.fullname,
+        company: formData.company,
+        product: formData.product?.label,
+        company_origen: formData.company_origen?.label,
+        destinity_country: formData.destinity_country?.label,
+        phone: formData.phone,
+        description: formData.description,
+        imagesHTML: imagesHTML && imagesHTML, 
+    };
 
 
-      console.log({ data });
-    
- /*
-    const emailHtml = renderToStaticMarkup(<EmailTemplate formData={formData} />);
-
-    await resend.emails.send({
-      from: 'libertadores323@gmail.com',
-      to: 'maximiliano.mino323@gmail.com',
-      subject: 'hello world',
-      html: emailHtml,  // Usar el HTML generado
-    });
-     try {
-        const emailSent = await emailjs
-        .send(
+    try {
+        const emailSent = await emailjs.send(
             REACT_APP_EMAILJS_SERVICEID_TEST,
             REACT_APP_EMAILJS_TEMPLATEID_TEST,
-            {
-            email: emailData.email,
-            message: emailContent,
-          },
-          REACT_APP_EMAILJS_USER_ID
-        )
+            { ...emailParams },
+            REACT_APP_EMAILJS_USER_ID
+        );
 
         if (emailSent) {
-             setSuccessCard(true);
-             setLoading(false)
+            setSuccessCard(true);
+            setLoading(false);
         }
-        
-      return emailSent 
+
+        return emailSent;
     } catch (error) {
-      console.error(error);
-    }    */
-  }; 
+        console.error(error);
+    }
+};

@@ -18,9 +18,8 @@ export const useCustomForm = ( setSuccessCard, setLoading, selectedFiles ) => {
 
     try {
         reset()
-        const emailData = data.email;
 
-        sendEmail(emailData, data, setSuccessCard, setLoading); 
+        sendEmail( data, setSuccessCard, setLoading); 
            } catch (error) {
            console.log("🚀 ~ onSubmit ~ error:", error)
         return error
