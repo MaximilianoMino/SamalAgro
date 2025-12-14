@@ -10,7 +10,6 @@ import SuccessCard from "./components/successcard/SuccessCard";
 import CountriesContainer from "./components/countries/CountriesContainer";
 import Contact from "./components/contact/Contact";
 import { initGA, logPageView } from "./services/analytics";
-import { REACT_APP_TRACKING_ID } from "config/globals";
 
 import "./App.css";
 
@@ -19,7 +18,7 @@ function App() {
   const [successCard, setSuccessCard] = useState(false);
 
   useEffect(() => {
-    initGA(REACT_APP_TRACKING_ID);
+    initGA("REACT_APP_TRACKING_ID");
     logPageView();
   }, []);
 
