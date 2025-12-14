@@ -9,7 +9,7 @@ import InfoContainer from "./components/info/InfoContainer";
 import SuccessCard from "./components/successcard/SuccessCard";
 import CountriesContainer from "./components/countries/CountriesContainer";
 import Contact from "./components/contact/Contact";
-import { initGA, logPageView } from '../src/services/analytics';
+import { initGA, logPageView } from "./services/analytics";
 import { REACT_APP_TRACKING_ID } from "config/globals";
 
 import "./App.css";
@@ -32,7 +32,7 @@ function App() {
         setEnglish(false);
       }
     } catch (error) {
-      console.log("🚀 ~ file: App.js:27 ~ handleLanguage ~ error:", error)
+      console.log("🚀 ~ file: App.js:27 ~ handleLanguage ~ error:", error);
     }
   };
 
@@ -62,7 +62,6 @@ function App() {
 
           <Contact english={english} setSuccessCard={setSuccessCard} />
           <Footer english={english} />
-
         </div>
       )}
     </div>
