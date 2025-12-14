@@ -1,4 +1,4 @@
-import ReactGA from 'react-ga';
+import ReactGA from "react-ga4";
 
 export const initGA = (trackingID) => {
   ReactGA.initialize(trackingID);
@@ -9,11 +9,10 @@ export const logPageView = () => {
   ReactGA.pageview(window.location.pathname + window.location.search);
 };
 
-
 export const handleClickGA = (category, action, section) => {
   ReactGA.event({
-      category: category,
-      action: action,
-      label: section,
+    category: category,
+    action: action,
+    label: section,
   });
 };
